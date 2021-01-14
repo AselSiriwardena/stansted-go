@@ -163,6 +163,10 @@ a {
     font-size: 20px;
 }
 
+.text-heading {
+    font-size: 30px;
+}
+
 .uploadIcon:before {
     font-size: 72px;
 }
