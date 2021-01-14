@@ -204,7 +204,7 @@
     }
 
     .text-primary, .post-login #footer .active {
-        color: var(--primary-color-blue) !important;
+        color: var(--primary-color-black) !important;
     }
     /* Text colors end */
 
