@@ -163,6 +163,10 @@ a {
     font-size: 20px;
 }
 
+.text-heading {
+    font-size: 30px;
+}
+
 .uploadIcon:before {
     font-size: 72px;
 }
@@ -757,3 +761,23 @@ a {
 }
 
 /* ------------------------------------------- POST-LOGIN STYLES END ------------------------------------------------ */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: snow;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0px;
+    font-size: 30px;
+    text-align: center;
+}
+.page-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+}

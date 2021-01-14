@@ -3,10 +3,13 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>product details</title>
+    <title>Place details</title>
 
     <!-- jQuery mobile files -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -26,6 +29,18 @@
     <!-- Custom main CSS file -->
     <link rel="stylesheet" href="index.css">
 
+    <!--API key -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initAutocomplete&libraries=places&v=weekly"
+            defer
+    ></script>
+
+    <!--custom css and js files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/map_style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/rating_style.css" />
+    <script src="scripts/map.js"></script>
+
 </head>
 
 <body class="post-login">
@@ -44,24 +59,24 @@
                         </div>
                     </div>
                     <div class="ui-block-b icons w90">
-                        <i id="favourite"></i>
-                        <i class="fas fa-share-alt"></i>
-                        <a class="primary-color-black-text" data-rel="popup" href="#overlay"
-                            data-position-to="#optionz"><i class="fas fa-search"></i></a>
-                        <div class="ui-content pt-0 mb-1" data-shadow="false" data-theme="none" data-overlay-theme="a"
-                            data-role="popup" id="overlay">
-                            <div class="deals-search-bar">
-                                <ul data-role="listview" data-filter="true" data-filter-reveal="true"
-                                    data-filter-placeholder="Searching Promotions" data-inset="true">
-                                    <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>
-                                    <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>
-                                    <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>
-                                    <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a class="primary-color-black-text" href="realAR.html" rel="external"><i
-                                class="fas fa-camera"></i></a>
+<!--                        <i id="favourite"></i>-->
+<!--                        <i class="fas fa-share-alt"></i>-->
+<!--                        <a class="primary-color-black-text" data-rel="popup" href="#overlay"-->
+<!--                            data-position-to="#optionz"><i class="fas fa-search"></i></a>-->
+<!--                        <div class="ui-content pt-0 mb-1" data-shadow="false" data-theme="none" data-overlay-theme="a"-->
+<!--                            data-role="popup" id="overlay">-->
+<!--                            <div class="deals-search-bar">-->
+<!--                                <ul data-role="listview" data-filter="true" data-filter-reveal="true"-->
+<!--                                    data-filter-placeholder="Searching Promotions" data-inset="true">-->
+<!--                                    <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>-->
+<!--                                    <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>-->
+<!--                                    <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>-->
+<!--                                    <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <a class="primary-color-black-text" href="realAR.html" rel="external"><i-->
+<!--                                class="fas fa-camera"></i></a>-->
                     </div>
 
                 </div>
@@ -69,41 +84,214 @@
                     <div class="ui-block-a w60 prod-deets">
                         <h3 id="productTitle">Stok Cold Brew Coffee - Med Caff</h3>
                         <div class="ui-grid-a">
-                            <div class="ui-block-a w30">
+                            <div class="ui-block-a w40">
                                 <i class="fa fa-star secondary-color-yellow-text"></i>
                                 <i class="fa fa-star secondary-color-yellow-text"></i>
                                 <i class="fa fa-star secondary-color-yellow-text"></i>
                                 <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-half-full secondary-color-yellow-text"></i>
+                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
                             </div>
-                            <div class="ui-block-b w70">
+                            <div class="ui-block-b w60">
                                 <a href="reviews.html" rel="external">
                                     <p class="fw-bold f16">58 Reviews</p>
                                 </a>
                             </div>
+                                <iframe width="95%" height="95%" src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="ui-block-b icons w90">
+<!--                                need to align to both side-->
+                                <i class="fas fa-share-alt"></i>
+                                <i id="favourite"></i>
+
+<!--                                <a class="primary-color-black-text" data-rel="popup" href="#overlay"-->
+<!--                                   data-position-to="#optionz"><i class="fas fa-search"></i></a>-->
+<!--                                <div class="ui-content pt-0 mb-1" data-shadow="false" data-theme="none" data-overlay-theme="a"-->
+<!--                                     data-role="popup" id="overlay">-->
+<!--                                    <div class="deals-search-bar">-->
+<!--                                        <ul data-role="listview" data-filter="true" data-filter-reveal="true"-->
+<!--                                            data-filter-placeholder="Searching Promotions" data-inset="true">-->
+<!--                                            <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>-->
+<!--                                            <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>-->
+<!--                                            <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>-->
+<!--                                            <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <a class="primary-color-black-text" href="realAR.html" rel="external"><i-->
+<!--                                        class="fas fa-camera"></i></a>-->
+                            </div>
+
                         </div>
+
+
                         <p class="primary-color-grey-text f16 w80" id="productDetails">
                             Brewed from the heart of Kashmir, Stok presents the
                             best cold brew coffee of the 21st Century. This new line
                             of cold brews gives twice the motivation and energy
                             while keeping the nostalgic taste everybody loves...
                         </p>
-                        <div class="ui-grid-a pt-3">
-                            <div class="ui-block-a w20">
-                                <p class="primary-color-grey-text f22 mt-2"><strike>20.99</strike></p>
+                        <div class="ui-block-b w95">
+                            <div class="card">
+                                <div class="ui-grid-a">
+<!--                                    <div class="ui-block-a w20">-->
+<!--                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">-->
+<!--                                    </div>-->
+                                    <div class="ui-block-b w100 pl-2">
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a w40">
+                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                            </div>
+                                            <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-content pt-2">
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                                Great product ! This is
+                                                the
+                                                best
+                                                coffee I've tasted in a while. Definitely recommended if you're a
+                                                coffee
+                                                lover.</p>
+                                        </div>
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a">
+                                                <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
+                                            </div>
+                                            <div class="ui-block-b f16 text-right">
+                                                <i class="far fa-heart"></i> 57
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="ui-block-b">
+                            <div class="ui-grid-a d-none hideInStore">
+<!--                                <div class="ui-block-a ">-->
+
+                                <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-3 w100 pathUrl"
+                                       accesskey="proceed">Show All Review </a>
+<!--                                </div>-->
+                                <!--                                </div>-->
+                            </div>
+                        </div>
+
+                        <div class="ui-grid-a pt-3">
+
+                            <!--<div class="ui-block-a w20">
+                                <p class="primary-color-grey-text f22 mt-2"><strike>20.99</strike></p>
+                            </div>-->
+                            <!--<div class="ui-block-b">
                                 <h3 class="primary-color-red-text"><b>USD<span
                                             style="font-size: 32px; padding-left: 7px" id="price">10.99</span></b>
                                 </h3>
+                            </div>-->
+
+                        </div>
+                    </div>
+                    <div class="ui-block-b w40 ">
+                        <div class="text-center h40">
+                            <div id="row">
+                            </div>
+
+                           <!-- <input
+                                    id="pac-input"
+                                    class="controls"
+                                    type="text"
+&lt;!&ndash;                                    placeholder="Search Box"&ndash;&gt;
+                            />-->
+                            <div class="card">
+                            <div id="map"></div>
+                            </div>
+<!--                            <div class="ui-block-b pt-5 pr-3">-->
+                                <div class="ui-grid-a d-none hideInStore">
+                                    <div class="ui-block-a w100">
+                                        <a rel="external" class="ui-btn btn secondary-btn mb-3 w95 pathUrl"
+                                           accesskey="proceed">Book Ticket</a>
+                                    </div>
+<!--                                </div>-->
+                        </div>
+                                <div class="ui-grid-a d-none hideInStore">
+                                    <div class="ui-block-b w100">
+                                        <a rel="external" class="ui-btn btn primary-btn mb-3 w95 pathUrl"
+                                           accesskey="proceed">PLAY</a>
+                                    </div>
+                        </div>
+
+                    </div>
+                        <div class="rating">
+                            <div  class="rating__number">4.3</div>
+                            <div class="rating__stars">
+                                <div class="rating__stars-line">
+                                    <svg class="rating__star rating__star--1">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--2">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--3">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--4">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--5">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <div class="rating__stars-line">
+                                    <svg class="rating__star rating__star--1">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--2">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--3">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--4">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <div class="rating__stars-line">
+                                    <svg class="rating__star rating__star--1">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--2">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--3">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <div class="rating__stars-line">
+                                    <svg class="rating__star rating__star--1">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="rating__star rating__star--2">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                                <div class="rating__stars-line">
+                                    <svg class="rating__star rating__star--1">
+                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="rating__bars">
+                                <div class="rating__bar rating__bar--1">
+
+                                </div>
+                                <div class="rating__bar rating__bar--2"></div>
+                                <div class="rating__bar rating__bar--3"></div>
+                                <div class="rating__bar rating__bar--4"></div>
+                                <div class="rating__bar rating__bar--5"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="ui-block-b w40">
-                        <div class="text-center">
-                            <img class="img-fluid text-center pt-4" src="assets/img/product.png" id="image">
-                        </div>
-                    </div>
+<!--                        <div class="ui-grid-a">-->
+<!--                        </div>-->
                 </div>
             </div>
         </div>
@@ -111,7 +299,7 @@
             <div class="container">
                 <div class="ui-grid-a">
                     <div class="ui-block-a pt-5 pl-4 mt-2 d-none hideInStore">
-                        <div class="ui-grid-b counter pb-2 my-auto w45">
+                        <!--<div class="ui-grid-b counter pb-2 my-auto w45">
                             <div class="ui-block-a minusCount">
                                 <i class="fas fa-minus box-shadow-default"></i>
                             </div>
@@ -121,41 +309,41 @@
                             <div class="ui-block-c plusCount">
                                 <i class="fas fa-plus box-shadow-default"></i>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
-                    <div class="ui-block-b pt-5 pr-3">
-                        <div class="ui-grid-a d-none hideInStore">
-                            <div class="ui-block-a ">
-                                <a id="added" class="ui-btn btn secondary-btn w90 pathUrl" accesskey="nope">ADD TO CART</a>
+<!--                    <div class="ui-block-b pt-5 pr-3">-->
+<!--                        <div class="ui-grid-a d-none hideInStore">-->
+<!--                            <div class="ui-block-a ">-->
+<!--                                <a id="added" class="ui-btn btn secondary-btn w90 pathUrl" accesskey="nope">ADD TO CART</a>-->
 
-                                <div style="background-color: #F6FAFF; text-shadow: none; border: none;"
-                                    data-role="popup" data-position-to="window" id="addedPop" class="ui-content">
-                                    <div class="cart-popup">
-                                        <div class="container">
-                                            <div class="text-center">
-                                                <img src="assets/img/success.png" width="250" alt="">
-                                                <h3 class="secondary-color f28">Success</h3>
-                                                <h6 style="font-weight: 500;" class="primary-color-grey-text f22">Your
-                                                    item has been added to
-                                                    the
-                                                    cart!</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ui-block-b">
-                                <a rel="external" class="ui-btn btn primary-btn mb-3 w90 pathUrl"
-                                    accesskey="proceed">BUY NOW</a>
-                            </div>
-                        </div>
-                        <div class="ui-grid-solo d-none showInStore">
-                            <div class="ui-block-a">
-                                <a rel="external" class="ui-btn btn primary-btn mb-3 w90 pathUrl"
-                                    accesskey="map.html">View Store Location</a>
-                            </div>
-                        </div>
-                    </div>
+<!--                                <div style="background-color: #F6FAFF; text-shadow: none; border: none;"-->
+<!--                                    data-role="popup" data-position-to="window" id="addedPop" class="ui-content">-->
+<!--                                    <div class="cart-popup">-->
+<!--                                        <div class="container">-->
+<!--                                            <div class="text-center">-->
+<!--                                                <img src="assets/img/success.png" width="250" alt="">-->
+<!--                                                <h3 class="secondary-color f28">Success</h3>-->
+<!--                                                <h6 style="font-weight: 500;" class="primary-color-grey-text f22">Your-->
+<!--                                                    item has been added to-->
+<!--                                                    the-->
+<!--                                                    cart!</h6>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="ui-block-b">-->
+<!--                                <a rel="external" class="ui-btn btn primary-btn mb-3 w90 pathUrl"-->
+<!--                                    accesskey="proceed">BUY NOW</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;<div class="ui-grid-solo d-none showInStore">-->
+<!--                            <div class="ui-block-a">-->
+<!--                                <a rel="external" class="ui-btn btn primary-btn mb-3 w90 pathUrl"-->
+<!--                                    accesskey="map.html">View Store Location</a>-->
+<!--                            </div>-->
+<!--                        </div>&ndash;&gt;-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>
