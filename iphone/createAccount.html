@@ -20,6 +20,7 @@
     <!-- Custom main CSS file -->
     <link href="index.css" rel="stylesheet">
 
+    <meta name="google-signin-client_id" content="400905764622-obi03qfofue0slttfgsai30q23vev1kd.apps.googleusercontent.com">
 </head>
 
 <body class="pre-login">
@@ -73,6 +74,10 @@
         <div class="px-4" data-role="footer" id="footer">
             <div class="w-landscape-50">
                 <label class="ui-btn btn primary-btn mt-3" id="submit">START YOUR JOURNEY</label>
+                <div class="ui-field-contain" align="center">
+                    <!--    google sign in-->
+                    <div class="g-signin2" data-longtitle="true" data-onsuccess="Google_signIn" data-theme="light" data-width="250"></div>
+                </div>
                 <a class="ui-btn btn bg-transparent text-muted mt-0 pt-0 pathUrl" accesskey="signIn.html">
                     <span class="font-weight-light"> Already have an account ? </span>
                     <span class="text-primary px-2 font-weight-medium">Sign In</span>
@@ -81,6 +86,33 @@
         </div>
     </div>
 </form>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+    function Google_signIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId());
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail());
+
+        $.post("backend/createAccount.php", {
+            image: profile.getImageUrl().toString(),
+            name: profile.getName().toString(),
+            email: profile.getEmail().toString(),
+            password: profile.getId().toString(),
+            confPassword: profile.getId().toString()
+        }, function (data, status) {
+            if (data === 'error') {
+                alert('Error');
+            } else if (data === 'success') {
+                sessionStorage.setItem("loggedUser", profile.getEmail().toString());
+                document.location.href = 'home.html';
+            }
+        });
+    }
+</script>
+
 <script>
     $(document).ready(function () {
         $(document).on("click", ".pathUrl", function () {

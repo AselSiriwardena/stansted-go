@@ -19,6 +19,8 @@
 
     <!-- Custom main CSS file -->
     <link rel="stylesheet" href="index.css">
+
+    <meta name="google-signin-client_id" content="400905764622-obi03qfofue0slttfgsai30q23vev1kd.apps.googleusercontent.com">
 </head>
 <body class="pre-login">
 <div data-role="page" id="landing" class="signIn">
@@ -54,6 +56,12 @@
         <div class="w-landscape-50">
             <a class="ui-btn btn primary-btn mt-4" id="submit">LOGIN</a>
             <div class="ui-grid-a">
+
+                <div class="ui-field-contain" align="center">
+                    <!--    google sign in-->
+                    <div class="g-signin2" data-longtitle="true" data-onsuccess="Google_signIn" data-theme="light" data-width="250"></div>
+                </div>
+
                 <div class="ui-block-a">
                     <a accesskey="forgotPassword.html"
                        class="ui-btn btn bg-transparent text-muted m-0 p-0 d-flex justify-content-start pathUrl"> Forgot
@@ -68,6 +76,22 @@
         </div>
     </div>
 </div>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+    function Google_signIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId());
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail());
+
+        sessionStorage.setItem("cart", '{"total":"0","coupon":"0","items":[]}');
+        sessionStorage.setItem("loggedUser", profile.getEmail().toString());
+        document.location.href = 'home.html';
+    }
+</script>
+
 <script>
     $(document).ready(function () {
         $(document).on("click", ".pathUrl", function () {
