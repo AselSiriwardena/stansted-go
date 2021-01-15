@@ -16,7 +16,7 @@
 
     <!-- Bootstrap CSS file -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom JS Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -29,123 +29,270 @@
 </head>
 
 <body class="post-login">
-    <div data-role="page" class="reviews">
-        <div data-role="header" id="header2">
-            <div class="ui-grid-a">
-                <div class="container">
-                    <div class="ui-block-a w5">
-                        <a data-rel="back" rel="external"><img src="assets/img/back.svg" height="30" width="30"></a>
-                    </div>
-                    <div class="-ui-block-b w95">
-                        <h3 class="ui-block-b text-primary text-center">Reviews</h3>
-                    </div>
+<div data-role="page" class="reviews">
+    <div data-role="header" id="header2">
+        <div class="ui-grid-a">
+            <div class="container">
+                <div class="ui-block-a w5">
+                    <a data-rel="back" rel="external"><img src="assets/img/back.svg" height="30" width="30"></a>
+                </div>
+                <div class="-ui-block-b w95">
+                    <h3 class="ui-block-b text-primary text-center">Reviews</h3>
                 </div>
             </div>
         </div>
-        <div data-role="main">
-            <div class="container pb-5">
-                <div class="head mt-5">
-                    <a href="addreview.html" rel="external">
-                        <h5 class="text-center">Add a Review</h5>
-                    </a>
-                </div>
-                <ul class="nav nav-tabs nav-justified nav-primary mt-4">
-                    <li class="nav-item">
-                        <a href="#latest" class="nav-link active" data-toggle="tab">Latest</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#highest" class="nav-link" data-toggle="tab">Highest</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#lowest" class="nav-link" data-toggle="tab">Lowest</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="latest">
-                        <div class="ui-grid-a">
-
+    </div>
+    <div data-role="main">
+        <div class="container pb-5">
+            <div class="head mt-5">
+                <a href="addreview.html" rel="external">
+                    <h3 class="text-center">Add a Review</h3>
+                </a>
+            </div>
+            <ul class="nav nav-tabs nav-justified nav-primary mt-4">
+                <li class="nav-item">
+                    <a href="#latest" class="nav-link active" data-toggle="tab">Latest</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#highest" class="nav-link" data-toggle="tab">Highest</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#lowest" class="nav-link" data-toggle="tab">Lowest</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="latest">
+                    <div class="ui-grid-a">
                         <div id="test1" >
-
-                            </div>
-                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="highest">
-                        <div class="ui-grid-a">
-                            <div class="ui-block-a pr-3">
-                                <div class="card">
-                                    <div class="ui-grid-a">
-                                        <div class="ui-block-a w20">
-                                            <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                </div>
+                <div class="tab-pane fade" id="highest">
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a pr-3">
+                            <div class="card">
+                                <div class="ui-grid-a">
+                                    <div class="ui-block-a w20">
+                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                                    </div>
+                                    <div class="ui-block-b w80 pl-2">
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a w40">
+                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                            </div>
+                                            <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
                                         </div>
-                                        <div class="ui-block-b w80 pl-2">
-                                            <div class="ui-grid-a">
-                                                <div class="ui-block-a w40">
-                                                    <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
-                                                </div>
-                                                <div style="color: #E2C224;" class="ui-block-b w60 text-right">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star-half-alt"></i>
-                                                </div>
+                                        <div class="review-content pt-2">
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                                It wasn't at all serious but very informative and lasted about 50 minutes. Would highly recommend for all ages.</p>
+                                        </div>
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a">
+                                                <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
                                             </div>
-                                            <div class="review-content pt-2">
-                                                <p style="word-wrap: break-word;" class="primary-color-black text f16">
-                                                    Great product ! This is
-                                                    the
-                                                    best
-                                                    coffee I've tasted in a while. Definitely recommended if you're a
-                                                    coffee
-                                                    lover.</p>
-                                            </div>
-                                            <div class="ui-grid-a">
-                                                <div class="ui-block-a">
-                                                    <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
-                                                </div>
-                                                <div class="ui-block-b f16 text-right">
-                                                    <i class="far fa-heart"></i> 57
-                                                </div>
+                                            <div class="ui-block-b f16 text-right">
+                                                <i class="far fa-heart"></i> 57
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ui-block-b pl-3">
-                                <div class="card">
-                                    <div class="ui-grid-a">
-                                        <div class="ui-block-a w20">
-                                            <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                        </div>
+                        <div class="ui-block-b pl-3">
+                            <div class="card">
+                                <div class="ui-grid-a">
+                                    <div class="ui-block-a w20">
+                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                                    </div>
+                                    <div class="ui-block-b w80 pl-2">
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a w40">
+                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                            </div>
+                                            <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
                                         </div>
-                                        <div class="ui-block-b w80 pl-2">
-                                            <div class="ui-grid-a">
-                                                <div class="ui-block-a w40">
-                                                    <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
-                                                </div>
-                                                <div style="color: #E2C224;" class="ui-block-b w60 text-right">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star-half-alt"></i>
-                                                </div>
+                                        <div class="review-content pt-2">
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                                Great product ! This is
+                                                the
+                                                best
+                                                coffee I've tasted in a while. Definitely recommended if you're a
+                                                coffee
+                                                lover.</p>
+                                        </div>
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a">
+                                                <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
                                             </div>
-                                            <div class="review-content pt-2">
-                                                <p style="word-wrap: break-word;" class="primary-color-black text f16">
-                                                    Great product ! This is
-                                                    the
-                                                    best
-                                                    coffee I've tasted in a while. Definitely recommended if you're a
-                                                    coffee
-                                                    lover.</p>
+                                            <div class="ui-block-b f16 text-right">
+                                                <i class="far fa-heart"></i> 57
                                             </div>
-                                            <div class="ui-grid-a">
-                                                <div class="ui-block-a">
-                                                    <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
-                                                </div>
-                                                <div class="ui-block-b f16 text-right">
-                                                    <i class="far fa-heart"></i> 57
-                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-block-b pl-3">
+                            <div class="card">
+                                <div class="ui-grid-a">
+                                    <div class="ui-block-a w20">
+                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                                    </div>
+                                    <div class="ui-block-b w80 pl-2">
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a w40">
+                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                            </div>
+                                            <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-content pt-2">
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                                Great product ! This is
+                                                the
+                                                best
+                                                coffee I've tasted in a while. Definitely recommended if you're a
+                                                coffee
+                                                lover.</p>
+                                        </div>
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a">
+                                                <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
+                                            </div>
+                                            <div class="ui-block-b f16 text-right">
+                                                <i class="far fa-heart"></i> 57
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-block-b pl-3">
+                            <div class="card">
+                                <div class="ui-grid-a">
+                                    <div class="ui-block-a w20">
+                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                                    </div>
+                                    <div class="ui-block-b w80 pl-2">
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a w40">
+                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                            </div>
+                                            <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-content pt-2">
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                                Great product ! This is
+                                                the
+                                                best
+                                                coffee I've tasted in a while. Definitely recommended if you're a
+                                                coffee
+                                                lover.</p>
+                                        </div>
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a">
+                                                <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
+                                            </div>
+                                            <div class="ui-block-b f16 text-right">
+                                                <i class="far fa-heart"></i> 57
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-block-b pl-3">
+                            <div class="card">
+                                <div class="ui-grid-a">
+                                    <div class="ui-block-a w20">
+                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                                    </div>
+                                    <div class="ui-block-b w80 pl-2">
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a w40">
+                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                            </div>
+                                            <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-content pt-2">
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                                It wasn't at all serious but very informative and lasted about 50 minutes. Would highly recommend for all ages.</p>
+                                        </div>
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a">
+                                                <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
+                                            </div>
+                                            <div class="ui-block-b f16 text-right">
+                                                <i class="far fa-heart"></i> 57
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-block-b pl-3">
+                            <div class="card">
+                                <div class="ui-grid-a">
+                                    <div class="ui-block-a w20">
+                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                                    </div>
+                                    <div class="ui-block-b w80 pl-2">
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a w40">
+                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                            </div>
+                                            <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="review-content pt-2">
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                                Great product ! This is
+                                                the
+                                                best
+                                                coffee I've tasted in a while. Definitely recommended if you're a
+                                                coffee
+                                                lover.</p>
+                                        </div>
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a">
+                                                <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
+                                            </div>
+                                            <div class="ui-block-b f16 text-right">
+                                                <i class="far fa-heart"></i> 57
                                             </div>
                                         </div>
                                     </div>
@@ -153,83 +300,83 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="lowest">
-                        <div class="ui-grid-a">
-                            <div class="ui-block-a pr-3">
-                                <div class="card">
-                                    <div class="ui-grid-a">
-                                        <div class="ui-block-a w20">
-                                            <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                </div>
+                <div class="tab-pane fade" id="lowest">
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a pr-3">
+                            <div class="card">
+                                <div class="ui-grid-a">
+                                    <div class="ui-block-a w20">
+                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                                    </div>
+                                    <div class="ui-block-b w80 pl-2">
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a w40">
+                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                            </div>
+                                            <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                            </div>
                                         </div>
-                                        <div class="ui-block-b w80 pl-2">
-                                            <div class="ui-grid-a">
-                                                <div class="ui-block-a w40">
-                                                    <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
-                                                </div>
-                                                <div style="color: #E2C224;" class="ui-block-b w60 text-right">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star-half-alt"></i>
-                                                </div>
+                                        <div class="review-content pt-2">
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                                Bad Service ! This is
+                                                the
+                                                worse
+                                                place I've visted in a while. Not recommended if you're a
+                                                traveller
+                                                lover.</p>
+                                        </div>
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a">
+                                                <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
                                             </div>
-                                            <div class="review-content pt-2">
-                                                <p style="word-wrap: break-word;" class="primary-color-black text f16">
-                                                    Great product ! This is
-                                                    the
-                                                    best
-                                                    coffee I've tasted in a while. Definitely recommended if you're a
-                                                    coffee
-                                                    lover.</p>
-                                            </div>
-                                            <div class="ui-grid-a">
-                                                <div class="ui-block-a">
-                                                    <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
-                                                </div>
-                                                <div class="ui-block-b f16 text-right">
-                                                    <i class="far fa-heart"></i> 57
-                                                </div>
+                                            <div class="ui-block-b f16 text-right">
+                                                <i class="far fa-heart"></i> 57
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ui-block-b pl-3">
-                                <div class="card">
-                                    <div class="ui-grid-a">
-                                        <div class="ui-block-a w20">
-                                            <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                        </div>
+                        <div class="ui-block-b pl-3">
+                            <div class="card">
+                                <div class="ui-grid-a">
+                                    <div class="ui-block-a w20">
+                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">
+                                    </div>
+                                    <div class="ui-block-b w80 pl-2">
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a w40">
+                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                            </div>
+                                            <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                            </div>
                                         </div>
-                                        <div class="ui-block-b w80 pl-2">
-                                            <div class="ui-grid-a">
-                                                <div class="ui-block-a w40">
-                                                    <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
-                                                </div>
-                                                <div style="color: #E2C224;" class="ui-block-b w60 text-right">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
+                                        <div class="review-content pt-2">
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                                Bad Service ! This is
+                                                the
+                                                worse
+                                                place I've visted in a while. Not recommended if you're a
+                                                traveller
+                                                lover.</p>
+                                        </div>
+                                        <div class="ui-grid-a">
+                                            <div class="ui-block-a">
+                                                <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
                                             </div>
-                                            <div class="review-content pt-2">
-                                                <p style="word-wrap: break-word;" class="primary-color-black text f16">
-                                                    Great product ! This is
-                                                    the
-                                                    best
-                                                    coffee I've tasted in a while. Definitely recommended if you're a
-                                                    coffee
-                                                    lover.</p>
-                                            </div>
-                                            <div class="ui-grid-a">
-                                                <div class="ui-block-a">
-                                                    <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
-                                                </div>
-                                                <div class="ui-block-b f16 text-right">
-                                                    <i class="far fa-heart"></i> 57
-                                                </div>
+                                            <div class="ui-block-b f16 text-right">
+                                                <i class="far fa-heart"></i> 57
                                             </div>
                                         </div>
                                     </div>
@@ -241,27 +388,31 @@
             </div>
         </div>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
-    <script>
-        var config = {
-            apiKey: "AIzaSyDC0db7ssF55Q-yfiGUeCqB8wtHZ4_tyZw",
-            authDomain: "ui-ux-b3439.firebaseapp.com",
-            projectId: "ui-ux-b3439",
-            storageBucket: "ui-ux-b3439.appspot.com",
-            messagingSenderId: "628403705685",
-            appId: "1:628403705685:web:bebfe39d9d923bbf74c1dc",
-            measurementId: "G-CMKJ405F25"
-        };
-        // Initialize Firebase
-        var app = firebase.initializeApp(config);
-        // Initialize Cloud Firestore through Firebase
-        const db = app.firestore();
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+<script>
+    var config = {
+        apiKey: "AIzaSyDC0db7ssF55Q-yfiGUeCqB8wtHZ4_tyZw",
+        authDomain: "ui-ux-b3439.firebaseapp.com",
+        projectId: "ui-ux-b3439",
+        storageBucket: "ui-ux-b3439.appspot.com",
+        messagingSenderId: "628403705685",
+        appId: "1:628403705685:web:bebfe39d9d923bbf74c1dc",
+        measurementId: "G-CMKJ405F25"
+    };
+    // Initialize Firebase
+    var app = firebase.initializeApp(config);
+    // Initialize Cloud Firestore through Firebase
+    const db = app.firestore();
 
-        db.collection("Places").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
-            snapshot.forEach(function(x) {
-                $("#test1").append(`
-                <div class="ui-block-b pl-3">
+    let i = 0;
+
+    db.collection("Places").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
+        snapshot.forEach(function(x) {
+            $("#test1").append(`
+                            ${!Boolean(i % 2) ? `<div class="ui-block-a w50 pl-3">` : `<div class="ui-block-b w50 pl-3">`}
+                            <div class="ui-block-a pl-3">
                                 <div class="card">
                                     <div class="ui-grid-a">
                                         <div class="ui-block-a w20">
@@ -273,31 +424,38 @@
                                                     <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
                                                 </div>
                                                 <div style="color: #E2C224;" class="ui-block-b w60 text-right">
-                                                    ${x.data().rating === '4' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>` : x.data().rating === '5' ?`<i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>` : x.data().rating === '3' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>` : x.data().rating === '2' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>` : x.data().rating === '1' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>` : `<i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>`}
+                                                        ${x.data().rating === '4' ? `
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>`
+                : x.data().rating === '5' ?`<i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>`
+                    : x.data().rating === '3' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>`
+                        : x.data().rating === '2' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>`
+                            : x.data().rating === '1' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star-o secondary-color-yellow-text"></i>`
+                                : `<i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    `}
 
                                                 </div>
                                             </div>
@@ -318,11 +476,12 @@
                                 </div>
                             </div>
                 `);
-            });
+            i = i + 1;
         });
+    });
 
 
-    </script>
+</script>
 
 
 </body>
