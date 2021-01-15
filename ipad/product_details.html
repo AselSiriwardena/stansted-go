@@ -29,10 +29,15 @@
     <!-- Custom main CSS file -->
     <link rel="stylesheet" href="index.css">
 
-    <!--API key -->
+    <!--Normal API key -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initAutocomplete&libraries=places&v=weekly"
+            defer
+    ></script>
+<!--    With Marker-->
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initMap&libraries=places&v=weekly"
             defer
     ></script>
 
@@ -102,12 +107,13 @@
                             <i class="fas fa-share-alt"></i>
                             <i id="favourite"></i>
                             </div>
-                        <p class="primary-color-grey-text f16 w80" id="productDetails">
+                        <p class="primary-color-grey-text f16 w95" id="productDetails">
                             Brewed from the heart of Kashmir, Stok presents the
                             best cold brew coffee of the 21st Century. This new line
                             of cold brews gives twice the motivation and energy
                             while keeping the nostalgic taste everybody loves...
                         </p>
+                            <hr class="rounded w95" >
                         <h3 class="primary-color-red-text"><b>Euro<span
                                 style="font-size: 32px; padding-left: 7px" id="price">10.99</span></b>
                         </h3>
@@ -204,6 +210,7 @@
                         </div>
                     </div>
                     <div class="ui-block-b w40 ">
+                        <div id="map"></div>
                         <div class="text-center h40">
                             <div id="row">
                             </div>
@@ -214,78 +221,78 @@
                                     type="text"
 &lt;!&ndash;                                    placeholder="Search Box"&ndash;&gt;
                             />-->
-                            <div class="card">
-                            <div id="map"></div>
-                            </div>
-                            <div class="rating">
-                                <div  class="rating__number">4.3</div>
-                                <div class="rating__stars">
-                                    <div class="rating__stars-line">
-                                        <svg class="rating__star rating__star--1">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--2">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--3">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--4">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--5">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="rating__stars-line">
-                                        <svg class="rating__star rating__star--1">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--2">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--3">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--4">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="rating__stars-line">
-                                        <svg class="rating__star rating__star--1">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--2">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--3">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="rating__stars-line">
-                                        <svg class="rating__star rating__star--1">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="rating__star rating__star--2">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="rating__stars-line">
-                                        <svg class="rating__star rating__star--1">
-                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="rating__bars">
-                                    <div class="rating__bar rating__bar--1">
+<!--                            <div class="card">-->
 
-                                    </div>
-                                    <div class="rating__bar rating__bar--2"></div>
-                                    <div class="rating__bar rating__bar--3"></div>
-                                    <div class="rating__bar rating__bar--4"></div>
-                                    <div class="rating__bar rating__bar--5"></div>
-                                </div>
-                            </div>
+<!--                            </div>-->
+<!--                            <div class="rating">-->
+<!--                                <div  class="rating__number">4.3</div>-->
+<!--                                <div class="rating__stars">-->
+<!--                                    <div class="rating__stars-line">-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;1">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;2">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;3">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;4">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;5">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                    </div>-->
+<!--                                    <div class="rating__stars-line">-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;1">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;2">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;3">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;4">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                    </div>-->
+<!--                                    <div class="rating__stars-line">-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;1">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;2">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;3">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                    </div>-->
+<!--                                    <div class="rating__stars-line">-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;1">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;2">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                    </div>-->
+<!--                                    <div class="rating__stars-line">-->
+<!--                                        <svg class="rating__star rating__star&#45;&#45;1">-->
+<!--                                            <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
+<!--                                        </svg>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="rating__bars">-->
+<!--                                    <div class="rating__bar rating__bar&#45;&#45;1">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="rating__bar rating__bar&#45;&#45;2"></div>-->
+<!--                                    <div class="rating__bar rating__bar&#45;&#45;3"></div>-->
+<!--                                    <div class="rating__bar rating__bar&#45;&#45;4"></div>-->
+<!--                                    <div class="rating__bar rating__bar&#45;&#45;5"></div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                             <div class="ui-grid-a pt-3">
                                 <div class="ui-block-b">
 
@@ -534,77 +541,15 @@
                 </div>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed" id="footer" data-tap-toggle="false" transition="fade"
-            class="py-2">
-            <div data-role="navbar" data-grid="d" class="h90 text-center footer">
-                <ul class="h100">
-                    <li class="w100 h20 nav-footer">
-                        <a href="home.html" rel="external">
-                            <i class="fa fa-home"></i>
-                            <div>Home</div>
-                        </a>
-                    </li>
-                    <li class="w100 h20 nav-footer">
-                        <a href="deals.html" rel="external" class="active">
-                            <i class="fa fa-tag font"></i>
-                            <div>Deals</div>
-                        </a>
-                    </li>
-                    <li class="w100 h20 nav-footer">
-                        <a href="#" rel="external">
-                            <i class="fa fa-store-alt"></i>
-                            <div>Store</div>
-                        </a>
-                    </li>
-                    <li class="w100 h20 nav-footer">
-                        <a href="cart.html" rel="external">
-                            <i class="fa fa-shopping-cart"></i>
-                            <div>Cart</div>
-                        </a>
-                    </li>
-                    <li class="w100 h20 nav-footer">
-                        <a href="profile.html" rel="external">
-                            <i class="fa fa-user"></i>
-                            <div>Profile</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div data-role="footer" data-position="fixed" id="footer2" data-tap-toggle="false" transition="fade">
-            <div data-role="navbar" data-grid="d" class="text-center footer2">
-                <ul class="w100">
-                    <li class="w20 nav-footer">
-                        <a href="home.html" rel="external">
-                            <i class="fa fa-home"></i>
-                            <div>Home</div>
-                        </a>
-                    </li>
-                    <li class="w20 nav-footer">
-                        <a href="deals.html" rel="external">
-                            <i class="fa fa-tag font"></i>
-                            <div>Deals</div>
-                        </a>
-                    </li>
-                    <li class="w20 nav-footer">
-                        <a href="#" rel="external">
-                            <i class="fa fa-store-alt"></i>
-                            <div>Store</div>
-                        </a>
-                    </li>
-                    <li class="w20 nav-footer">
-                        <a href="cart.html" rel="external" class="active">
-                            <i class="fa fa-shopping-cart"></i>
-                            <div>Cart</div>
-                        </a>
-                    </li>
-                    <li class="w20 nav-footer">
-                        <a href="profile.html" rel="external">
-                            <i class="fa fa-user"></i>
-                            <div>Profile</div>
-                        </a>
-                    </li>
-                </ul>
+        <div data-role="footer" position="fixed" id="footer2" data-tap-toggle="false" >
+            <div class="page-footer" data-fullscreen="true">
+                <div class="grid-container  border-rad-max">
+                    <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home_selected.svg"></a></a></div>
+                    <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
+                    <div class="grid-item"><a href="landing.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
+                    <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
+                    <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
+                </div>
             </div>
         </div>
     </div>
