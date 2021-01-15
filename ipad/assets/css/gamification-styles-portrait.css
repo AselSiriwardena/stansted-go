@@ -12,5 +12,8 @@
         height: 50px;
         padding-left: 2em !important;
     }
+    .leaderboard-page{
+        background-image: url("../images/gamification_background_portrait.png") !important;
+    }
 
 }
