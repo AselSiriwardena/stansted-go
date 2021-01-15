@@ -22,5 +22,6 @@
     --gradient-variation-1: linear-gradient(#30156F, #5229B8);
     --gradient-variation-2: linear-gradient(#634315, #62AB2B);
     --gradient-variation-3: linear-gradient(#FFFFFF, #A4E3FF);
+    --gradient-variation-login: linear-gradient(to right, #00DCFF, #0A64F3);
     /* Gradient Colours end */
 }

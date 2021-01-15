@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <!-- jQuery mobile files -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <!-- Font awesome file -->
+    <script src="https://kit.fontawesome.com/f083cf2118.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom main CSS file -->
+    <link rel="stylesheet" href="index.css">
+    <script>
+        //document.getElementById("username").innerHTML = document.cookie;
+        console.log(document.cookie);
+    </script>
+</head>
+<body class="post-login">
+<div data-role="page" class="home">
+
+    <div class="rankSummary">
+        <div class="ui-grid-a mt-4 mb-3 px-4 d-flex align-items-center">
+            <div class="ui-block-a w80">
+                <div class="font-size-l font-weight-heavy">Macclesfield - Gainsborogh</div>
+            </div>
+            <div class="ui-block-b w20">
+                <div class="font-size-m text-right"><a>See More</a></div>
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="tab-content">
+                <div class="tab-pane card fade show active mb-4 p-0" id="daily">
+                    <div class="rankContent">
+                        <div class="ui-grid-a d-flex align-items-center p-3">
+                            <div class="ui-block-a w20">
+                                <img src="assets/img/avatar-placeholder.png" width="100%" class="img-fluid"
+                                     alt="Product 1" id="userProfile">
+                            </div>
+                            <div class="ui-block-b w80 pl-3">
+                                <div class="ui-grid-a d-flex align-items-center">
+                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Today's Rank</h5>
+                                    <h3 class="ui-block-b w30 primary-color">#101</h3>
+                                </div>
+                                <hr class="my-2">
+                                <div class="ui-grid-a d-flex align-items-center">
+                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Points</h5>
+                                    <h3 class="ui-block-b w30 secondary-color" id="userPoints">1500</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableWrapper">
+                            <table data-role="table" id="tankTable" data-mode="" class="mt-2 rankTable"
+                                   data-role="table">
+                                <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Name</th>
+                                    <th>Daily Points</th>
+                                    <th>Total Points</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr valign="middle">
+                                    <th>#1</th>
+                                    <td>
+                                        <div class="td-wrapper">
+                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
+                                                 width="30px" alt="">
+                                            <div class="truncate">Jane Doe</div>
+                                        </div>
+                                    </td>
+                                    <td>2,000</td>
+                                    <td>4,500</td>
+                                </tr>
+                                <tr valign="middle">
+                                    <th>#2</th>
+                                    <td>
+                                        <div class="td-wrapper">
+                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
+                                                 width="30px" alt="">
+                                            <div class="truncate">Simon Evans</div>
+                                        </div>
+                                    </td>
+                                    <td>1,800</td>
+                                    <td>11,200</td>
+                                </tr>
+                                <tr valign="middle">
+                                    <th>#3</th>
+                                    <td>
+                                        <div class="td-wrapper">
+                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
+                                                 width="30px" alt="">
+                                            <div class="truncate">Maria Lee</div>
+                                        </div>
+                                    </td>
+                                    <td>1,450</td>
+                                    <td>2000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane card fade mb-4 p-0" id="weekly">
+                    <div class="rankContent">
+                        <div class="ui-grid-a d-flex align-items-center p-3">
+                            <div class="ui-block-a w20">
+                                <img src="assets/img/avatar-placeholder.png" width="100%" class="img-fluid"
+                                     alt="Product 1">
+                            </div>
+                            <div class="ui-block-b w80 pl-3">
+                                <div class="ui-grid-a d-flex align-items-center">
+                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Today's Rank</h5>
+                                    <h3 class="ui-block-b w30 primary-color">#101</h3>
+                                </div>
+                                <hr class="my-2">
+                                <div class="ui-grid-a d-flex align-items-center">
+                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Points</h5>
+                                    <h3 class="ui-block-b w30 secondary-color">1500</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableWrapper">
+                            <table data-role="table" id="movie-table-custom" data-mode="" class="mt-2 rankTable">
+                                <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Name</th>
+                                    <th>Weekly Points</th>
+                                    <th>Total Points</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr valign="middle">
+                                    <th>#1</th>
+                                    <td>
+                                        <div class="td-wrapper">
+                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
+                                                 width="30px" alt="">
+                                            <div class="truncate">Jane Doe</div>
+                                        </div>
+                                    </td>
+                                    <td>2,000</td>
+                                    <td>4,500</td>
+                                </tr>
+                                <tr valign="middle">
+                                    <th>#2</th>
+                                    <td>
+                                        <div class="td-wrapper">
+                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
+                                                 width="30px" alt="">
+                                            <div class="truncate">Simon Evans</div>
+                                        </div>
+                                    </td>
+                                    <td>1,800</td>
+                                    <td>11,200</td>
+                                </tr>
+                                <tr valign="middle">
+                                    <th>#3</th>
+                                    <td>
+                                        <div class="td-wrapper">
+                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
+                                                 width="30px" alt="">
+                                            <div class="truncate">Maria Lee</div>
+                                        </div>
+                                    </td>
+                                    <td>1,450</td>
+                                    <td>2000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane card fade mb-4 p-0" id="monthly">
+                    <div class="rankContent">
+                        <div class="ui-grid-a d-flex align-items-center p-3">
+                            <div class="ui-block-a w20">
+                                <img src="assets/img/avatar-placeholder.png" width="100%" class="img-fluid"
+                                     alt="Product 1">
+                            </div>
+                            <div class="ui-block-b w80 pl-3">
+                                <div class="ui-grid-a d-flex align-items-center">
+                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Today's Rank</h5>
+                                    <h3 class="ui-block-b w30 primary-color">#101</h3>
+                                </div>
+                                <hr class="my-2">
+                                <div class="ui-grid-a d-flex align-items-center">
+                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Points</h5>
+                                    <h3 class="ui-block-b w30 secondary-color">1500</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableWrapper">
+                            <table data-role="table" id="movie-table-custom" data-mode="" class="mt-2 rankTable">
+                                <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Name</th>
+                                    <th>Monthly Points</th>
+                                    <th>Total Points</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr valign="middle">
+                                    <th>#1</th>
+                                    <td>
+                                        <div class="td-wrapper">
+                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
+                                                 width="30px" alt="">
+                                            <div class="truncate">Jane Doe</div>
+                                        </div>
+                                    </td>
+                                    <td>2,000</td>
+                                    <td>4,500</td>
+                                </tr>
+                                <tr valign="middle">
+                                    <th>#2</th>
+                                    <td>
+                                        <div class="td-wrapper">
+                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
+                                                 width="30px" alt="">
+                                            <div class="truncate">Simon Evans</div>
+                                        </div>
+                                    </td>
+                                    <td>1,800</td>
+                                    <td>11,200</td>
+                                </tr>
+                                <tr valign="middle">
+                                    <th>#3</th>
+                                    <td>
+                                        <div class="td-wrapper">
+                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
+                                                 width="30px" alt="">
+                                            <div class="truncate">Maria Lee</div>
+                                        </div>
+                                    </td>
+                                    <td>1,450</td>
+                                    <td>2000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" id="footer" data-tap-toggle="false" transition="fade" class="py-2">
+        <div data-role="navbar" data-grid="d" class="h100">
+            <ul>
+                <li>
+                    <a class="pathUrl" accesskey="home.html">
+                        <i class="fa fa-home"></i>
+                        <div>Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="pathUrl" accesskey="deals.html">
+                        <i class="fa fa-tag font"></i>
+                        <div>Deals</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="pathUrl" accesskey="store.html">
+                        <i class="fa fa-store-alt"></i>
+                        <div>Store</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="pathUrl" accesskey="cart.html">
+                        <i class="fa fa-shopping-cart"></i>
+                        <div>Cart</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="pathUrl" accesskey="profile.html">
+                        <i class="fa fa-user"></i>
+                        <div>Profile</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $(document).on("click", ".pathUrl", function () {
+            document.location.href = this.accessKey;
+        });
+        $(document).on("click", ".dealsClick", function () {
+            sessionStorage.removeItem('currentDeal');
+            sessionStorage.setItem("currentDeal", this.accessKey);
+            sessionStorage.setItem("ratingFilter", '0');
+            sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"999"}');
+            sessionStorage.setItem("sort", 'default');
+            document.location.href = 'promotion_details.html';
+        });
+        $.post("backend/userData.php", {
+            action: 'view',
+            currentUser: sessionStorage.getItem("loggedUser")
+        }, function (data, status) {
+            const json = JSON.parse(data);
+            $("#username").html(json.name);
+            $("#userProfile").attr('src', json.imageSrc);
+            $("#userPoints").html(json.points);
+        });
+
+    })
+
+</script>

@@ -184,6 +184,12 @@
         border: 2px solid var(--primary-color-blue) !important;
     }
 
+    .primary-btn-login {
+        background-image: var(--gradient-variation-login) !important;
+        color: var(--primary-color-white) !important;
+        border: 2px solid var(--primary-color-blue) !important;
+    }
+
     .secondary-btn {
         background-color: var(--primary-color-white) !important;
         color: var(--primary-color-blue) !important;
