@@ -33,267 +33,116 @@
 <div data-role="page" class="home">
 
     <div class="rankSummary">
-        <div class="ui-grid-a mt-4 mb-3 px-4 d-flex align-items-center">
+        <div class="ui-grid-a mt-4 mb-3 p-4 px-4 d-flex align-items-center">
+            <div class="ui-block-b w20">
+                <a accesskey="index.html" class="p-0 m-0 pathUrl"><img src="assets/images/back.svg" height="30" width="30"></a>
+            </div>
             <div class="ui-block-a w80">
                 <div class="font-size-l font-weight-heavy">Macclesfield - Gainsborogh</div>
             </div>
-            <div class="ui-block-b w20">
-                <div class="font-size-m text-right"><a>See More</a></div>
-            </div>
+
         </div>
         <div class="ui-grid-a">
             <div class="tab-content">
-                <div class="tab-pane card fade show active mb-4 p-0" id="daily">
-                    <div class="rankContent">
+
+                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" id="daily" accesskey="1">
                         <div class="ui-grid-a d-flex align-items-center p-3">
-                            <div class="ui-block-a w20">
-                                <img src="assets/img/avatar-placeholder.png" width="100%" class="img-fluid"
-                                     alt="Product 1" id="userProfile">
-                            </div>
                             <div class="ui-block-b w80 pl-3">
                                 <div class="ui-grid-a d-flex align-items-center">
-                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Today's Rank</h5>
-                                    <h3 class="ui-block-b w30 primary-color">#101</h3>
+                                    <h3 class="ui-block-a w70 text-muted font-weight-bold">10:21</h3>
+                                    <a class="ui-block-b w10 p-2 mr-5 ml-100">
+                                        <img src="assets/images/foward.svg" height="30" width="30">
+                                    </a>
+                                    <h3 class="ui-block-c w70 text-muted font-weight-bold">10:21</h3>
                                 </div>
-                                <hr class="my-2">
+
+                                <div class="ui-grid-a d-flex mb-2 align-items-center">
+                                    <h5 class="ui-block-a w50 text-muted font-weight-bold">On time macclesfield</h5>
+                                    <h5 class="ui-block-b w50 text-muted font-weight-bold">On time Gainsborogh</h5>
+                                </div>
+
                                 <div class="ui-grid-a d-flex align-items-center">
-                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Points</h5>
-                                    <h3 class="ui-block-b w30 secondary-color" id="userPoints">1500</h3>
+                                    <h5 class="ui-block-a w100 text-muted font-weight-bold">Train to Manchester Oiccadilly</h5>
+                                </div>
+
+                                <hr class="my-2">
+                                <div class="ui-grid-b d-flex align-items-center">
+                                    <h5 class="ui-block-a w50 text-muted font-weight-bold">Ticket Price</h5>
+                                    <h3 class="ui-block-b w50 secondary-color" id="userPoints">$19.99</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="tableWrapper">
-                            <table data-role="table" id="tankTable" data-mode="" class="mt-2 rankTable"
-                                   data-role="table">
-                                <thead>
-                                <tr>
-                                    <th>Rank</th>
-                                    <th>Name</th>
-                                    <th>Daily Points</th>
-                                    <th>Total Points</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr valign="middle">
-                                    <th>#1</th>
-                                    <td>
-                                        <div class="td-wrapper">
-                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
-                                                 width="30px" alt="">
-                                            <div class="truncate">Jane Doe</div>
-                                        </div>
-                                    </td>
-                                    <td>2,000</td>
-                                    <td>4,500</td>
-                                </tr>
-                                <tr valign="middle">
-                                    <th>#2</th>
-                                    <td>
-                                        <div class="td-wrapper">
-                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
-                                                 width="30px" alt="">
-                                            <div class="truncate">Simon Evans</div>
-                                        </div>
-                                    </td>
-                                    <td>1,800</td>
-                                    <td>11,200</td>
-                                </tr>
-                                <tr valign="middle">
-                                    <th>#3</th>
-                                    <td>
-                                        <div class="td-wrapper">
-                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
-                                                 width="30px" alt="">
-                                            <div class="truncate">Maria Lee</div>
-                                        </div>
-                                    </td>
-                                    <td>1,450</td>
-                                    <td>2000</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                </div>
+
+                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" id="daily" accesskey="2">
+                    <div class="ui-grid-a d-flex align-items-center p-3">
+                        <div class="ui-block-b w80 pl-3">
+                            <div class="ui-grid-a d-flex align-items-center">
+                                <h3 class="ui-block-a w70 text-muted font-weight-bold">12:10</h3>
+                                <a class="ui-block-b w10 p-2 mr-5 ml-100">
+                                    <img src="assets/images/foward.svg" height="30" width="30">
+                                </a>
+                                <h3 class="ui-block-c w70 text-muted font-weight-bold">3:05</h3>
+                            </div>
+
+                            <div class="ui-grid-a d-flex mb-2 align-items-center">
+                                <h5 class="ui-block-a w50 text-muted font-weight-bold">On time macclesfield</h5>
+                                <h5 class="ui-block-b w50 text-muted font-weight-bold">On time Gainsborogh</h5>
+                            </div>
+
+                            <div class="ui-grid-a d-flex align-items-center">
+                                <h5 class="ui-block-a w100 text-muted font-weight-bold">Train to Manchester Oiccadilly</h5>
+                            </div>
+
+                            <hr class="my-2">
+                            <div class="ui-grid-b d-flex align-items-center">
+                                <h5 class="ui-block-a w50 text-muted font-weight-bold">Ticket Price</h5>
+                                <h3 class="ui-block-b w50 secondary-color" id="userPoints">$15.99</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane card fade mb-4 p-0" id="weekly">
-                    <div class="rankContent">
-                        <div class="ui-grid-a d-flex align-items-center p-3">
-                            <div class="ui-block-a w20">
-                                <img src="assets/img/avatar-placeholder.png" width="100%" class="img-fluid"
-                                     alt="Product 1">
+
+                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" id="daily" accesskey="3">
+                    <div class="ui-grid-a d-flex align-items-center p-3">
+                        <div class="ui-block-b w80 pl-3">
+                            <div class="ui-grid-a d-flex align-items-center">
+                                <h3 class="ui-block-a w70 text-muted font-weight-bold">15:21</h3>
+                                <a class="ui-block-b w10 p-2 mr-5 ml-100">
+                                    <img src="assets/images/foward.svg" height="30" width="30">
+                                </a>
+                                <h3 class="ui-block-c w70 text-muted font-weight-bold">17:21</h3>
                             </div>
-                            <div class="ui-block-b w80 pl-3">
-                                <div class="ui-grid-a d-flex align-items-center">
-                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Today's Rank</h5>
-                                    <h3 class="ui-block-b w30 primary-color">#101</h3>
-                                </div>
-                                <hr class="my-2">
-                                <div class="ui-grid-a d-flex align-items-center">
-                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Points</h5>
-                                    <h3 class="ui-block-b w30 secondary-color">1500</h3>
-                                </div>
+
+                            <div class="ui-grid-a d-flex mb-2 align-items-center">
+                                <h5 class="ui-block-a w50 text-muted font-weight-bold">On time macclesfield</h5>
+                                <h5 class="ui-block-b w50 text-muted font-weight-bold">On time Gainsborogh</h5>
                             </div>
-                        </div>
-                        <div class="tableWrapper">
-                            <table data-role="table" id="movie-table-custom" data-mode="" class="mt-2 rankTable">
-                                <thead>
-                                <tr>
-                                    <th>Rank</th>
-                                    <th>Name</th>
-                                    <th>Weekly Points</th>
-                                    <th>Total Points</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr valign="middle">
-                                    <th>#1</th>
-                                    <td>
-                                        <div class="td-wrapper">
-                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
-                                                 width="30px" alt="">
-                                            <div class="truncate">Jane Doe</div>
-                                        </div>
-                                    </td>
-                                    <td>2,000</td>
-                                    <td>4,500</td>
-                                </tr>
-                                <tr valign="middle">
-                                    <th>#2</th>
-                                    <td>
-                                        <div class="td-wrapper">
-                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
-                                                 width="30px" alt="">
-                                            <div class="truncate">Simon Evans</div>
-                                        </div>
-                                    </td>
-                                    <td>1,800</td>
-                                    <td>11,200</td>
-                                </tr>
-                                <tr valign="middle">
-                                    <th>#3</th>
-                                    <td>
-                                        <div class="td-wrapper">
-                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
-                                                 width="30px" alt="">
-                                            <div class="truncate">Maria Lee</div>
-                                        </div>
-                                    </td>
-                                    <td>1,450</td>
-                                    <td>2000</td>
-                                </tr>
-                                </tbody>
-                            </table>
+
+                            <div class="ui-grid-a d-flex align-items-center">
+                                <h5 class="ui-block-a w100 text-muted font-weight-bold">Train to Manchester Oiccadilly</h5>
+                            </div>
+
+                            <hr class="my-2">
+                            <div class="ui-grid-b d-flex align-items-center">
+                                <h5 class="ui-block-a w50 text-muted font-weight-bold">Ticket Price</h5>
+                                <h3 class="ui-block-b w50 secondary-color" id="userPoints">$14.99</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane card fade mb-4 p-0" id="monthly">
-                    <div class="rankContent">
-                        <div class="ui-grid-a d-flex align-items-center p-3">
-                            <div class="ui-block-a w20">
-                                <img src="assets/img/avatar-placeholder.png" width="100%" class="img-fluid"
-                                     alt="Product 1">
-                            </div>
-                            <div class="ui-block-b w80 pl-3">
-                                <div class="ui-grid-a d-flex align-items-center">
-                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Today's Rank</h5>
-                                    <h3 class="ui-block-b w30 primary-color">#101</h3>
-                                </div>
-                                <hr class="my-2">
-                                <div class="ui-grid-a d-flex align-items-center">
-                                    <h5 class="ui-block-a w70 text-muted font-weight-bold">Points</h5>
-                                    <h3 class="ui-block-b w30 secondary-color">1500</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tableWrapper">
-                            <table data-role="table" id="movie-table-custom" data-mode="" class="mt-2 rankTable">
-                                <thead>
-                                <tr>
-                                    <th>Rank</th>
-                                    <th>Name</th>
-                                    <th>Monthly Points</th>
-                                    <th>Total Points</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr valign="middle">
-                                    <th>#1</th>
-                                    <td>
-                                        <div class="td-wrapper">
-                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
-                                                 width="30px" alt="">
-                                            <div class="truncate">Jane Doe</div>
-                                        </div>
-                                    </td>
-                                    <td>2,000</td>
-                                    <td>4,500</td>
-                                </tr>
-                                <tr valign="middle">
-                                    <th>#2</th>
-                                    <td>
-                                        <div class="td-wrapper">
-                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
-                                                 width="30px" alt="">
-                                            <div class="truncate">Simon Evans</div>
-                                        </div>
-                                    </td>
-                                    <td>1,800</td>
-                                    <td>11,200</td>
-                                </tr>
-                                <tr valign="middle">
-                                    <th>#3</th>
-                                    <td>
-                                        <div class="td-wrapper">
-                                            <img src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"
-                                                 width="30px" alt="">
-                                            <div class="truncate">Maria Lee</div>
-                                        </div>
-                                    </td>
-                                    <td>1,450</td>
-                                    <td>2000</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
         </div>
     </div>
-    <div data-role="footer" data-position="fixed" id="footer" data-tap-toggle="false" transition="fade" class="py-2">
-        <div data-role="navbar" data-grid="d" class="h100">
-            <ul>
-                <li>
-                    <a class="pathUrl" accesskey="home.html">
-                        <i class="fa fa-home"></i>
-                        <div>Home</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="pathUrl" accesskey="deals.html">
-                        <i class="fa fa-tag font"></i>
-                        <div>Deals</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="pathUrl" accesskey="store.html">
-                        <i class="fa fa-store-alt"></i>
-                        <div>Store</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="pathUrl" accesskey="cart.html">
-                        <i class="fa fa-shopping-cart"></i>
-                        <div>Cart</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="pathUrl" accesskey="profile.html">
-                        <i class="fa fa-user"></i>
-                        <div>Profile</div>
-                    </a>
-                </li>
-            </ul>
+    <div data-role="footer" class="page-footer" position="fixed" data-fullscreen="true">
+        <div class="grid-container  border-rad-max">
+            <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home.svg"></a></a></div>
+            <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
+            <div class="grid-item"><a href="landing.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
+            <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
+            <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile_selected.svg"></a></a></div>
         </div>
     </div>
 </div>
@@ -304,23 +153,27 @@
         $(document).on("click", ".pathUrl", function () {
             document.location.href = this.accessKey;
         });
-        $(document).on("click", ".dealsClick", function () {
-            sessionStorage.removeItem('currentDeal');
-            sessionStorage.setItem("currentDeal", this.accessKey);
-            sessionStorage.setItem("ratingFilter", '0');
-            sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"999"}');
-            sessionStorage.setItem("sort", 'default');
-            document.location.href = 'promotion_details.html';
+        $(document).on("click", ".ticketClicked", function () {
+            sessionStorage.removeItem('trainSelected');
+            sessionStorage.setItem("trainSelected", this.accessKey);
+            if (this.accessKey == 1) {
+                sessionStorage.setItem("price", '19.99');
+            } else if (this.accessKey == 1) {
+                sessionStorage.setItem("price", '15.99');
+            } else {
+                sessionStorage.setItem("price", '14.99');
+            }
+            document.location.href = 'confirm-payment.html';
         });
-        $.post("backend/userData.php", {
-            action: 'view',
-            currentUser: sessionStorage.getItem("loggedUser")
-        }, function (data, status) {
-            const json = JSON.parse(data);
-            $("#username").html(json.name);
-            $("#userProfile").attr('src', json.imageSrc);
-            $("#userPoints").html(json.points);
-        });
+        // $.post("backend/userData.php", {
+        //     action: 'view',
+        //     currentUser: sessionStorage.getItem("loggedUser")
+        // }, function (data, status) {
+        //     const json = JSON.parse(data);
+        //     $("#username").html(json.name);
+        //     $("#userProfile").attr('src', json.imageSrc);
+        //     $("#userPoints").html(json.points);
+        // });
 
     })
 
