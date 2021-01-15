@@ -69,10 +69,10 @@
 
                             <div class="ui-block-solo">
                                 <h5 class="ui-block-a gamifi-ques-title">Where is this?</h5>
-                                <button class="ui-block-a gamificaton-ans">London</button>
-                                <button class="ui-block-a gamificaton-ans">Kensington</button>
-                                <button class="ui-block-a gamificaton-ans">Haringey</button>
-                                <button class="ui-block-a gamificaton-ans">City of Westminster</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1" onclick="onClickHandler(this)">London</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Kensington</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">Haringey</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">City of Westminster</button>
                             </div>
 
                         </div>
@@ -101,6 +101,12 @@
 
 
 </div>
+<script type="text/javascript">
+    function onClickHandler(elem) {
+        elem.style.background = 'red';
+        elem.style.color = 'black';
+    }
+</script>
 
 </body>
 
