@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/gamification-styles-landscape.css" />
+    <link rel="stylesheet" href="assets/css/gamification-styles-portrait.css" />
+    <!-- jQuery mobile files -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <!-- Font awesome file -->
+    <script src="https://kit.fontawesome.com/f083cf2118.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom main CSS file -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body class="post-login">
+<div data-role="page" class="home leaderboard-page">
+<!--    <div data-role="header" id="header" class="align-stuff">-->
+<!--        <div class="container">-->
+<!--            <div class="ui-grid-a head-head">-->
+<!--                <div class="ui-block-a">-->
+<!--                    <h1>Home</h1>-->
+<!--                </div>-->
+<!--                <div class="ui-block-b icons" id="optionz">-->
+<!--                    <a class="primary-color-black-text" data-rel="popup" href="#overlay"-->
+<!--                       data-position-to="#optionz"><i class="fas fa-search"></i></a>-->
+<!--                    <div class="ui-content pt-0 mb-1" data-shadow="false" data-theme="none" data-overlay-theme="a"-->
+<!--                         data-role="popup" id="overlay">-->
+<!--                        <div class="deals-search-bar">-->
+<!--                            <ul data-role="listview" data-filter="true" data-filter-reveal="true"-->
+<!--                                data-filter-placeholder="Searching Promotions" data-inset="true">-->
+<!--                                <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>-->
+<!--                                <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>-->
+<!--                                <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>-->
+<!--                                <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <a class="primary-color-black-text" href="realAR.html" rel="external"><i-->
+<!--                            class="fas fa-camera"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="align-stuff" data-role="main">
+
+
+        <div class="container">
+            <div class="ui-grid-a main-head mt-5">
+                <div class="ui-block-a pt-2 pl-2  w80">
+                    <h3><b>Leaderboard</b></h3>
+                </div>
+
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a w40 pr-3">
+                    <div class="card">
+                        <div class="ui-grid-solo text-center mb-3">
+                            <img src="assets/images/gamification-avatar.svg" id="userImage" width="100" class="img-fluid">
+<!--                            <p class="primary-color-grey-text f16 mb-0 mt-3">Rank</p>-->
+                            <h2 class="primary-color-black-text"><span class="primary-color-black-text user_name"
+                                                                              id="username">Pesh</span></h2>
+                            <div class="ui-grid-a ">
+                                <img src="assets/images/gamification-stars.svg" id="gamifiStars" width="100" class="img-fluid">
+                            </div>
+                            <div class="ui-grid-b">
+                                <img src="assets/images/gamificationBadges.svg" id="gamifiBadges" width="100" class="img-fluid">
+                            </div>
+                            <div class="ui-grid-c leaderboard-score-container">
+                              <div class="ui-block-b">
+                                    <h4 class="primary-color-black-text">Rank</h4>
+                                    <h4 class="primary-color-black-text ">Score</h4>
+
+                                </div>
+                                <div class="ui-block-c">
+                                    <h4 class="primary-color-red-text ">1225</h4>
+                                    <h4 class="primary-color-black-text ">1850</h4>
+
+                                </div>
+                            </div>
+
+<!--                            <h2 class="primary-color-blue-text f32 fw-heavy">1225</h2>-->
+<!--                            <div class="ui-grid-a mt-5">-->
+<!--                                <div class="ui-block-a text-left">-->
+<!--                                    <p class="f16 primary-color-grey-text mb-0">Rank</p>-->
+<!--                                    <h3 class="f22 primary-color-green-text">1225</h3>-->
+<!--                                </div>-->
+<!--&lt;!&ndash;                                <div class="ui-block-b text-right">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <p class="f16 primary-color-grey-text mb-0">Badges</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <h3 class="f22 primary-color-green-text" id="userPoints">15,050</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--                                <div class="ui-block-b ">-->
+<!--                                    <p class="f16 primary-color-grey-text mb-0">Score</p>-->
+<!--&lt;!&ndash;                                    <h3 class="f22 primary-color-green-text" id="userPoints">15,050</h3>&ndash;&gt;-->
+<!--                                    <h3 class="f22 primary-color-green-text" id="userPointss">1850 </h3>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-block-b w60 pl-3 mt-4" style="height: 500px;overflow-y:scroll;">
+
+                    <ul data-role="listview" data-inset="true">
+                       <li class="leaderboard-li" >
+                           <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                           <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                           <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                           <span class="leaderboard_li_score_span">20585  </span>
+                           <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                       </li>
+                        <li class="leaderboard-li" >
+                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                        </li>
+                        <li class="leaderboard-li" >
+                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                        </li>
+                        <li class="leaderboard-li" >
+                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                        </li>
+                        <li class="leaderboard-li" >
+                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                        </li>
+                        <li class="leaderboard-li" >
+                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                        </li>
+                        <li class="leaderboard-li" >
+                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                        </li><li class="leaderboard-li" >
+                        <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                        <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                        <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                        <span class="leaderboard_li_score_span">20585  </span>
+                        <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                    </li>
+                        <li class="leaderboard-li" >
+                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                        </li><li class="leaderboard-li" >
+                        <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
+                        <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                        <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                        <span class="leaderboard_li_score_span">20585  </span>
+                        <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                    </li>
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+<!--                    <ul class="nav nav-tabs nav-justified nav-primary">-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#shipping" class="nav-link active" data-toggle="tab">Today</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#ongoing" class="nav-link" data-toggle="tab">Week</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a href="#unpaid" class="nav-link" data-toggle="tab">Month</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                    <div class="tab-content">-->
+<!--                        <div class="tab-pane card fade show active" id="shipping">-->
+<!--                            <table data-role="table" id="movie-table-custom" data-mode="" class="movie-list">-->
+<!--                                <thead>-->
+<!--                                <tr>-->
+<!--                                    <th>Rank</th>-->
+<!--                                    <th style="width:40%">Name</th>-->
+<!--                                    <th>Daily Points</th>-->
+<!--                                    <th>Total Points</th>-->
+<!--                                </tr>-->
+<!--                                </thead>-->
+<!--                                <tbody>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#1</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">Citizen Kane-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1941</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">100%</td>-->
+<!--                                </tr>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#2</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">Casablanca-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1942</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">97%</td>-->
+<!--                                </tr>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#3</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">The Godfather-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1972</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">97%</td>-->
+<!--                                </tr>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#4</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">The Middle Man-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1989</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">90%</td>-->
+<!--                                </tr>-->
+<!--                                </tbody>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                        <div class="tab-pane card fade" id="ongoing">-->
+<!--                            <table data-role="table" id="movie-table-custom" data-mode="" class="movie-list">-->
+<!--                                <thead>-->
+<!--                                <tr>-->
+<!--                                    <th>Rank</th>-->
+<!--                                    <th style="width:40%">Name</th>-->
+<!--                                    <th>Daily Points</th>-->
+<!--                                    <th>Total Points</th>-->
+<!--                                </tr>-->
+<!--                                </thead>-->
+<!--                                <tbody>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#1</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">Citizen Kane-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1941</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">100%</td>-->
+<!--                                </tr>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#2</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">Casablanca-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1942</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">97%</td>-->
+<!--                                </tr>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#3</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">The Godfather-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1972</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">97%</td>-->
+<!--                                </tr>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#4</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">The Middle Man-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1989</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">90%</td>-->
+<!--                                </tr>-->
+<!--                                </tbody>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                        <div class="tab-pane card fade" id="unpaid">-->
+<!--                            <table data-role="table" id="movie-table-custom" data-mode="" class="movie-list">-->
+<!--                                <thead>-->
+<!--                                <tr>-->
+<!--                                    <th>Rank</th>-->
+<!--                                    <th style="width:40%">Name</th>-->
+<!--                                    <th>Daily Points</th>-->
+<!--                                    <th>Total Points</th>-->
+<!--                                </tr>-->
+<!--                                </thead>-->
+<!--                                <tbody>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#1</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">Citizen Kane-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1941</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">100%</td>-->
+<!--                                </tr>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#2</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">Casablanca-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1942</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">97%</td>-->
+<!--                                </tr>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#3</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">The Godfather-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1972</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">97%</td>-->
+<!--                                </tr>-->
+<!--                                <tr valign="middle">-->
+<!--                                    <th>#4</th>-->
+<!--                                    <td class="primary-color-black-text fw-bold"><img-->
+<!--                                            src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
+<!--                                            width="30px" alt="">The Middle Man-->
+<!--                                    </td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">1989</td>-->
+<!--                                    <td class="primary-color-blue-text fw-bold">90%</td>-->
+<!--                                </tr>-->
+<!--                                </tbody>-->
+<!--                            </table>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" id="footer" data-tap-toggle="false" transition="fade"
+         class="py-2">
+        <div data-role="navbar" data-grid="d" class="h90 text-center footer">
+            <ul class="h100">
+                <li class="w100 h20 nav-footer">
+                    <a href="home.html" rel="external" class="active">
+                        <i class="fa fa-home"></i>
+                        <div>Home</div>
+                    </a>
+                </li>
+                <li class="w100 h20 nav-footer">
+                    <a href="deals.html" rel="external">
+                        <i class="fa fa-tag font"></i>
+                        <div>Deals</div>
+                    </a>
+                </li>
+                <li class="w100 h20 nav-footer">
+                    <a href="store.html" rel="external">
+                        <i class="fa fa-store-alt"></i>
+                        <div>Store</div>
+                    </a>
+                </li>
+                <li class="w100 h20 nav-footer">
+                    <a href="cart.html" rel="external">
+                        <i class="fa fa-shopping-cart"></i>
+                        <div>Cart</div>
+                    </a>
+                </li>
+                <li class="w100 h20 nav-footer">
+                    <a href="profile.html" rel="external">
+                        <i class="fa fa-user"></i>
+                        <div>Profile</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" id="footer2" data-tap-toggle="false" transition="fade">
+        <div data-role="navbar" data-grid="d" class="text-center footer2">
+            <ul class="w100">
+                <li class="w20 nav-footer">
+                    <a href="home.html" rel="external" class="active">
+                        <i class="fa fa-home"></i>
+                        <div>Home</div>
+                    </a>
+                </li>
+                <li class="w20 nav-footer">
+                    <a href="deals.html" rel="external">
+                        <i class="fa fa-tag font"></i>
+                        <div>Deals</div>
+                    </a>
+                </li>
+                <li class="w20 nav-footer">
+                    <a href="store.html" rel="external">
+                        <i class="fa fa-store-alt"></i>
+                        <div>Store</div>
+                    </a>
+                </li>
+                <li class="w20 nav-footer">
+                    <a href="cart.html" rel="external">
+                        <i class="fa fa-shopping-cart"></i>
+                        <div>Cart</div>
+                    </a>
+                </li>
+                <li class="w20 nav-footer">
+                    <a href="profile.html" rel="external">
+                        <i class="fa fa-user"></i>
+                        <div>Profile</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+
+        $('#' + sessionStorage.getItem('theme')).prop("checked", true);
+
+        if (sessionStorage.getItem('theme') === 'dark') {
+            $('body').addClass('dark');
+        }
+        $('input[name="radio-group-2"]:radio').change(function () {
+            if (this.accessKey === 'dark') {
+                sessionStorage.setItem('theme', 'dark')
+                $('body').addClass('dark');
+
+            } else {
+                sessionStorage.setItem('theme', 'light')
+                $('body').removeClass('dark');
+            }
+        });
+
+
+        $.post("backend/userData.php", {
+            action: 'view',
+            currentUser: sessionStorage.getItem("loggedUser")
+        }, function (data, status) {
+            const json = JSON.parse(data);
+            $("#username").html(json.name);
+            if (json.imageSrc !== "") {
+                $("#userImage").attr('src', json.imageSrc);
+            }
+
+            $("#userPoints").html(json.points);
+        });
+        $(document).on("click", ".dealsClick", function () {
+            if (this.accessKey === "2") {
+                sessionStorage.setItem("currentDeal", this.accessKey);
+                sessionStorage.setItem("ratingFilter", '0');
+                sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"999"}');
+                sessionStorage.setItem("sort", 'default');
+                document.location.href = 'promotion_details_in.html';
+            } else {
+                sessionStorage.setItem("currentDeal", this.accessKey);
+                sessionStorage.setItem("ratingFilter", '0');
+                sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"999"}');
+                sessionStorage.setItem("sort", 'default');
+                document.location.href = 'promotion_details.html';
+            }
+
+        });
+        $(document).on("click", ".pathurl", function () {
+            document.location.href = this.accessKey;
+        });
+
+    })
+</script>
