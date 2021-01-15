@@ -586,7 +586,7 @@ a {
 }
 
 .landing-right {
-    background: url('../img/landingImage.jpg');
+    /*background: url('../img/landingImage.jpg');*/
     background-position: center center;
     background-size: cover;
     position: relative;

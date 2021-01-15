@@ -112,6 +112,12 @@
 .color-black{
     color: black !important;
 }
+   .gam-ans-btn:focus{
+          background: red !important;
+      }
+    .gam-ans-btn-correct:focus{
+        background: lightgreen !important;
+    }
 
 
 
