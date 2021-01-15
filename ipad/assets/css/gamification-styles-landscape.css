@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1024px) {
+.leaderboard-score-container{
+    display: flex;
+    justify-content: center;
+    aligin-items: center;
+}
+.leaderboard-li{
+    border-radius: 40px !important;
+    margin-bottom: 9px!important;
+    height: 50px;
+}
+.leaderboard_li_rank_span{
+    margin-left: 3%;
+}
+    .leaderboard_li_score_span{
+
+        margin-left: 2%;
+    }
+    .leaderboard_li_badge_img{
+
+        float: right;
+    }
+    .leaderboard-page{
+        background-image: url("../images/gamifi_bg_img_ipad_landscape.png");
+    }
+
+
+}

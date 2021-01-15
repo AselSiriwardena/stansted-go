@@ -62,17 +62,34 @@ function initAutocomplete() {
   });
 }
 
+// //function for promt a marker
+// function initMap() {
+//         const myLatLng = { lat: 6.8653, lng: 79.8599 };
+//         const map = new google.maps.Map(document.getElementById("map"), {
+//           zoom: 4,
+//           center: myLatLng,
+//         });
+//         new google.maps.Marker({
+//           position: myLatLng,
+//           map,
+//           title: "Gedarta Foods",
+//         });
+//       }
 //function for promt a marker
 function initMap() {
-        const myLatLng = { lat: 6.8653, lng: 79.8599 };
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: myLatLng,
-        });
-        new google.maps.Marker({
-          position: myLatLng,
-          map,
-          title: "Gedarta Foods",
-        });
-      }
+  var mapOptions = {
+    zoom: 8,
+    center: new google.maps.LatLng(41.5, -71),
+    mapTypeId: 'roadmap'
+  };
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+  var goldenGatePosition = {lat: 42.3751,lng:  -71.10561};
+  var marker = new google.maps.Marker({
+    position: goldenGatePosition,
+    map: map,
+    title: 'Golden Gate Bridge'
+  });
+
+}
 
