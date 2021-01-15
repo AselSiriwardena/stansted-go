@@ -29,10 +29,15 @@
     <!-- Custom main CSS file -->
     <link rel="stylesheet" href="index.css">
 
-    <!--API key -->
+    <!--Normal API key -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initAutocomplete&libraries=places&v=weekly"
+            defer
+    ></script>
+<!--    With Marker-->
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initMap&libraries=places&v=weekly"
             defer
     ></script>
 
@@ -102,12 +107,13 @@
                             <i class="fas fa-share-alt"></i>
                             <i id="favourite"></i>
                             </div>
-                        <p class="primary-color-grey-text f16 w80" id="productDetails">
+                        <p class="primary-color-grey-text f16 w95" id="productDetails">
                             Brewed from the heart of Kashmir, Stok presents the
                             best cold brew coffee of the 21st Century. This new line
                             of cold brews gives twice the motivation and energy
                             while keeping the nostalgic taste everybody loves...
                         </p>
+                            <hr class="rounded w95" >
                         <h3 class="primary-color-red-text"><b>Euro<span
                                 style="font-size: 32px; padding-left: 7px" id="price">10.99</span></b>
                         </h3>
