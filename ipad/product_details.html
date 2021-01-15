@@ -44,6 +44,7 @@
     <!--custom css and js files -->
     <link rel="stylesheet" type="text/css" href="assets/css/map_style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/rating_style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/card_style.css" />
     <script src="scripts/map.js"></script>
 
 </head>
@@ -87,7 +88,7 @@
                 </div>
                 <div class="ui-grid-a pl-4 mt-3">
                     <div class="ui-block-a w60 prod-deets">
-                        <h3 id="productTitle">Cambridge</h3>
+                        <h3 id="productTitle">Big Ben Tower</h3>
                         <div class="ui-grid-a">
                             <div class="ui-block-a w40">
                                 <i class="fa fa-star secondary-color-yellow-text"></i>
@@ -98,11 +99,17 @@
                             </div>
                             <div class="ui-block-b w60">
                                 <a href="reviews.html" rel="external">
-                                    <p class="fw-bold f16">58 Reviews</p>
+                                    <p class="fw-bold f10">58 Reviews</p>
                                 </a>
                             </div>
-                                <iframe width="95%" height="95%" src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="ui-block-b icons w90">
+
+<!--                            <div class="ui-grid-solo w100 h60">-->
+<!--                                <iframe width="400" height="315" src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--                            </div>-->
+
+
+                            <div class="ui-block-b icons w95">
+                                <iframe width="100%" height="300" src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                             <i class="fas fa-share-alt"></i>
                             <i id="favourite"></i>
@@ -114,8 +121,8 @@
                             while keeping the nostalgic taste everybody loves...
                         </p>
                             <hr class="rounded w95" >
-                        <h3 class="primary-color-red-text"><b>Euro<span
-                                style="font-size: 32px; padding-left: 7px" id="price">10.99</span></b>
+                        <h3 class="primary-color-red-text"><b>Euro 10.99</span></b>
+<!--                                style="font-size: 32px; padding-left: 7px" id="price">10.99</span></b>-->
                         </h3>
 <!--                            <div class="ui-block-b icons w10">-->
 <!--                            <i class="primary-color-red-text">Euro<span-->
@@ -211,10 +218,10 @@
                     </div>
                     <div class="ui-block-b w40 ">
                         <div id="map"></div>
+                        <hr class="rounded w95" >
                         <div class="text-center h40">
                             <div id="row">
                             </div>
-
                            <!-- <input
                                     id="pac-input"
                                     class="controls"
@@ -308,15 +315,60 @@
                         </div>
                                 <div class="ui-grid-a d-none hideInStore">
                                     <div class="ui-block-b w100">
-                                        <a rel="external" href="gamification_intro.html" class="ui-btn btn primary-btn mb-3 w95 pathUrl"
+                                        <a rel="external" class="ui-btn btn primary-btn mb-3 w95 pathUrl"
                                            accesskey="proceed">PLAY</a>
                                     </div>
                         </div>
                     </div>
-
 <!--                        <div class="ui-grid-a">-->
 <!--                        </div>-->
+                        <br>
+                        <br>
+                        <div class="rating">
+                            <div class="rating__number">4.3</div>
+                            <div class="rating__stars">
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                </div>
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+
+                                </div>
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+
+                                </div>
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+
+                                </div>
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+
+                                </div>
+                            </div>
+                            <div class="rating__bars">
+                                <div class="rating__bar rating__bar--1">
+
+                                </div>
+                                <div class="rating__bar rating__bar--2"></div>
+                                <div class="rating__bar rating__bar--3"></div>
+                                <div class="rating__bar rating__bar--4"></div>
+                                <div class="rating__bar rating__bar--5"></div>
+                            </div>
+                        </div>
                 </div>
+
             </div>
         </div>
 <!--            <div class="ui-grid-solo mt-5">-->
@@ -414,19 +466,9 @@
                                 <div class="ui-grid-solo text-center">
                                     <div class="card">
                                         <div class="img-best mt-3 mb-3">
-                                            <img src="assets/img/productCoffee4.png" width="100px">
+                                            <img src="assets/images/cornwall.jpg" width="100%">
                                         </div>
-                                        <h3 class="pt-3">Culive Fresh <br> Beaned Coffee</h3>
-                                        <div class="ui-grid-a pt-3">
-                                            <div class="ui-block-a">
-                                                <p style="line-height: 2;" class="primary-color-grey-text f16"><strike>USD
-                                                    35.00</strike></p>
-                                            </div>
-                                            <div class="ui-block-b">
-                                                <p class="primary-color-red-text fw-bold f16">USD <span
-                                                        class="f22">25.00</span></p>
-                                            </div>
-                                        </div>
+                                        <h3 class="pt-3">Cornwall</h3>
                                     </div>
                                 </div>
                             </div>
@@ -434,19 +476,9 @@
                                 <div class="ui-grid-solo text-center">
                                     <div class="card">
                                         <div class="img-best mt-3 mb-3">
-                                            <img src="assets/img/productCoffee4.png" width="100px">
+                                            <img src="assets/images/Big Ben.jpg" width="100%">
                                         </div>
-                                        <h3 class="pt-3">Culive Fresh <br> Beaned Coffee</h3>
-                                        <div class="ui-grid-a pt-3">
-                                            <div class="ui-block-a">
-                                                <p style="line-height: 2;" class="primary-color-grey-text f16"><strike>USD
-                                                    35.00</strike></p>
-                                            </div>
-                                            <div class="ui-block-b">
-                                                <p class="primary-color-red-text fw-bold f16">USD <span
-                                                        class="f22">25.00</span></p>
-                                            </div>
-                                        </div>
+                                        <h3 class="pt-3">Big Ben</h3>
                                     </div>
                                 </div>
                             </div>
@@ -454,19 +486,9 @@
                                 <div class="ui-grid-solo text-center">
                                     <div class="card">
                                         <div class="img-best mt-3 mb-3">
-                                            <img src="assets/img/productCoffee4.png" width="100px">
+                                            <img src="assets/images/Big Ben.jpg" width="100%">
                                         </div>
-                                        <h3 class="pt-3">Culive Fresh <br> Beaned Coffee</h3>
-                                        <div class="ui-grid-a pt-3">
-                                            <div class="ui-block-a">
-                                                <p style="line-height: 2;" class="primary-color-grey-text f16"><strike>USD
-                                                    35.00</strike></p>
-                                            </div>
-                                            <div class="ui-block-b">
-                                                <p class="primary-color-red-text fw-bold f16">USD <span
-                                                        class="f22">25.00</span></p>
-                                            </div>
-                                        </div>
+                                        <h3 class="pt-3">Colin</h3>
                                     </div>
                                 </div>
                             </div>
@@ -474,19 +496,19 @@
                                 <div class="ui-grid-solo text-center">
                                     <div class="card">
                                         <div class="img-best mt-3 mb-3">
-                                            <img src="assets/img/productCoffee4.png" width="100px">
+                                            <img src="assets/images/cornwall.jpg" width="100%">
                                         </div>
-                                        <h3 class="pt-3">Culive Fresh <br> Beaned Coffee</h3>
-                                        <div class="ui-grid-a pt-3">
-                                            <div class="ui-block-a">
-                                                <p style="line-height: 2;" class="primary-color-grey-text f16"><strike>USD
-                                                    35.00</strike></p>
-                                            </div>
-                                            <div class="ui-block-b">
-                                                <p class="primary-color-red-text fw-bold f16">USD <span
-                                                        class="f22">25.00</span></p>
-                                            </div>
+                                        <h3 class="pt-3">Colin</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="ui-grid-solo text-center">
+                                    <div class="card">
+                                        <div class="img-best mt-3 mb-3">
+                                            <img src="assets/images/cornwall.jpg" width="100%">
                                         </div>
+                                        <h3 class="pt-3">Colin</h3>
                                     </div>
                                 </div>
                             </div>
@@ -545,7 +567,7 @@
             <div class="page-footer" data-fullscreen="true">
                 <div class="grid-container  border-rad-max">
                     <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home_selected.svg"></a></a></div>
-                    <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
+                    <div class="grid-item"><a href="favouritesAll.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
                     <div class="grid-item"><a href="landing.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
                     <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
                     <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
