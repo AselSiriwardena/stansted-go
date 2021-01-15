@@ -15,5 +15,10 @@
     .leaderboard-page{
         background-image: url("../images/gamification_background_portrait.png") !important;
     }
+    /*.question-container{*/
+    /*    width: 100px;*/
+    /*    height: 40vh !important;*/
+
+    /*}*/
 
 }

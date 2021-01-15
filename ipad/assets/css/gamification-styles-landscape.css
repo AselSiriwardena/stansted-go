@@ -78,7 +78,7 @@
     .question-container{
         width: 600px;
         background: white;
-        height: 50vh;
+        /*height: 50vh;*/
 
     }
 
@@ -99,7 +99,16 @@
     .gam-box-shadow{
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
-
+    .gamificaton-ans{
+        width: 252px !important;
+        margin-bottom: 10px !important;
+        background: white !important;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        height: 30px;
+    }
+.gamifi-ques-title{
+    margin-bottom: 47px !important;
+}
 
 
 
