@@ -79,7 +79,7 @@ function initAutocomplete() {
 function initMap() {
   var mapOptions = {
     zoom: 8,
-    center: new google.maps.LatLng(41.5, -71),
+    center: new google.maps.LatLng(42.3751, -71.10561),
     mapTypeId: 'roadmap'
   };
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
