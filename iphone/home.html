@@ -31,29 +31,81 @@
 </head>
 <body class="post-login">
 <div data-role="page" class="home">
-    <div data-role="header" id="header" class="px-4 pt-5 pb-4">
-        <div class="ui-grid-a d-flex align-items-center header-title">
-            <div class="ui-block-a">
-                <h3 class="m-0">Home</h3>
-            </div>
-            <div class="ui-block-b">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-camera"></i>
-            </div>
-        </div>
-        <div class="header-content">
-            <h2>Welcome<span class="primary-color-blue-text user_name" id="username">James</span></h2>
-            <h4 class="text-muted">We have a lot in store for you...literally !</h4>
-        </div>
-    </div>
     <div role="main" id="main">
+        <div class="page-header pt-5 pb-4" position="fixed" data-fullscreen="true">
+            <div class="ui-grid-a d-flex align-items-center header-title px-4 ">
+                <div class="ui-block-a">
+                    <h3 class="m-0">Destination</h3>
+                </div>
+                <div class="ui-block-b icons">
+                    <a class="primary-color-black-text" data-rel="popup" href="#overlay" data-position-to="origin"><i
+                            class="fas fa-search"></i></a>
+                    <div class="ui-content" data-shadow="false" data-theme="none" data-overlay-theme="a" data-role="popup"
+                         id="overlay">
+                        <div class="deals-search-bar">
+                            <ul data-role="listview" data-filter="true" data-filter-reveal="true"
+                                data-filter-placeholder="Where to?" data-inset="true">
+                                <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>
+                                <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>
+                                <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>
+                                <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-items">
+            <ul class="nav nav-tabs nav-justified nav-primary">
+                <li class="nav-item">
+                    <a href="#daily" class="nav-link active" data-toggle="tab">City</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#weekly" class="nav-link" data-toggle="tab">HillCountry</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#monthly" class="nav-link" data-toggle="tab">Coastal</a>
+                </li>
+            </ul>
+        </div>
+        <div class="trending px-4 px-landscape-0">
+            <div class="ui-grid-a mt-4 mb-3 d-flex align-items-center px-landscape-4">
+            </div>
+            <div class="trending-items">
+                <div class="ui-grid-b px-landscape-4">
+                    <div class="ui-block-a w100 justify-content-center">
+                        <div class="promotion-banner ui-block-a">
+                            <a class="dealsClick" accesskey="1">
+                                <img alt="Trending promotion" class="img-fluid" width="100%"
+                                     src="assets/images/destination_1.svg">
+                            </a>
+                            <div class="ui-block-a w70">
+                                <div class="font-size font-weight-heavy">Tower Bridge</div>
+                                <h6 class="text-muted font-weight-bold">London</h6>
+                            </div>
+                            <div class="ui-block-b w30 bottom">
+                                <img src="assets/images/destination_star_rate.svg" width="100%" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-tabs nav-justified nav-primary">
+                <li class="nav-item">
+                    <a href="AR.html" class="nav-link active" id="card_link" data-toggle="tab">Explore AR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#paypal" class="nav-link" id="paypal_link" data-toggle="tab">Explore More</a>
+                </li>
+            </ul>
+        </div>
         <div class="slider">
             <div class="ui-grid-a mt-4 mb-3 px-4 d-flex align-items-center">
                 <div class="ui-block-a w80">
-                    <div class="font-size-l font-weight-heavy">Latest Deals</div>
+                    <div class="font-size-l font-weight-heavy">Promotional Offers</div>
                 </div>
                 <div class="ui-block-b w20">
-                    <div class="font-size-m text-right"><a>See All</a></div>
+                    <div class="font-size-m text-right"><a>Show All</a></div>
                 </div>
             </div>
             <div class="carousell">
@@ -65,12 +117,8 @@
                                     <div class="ui-block-a w60">
                                         <div class="top">
                                             <div class="d-flex align-items-center">
-                                                <h1 class="font-family-primary primary-color-black-text"><b>NIKE</b>
+                                                <h1 class="font-family-primary primary-color-black-text"><b>Norfolk</b>
                                                 </h1>
-                                                <div class="top secondary-color-gold-text ml-2">
-                                                    <h5 class="mb-0 font-weight-bold">SUMMER</h5>
-                                                    <h5 style="letter-spacing: 9px;" class="font-weight-bold">SALE</h5>
-                                                </div>
                                             </div>
                                             <div>
                                                 <div class="font-size-m">Shoes starting from</div>
@@ -85,7 +133,7 @@
                                     </div>
                                     <div class="ui-block-b w40">
                                         <div class="bottom">
-                                            <img src="assets/img/Nike.png" width="100%" height="auto">
+                                            <img src="assets/images/destination_2.svg" width="100%" height="auto">
                                         </div>
                                     </div>
                                 </div>
@@ -165,6 +213,7 @@
                 </div>
             </div>
         </div>
+
         <div class="trending px-4 px-landscape-0">
             <div class="ui-grid-a mt-4 mb-3 d-flex align-items-center px-landscape-4">
                 <div class="ui-block-a w80">
@@ -443,40 +492,13 @@
             </div>
         </div>
     </div>
-    <div data-role="footer" data-position="fixed" id="footer" data-tap-toggle="false" transition="fade" class="py-2">
-        <div data-role="navbar" data-grid="d" class="h100">
-            <ul>
-                <li>
-                    <a class="pathUrl" accesskey="home.html">
-                        <i class="fa fa-home"></i>
-                        <div>Home</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="pathUrl" accesskey="deals.html">
-                        <i class="fa fa-tag font"></i>
-                        <div>Deals</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="pathUrl" accesskey="store.html">
-                        <i class="fa fa-store-alt"></i>
-                        <div>Store</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="pathUrl" accesskey="cart.html">
-                        <i class="fa fa-shopping-cart"></i>
-                        <div>Cart</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="pathUrl" accesskey="profile.html">
-                        <i class="fa fa-user"></i>
-                        <div>Profile</div>
-                    </a>
-                </li>
-            </ul>
+    <div data-role="footer" class="page-footer" position="fixed" data-fullscreen="true">
+        <div class="grid-container  border-rad-max">
+            <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home.svg"></a></a></div>
+            <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
+            <div class="grid-item"><a href="landing.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
+            <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
+            <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
         </div>
     </div>
 </div>

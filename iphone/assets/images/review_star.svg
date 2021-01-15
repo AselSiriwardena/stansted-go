@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="375" height="812" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Shape" d="M338.667-26.667h16.667A2.667,2.667,0,0,1,358-24v6h0a2.667,2.667,0,0,1-2.667,2.667H338.667A2.667,2.667,0,0,1,336-18v-6h0A2.667,2.667,0,0,1,338.667-26.667Z" transform="translate(-336 26.667)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Shape-2" data-name="Shape" d="M359-23v4a2.17,2.17,0,0,0,1.328-2A2.17,2.17,0,0,0,359-23" transform="translate(-359 23)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Shape-3" data-name="Shape" d="M339.333-24.667h15.333A1.333,1.333,0,0,1,356-23.333v4.667h0a1.333,1.333,0,0,1-1.333,1.333H339.333A1.333,1.333,0,0,1,338-18.667v-4.667h0A1.333,1.333,0,0,1,339.333-24.667Z" transform="translate(-338 24.667)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path id="Shape-4" data-name="Shape" d="M323.33-24.392a8.64,8.64,0,0,1,5.953,2.378.308.308,0,0,0,.433,0l1.156-1.167a.322.322,0,0,0,.093-.229.322.322,0,0,0-.1-.227,10.9,10.9,0,0,0-15.08,0,.322.322,0,0,0-.1.227.322.322,0,0,0,.093.229l1.156,1.167a.308.308,0,0,0,.433,0,8.641,8.641,0,0,1,5.954-2.378Zm0,3.8a4.907,4.907,0,0,1,3.294,1.27.31.31,0,0,0,.433-.006l1.155-1.167a.322.322,0,0,0,.094-.23.322.322,0,0,0-.1-.229,7.159,7.159,0,0,0-9.752,0,.322.322,0,0,0-.1.229.322.322,0,0,0,.094.23l1.154,1.167a.31.31,0,0,0,.433.006,4.907,4.907,0,0,1,3.292-1.27Zm2.219,2.784a.314.314,0,0,0,.094-.231.314.314,0,0,0-.1-.226,3.422,3.422,0,0,0-4.419,0,.314.314,0,0,0-.1.226.314.314,0,0,0,.094.231l2,2.016a.311.311,0,0,0,.222.093.312.312,0,0,0,.222-.093Z" transform="translate(-315.694 26.669)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <path id="Shape-5" data-name="Shape" d="M294.667-19.667h1a1,1,0,0,1,1,1v2a1,1,0,0,1-1,1h-1a1,1,0,0,1-1-1v-2a1,1,0,0,1,1-1Zm4.667-2h1a1,1,0,0,1,1,1v4a1,1,0,0,1-1,1h-1a1,1,0,0,1-1-1v-4A1,1,0,0,1,299.333-21.667ZM304-24h1a1,1,0,0,1,1,1v6.333a1,1,0,0,1-1,1h-1a1,1,0,0,1-1-1V-23A1,1,0,0,1,304-24Zm4.667-2.333h1a1,1,0,0,1,1,1v8.667a1,1,0,0,1-1,1h-1a1,1,0,0,1-1-1v-8.667a1,1,0,0,1,1-1Z" transform="translate(-293.667 26.333)" fill="none"/>
+    </clipPath>
+    <filter id="Path_1" x="-3" y="462" width="378" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+    <g id="status_bar_light" data-name="status bar/light" transform="translate(-4 -79)">
+      <g id="Battery" transform="translate(344.177 97.333)">
+        <g id="Border" clip-path="url(#clip-path-2)">
+          <path id="Fill" d="M2.667,0H19.333A2.667,2.667,0,0,1,22,2.667v6h0a2.667,2.667,0,0,1-2.667,2.667H2.667A2.667,2.667,0,0,1,0,8.667v-6H0A2.667,2.667,0,0,1,2.667,0Z" fill="none" stroke="rgba(0,0,0,0.35)" stroke-width="2"/>
+        </g>
+        <g id="Cap" transform="translate(23 3.667)" clip-path="url(#clip-path-3)">
+          <path id="Fill-2" data-name="Fill" d="M354-28h11.328v14H354Z" transform="translate(-359 23)" fill="rgba(0,0,0,0.4)"/>
+        </g>
+        <g id="Capacity" transform="translate(2 2)" clip-path="url(#clip-path-4)">
+          <path id="Fill-3" data-name="Fill" d="M333-29.667h28v17.333H333Z" transform="translate(-338 24.667)"/>
+        </g>
+      </g>
+      <g id="Wifi" transform="translate(323.87 97.331)">
+        <g id="Wifi-2" data-name="Wifi" clip-path="url(#clip-path-5)">
+          <path id="Fill-4" data-name="Fill" d="M310.694-31.669h25.272V-10.7H310.694Z" transform="translate(-315.694 26.669)"/>
+        </g>
+      </g>
+      <g id="Cellular_Connection" data-name="Cellular Connection" transform="translate(301.843 97.667)">
+        <g id="Cellular_Connection-2" data-name="Cellular Connection" clip-path="url(#clip-path-6)">
+          <path id="Fill-5" data-name="Fill" d="M288.667-31.333h27v20.667h-27Z" transform="translate(-293.667 26.333)"/>
+        </g>
+      </g>
+      <g id="Bars___Time_Black" data-name="Bars/_/Time Black" transform="translate(33 95)">
+        <path id="Background" d="M21-19H75V-35H21Z" transform="translate(-21 35)" fill="none"/>
+        <path id="_Time" data-name="↳ Time" d="M16.433,13.239c2.509,0,4-1.962,4-5.284a6.336,6.336,0,0,0-.7-3.117A3.5,3.5,0,0,0,16.487,2.89a3.43,3.43,0,0,0-3.664,3.466A3.159,3.159,0,0,0,16.07,9.637,2.727,2.727,0,0,0,18.627,8.16h.116c0,2.256-.854,3.6-2.3,3.6a1.716,1.716,0,0,1-1.729-1.21H12.96A3.324,3.324,0,0,0,16.433,13.239Zm.062-5A1.865,1.865,0,0,1,14.553,6.3a1.948,1.948,0,1,1,3.9.027A1.874,1.874,0,0,1,16.494,8.235Zm7.038,3.719a1.08,1.08,0,1,0-1.094-1.08A1.048,1.048,0,0,0,23.532,11.954Zm0-5.127a1.043,1.043,0,0,0,1.094-1.073,1.094,1.094,0,0,0-2.187,0A1.047,1.047,0,0,0,23.532,6.827ZM31.445,13h1.688V11.161h1.333V9.671H33.134V3.136H30.646c-1.743,2.625-3.131,4.819-4.02,6.453v1.572h4.819ZM28.26,9.609c1.148-2.023,2.174-3.644,3.117-5.038h.1V9.712H28.26ZM38.511,13h1.764V3.136H38.518L35.94,4.94v1.7l2.454-1.723h.116Z" transform="translate(-13 0)"/>
+      </g>
+    </g>
+    <g id="Title" transform="translate(38.794 46.5)">
+      <rect id="Title_background" data-name="Title background" width="216.206" height="37" fill="rgba(0,0,0,0)"/>
+      <text id="Sign_in" data-name="Sign in" transform="translate(15.5 28)" fill="#24253d" font-size="20" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="0" y="0">Write a Review</tspan></text>
+    </g>
+    <g id="Write-Review" transform="translate(27 296.547)">
+      <rect id="Rectangle" width="318" height="136" rx="8" fill="#f5f5f5"/>
+      <text id="Review" transform="translate(15.5 9)" fill="#8c8c98" font-size="15" font-family="OpenSans, Open Sans" opacity="0.5"><tspan x="0" y="16">Review</tspan></text>
+    </g>
+    <g id="Group_Copy_2" data-name="Group Copy 2" transform="translate(27 215.547)">
+      <rect id="Rectangle-2" data-name="Rectangle" width="318" height="46" rx="8" transform="translate(0 0.453)" fill="#f5f5f5"/>
+      <text id="Name_on_card" data-name="Name on card" transform="translate(16 29.453)" fill="#8c8c98" font-size="15" font-family="OpenSans-Regular, Open Sans" opacity="0.5"><tspan x="0" y="0">Title</tspan></text>
+    </g>
+    <g id="Rating" transform="translate(107.5 115.5)">
+      <g id="Rating-2" data-name="Rating">
+        <rect id="Rating_background" data-name="Rating background" width="160" height="26.047" fill="rgba(0,0,0,0)"/>
+        <g id="Stars">
+          <path id="Shape-6" data-name="Shape" d="M13.023,19.887l8.048,4.858-2.136-9.155,7.111-6.16-9.364-.794L13.023,0,9.364,8.634,0,9.429l7.111,6.16L4.975,24.744Z" fill="#8c8c98"/>
+          <path id="Shape_Copy" data-name="Shape Copy" d="M13.023,19.887l8.048,4.858-2.136-9.155,7.111-6.16-9.364-.794L13.023,0,9.364,8.634,0,9.429l7.111,6.16L4.975,24.744Z" transform="translate(33.488)" fill="#8c8c98"/>
+          <path id="Shape_Copy_2" data-name="Shape Copy 2" d="M13.023,19.887l8.048,4.858-2.136-9.155,7.111-6.16-9.364-.794L13.023,0,9.364,8.634,0,9.429l7.111,6.16L4.975,24.744Z" transform="translate(66.977)" fill="#8c8c98"/>
+          <path id="Shape_Copy_3" data-name="Shape Copy 3" d="M13.023,19.887l8.048,4.858-2.136-9.155,7.111-6.16-9.364-.794L13.023,0,9.364,8.634,0,9.429l7.111,6.16L4.975,24.744Z" transform="translate(100.465)" fill="#8c8c98"/>
+          <path id="Shape_Copy_4" data-name="Shape Copy 4" d="M13.023,19.887l8.048,4.858-2.136-9.155,7.111-6.16-9.364-.794L13.023,0,9.364,8.634,0,9.429l7.111,6.16L4.975,24.744Z" transform="translate(133.953)" fill="#8c8c98"/>
+        </g>
+      </g>
+      <text id="Tap_a_star_to_rate" data-name="Tap a star to rate" transform="translate(11 29)" fill="rgba(36,37,61,0.5)" font-size="13" font-family="OpenSans-Regular, Open Sans"><tspan x="17.493" y="14">Tap a star to rate</tspan></text>
+    </g>
+    <g id="SIGN_UP" data-name="SIGN UP" transform="translate(27 489)">
+      <g transform="matrix(1, 0, 0, 1, -27, -489)" filter="url(#Path_1)">
+        <path id="Path_1-2" data-name="Path 1" d="M5.3,0H312.7A5.157,5.157,0,0,1,318,5V45a5.157,5.157,0,0,1-5.3,5H5.3A5.157,5.157,0,0,1,0,45V5A5.157,5.157,0,0,1,5.3,0Z" transform="translate(27 489)" fill="#3acce1"/>
+      </g>
+      <text id="Submit" transform="translate(160 33)" fill="#fff" font-size="20" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="-35.62" y="0">Submit</tspan></text>
+    </g>
+    <g id="Title-2" data-name="Title" transform="translate(-405.206 46.5)">
+      <rect id="Title_background-2" data-name="Title background" width="216.206" height="37" fill="rgba(0,0,0,0)"/>
+    </g>
+  </g>
+</svg>
