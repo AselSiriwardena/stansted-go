@@ -13,10 +13,11 @@
 
     .leaderboard_li_rank_span {
         margin-left: 3%;
+        float: right !important;
     }
 
     .leaderboard_li_score_span {
-
+        float: right !important;
         margin-left: 2%;
     }
 
