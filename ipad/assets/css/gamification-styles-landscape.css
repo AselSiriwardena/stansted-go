@@ -128,7 +128,7 @@
         width: 252px !important;
         margin-bottom: 10px !important;
         background: white !important;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
         height: 30px;
     }
 
@@ -146,6 +146,12 @@
 
     .gam-ans-btn-correct:focus {
         background: lightgreen !important;
+    }
+    /*.gam-ans-btn{*/
+    /*    box-shadow:red !important;*/
+    /*}*/
+    .t1class{
+        background: black!important;
     }
 
 

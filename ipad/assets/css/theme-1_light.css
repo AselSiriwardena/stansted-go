@@ -98,10 +98,16 @@ html body .ui-group-theme-b .ui-bar-inherit,
 /* Breadcrumb end */
 
 /* Buttons start */
+/*.ui-btn {*/
+/*    background-color: var(--primary-color-white) !important;*/
+/*    border-color: var(--primary-color-white) !important;*/
+/*    text-shadow: none !important;*/
+/*    box-shadow: none;*/
+/*}*/
 .ui-btn {
-    background-color: var(--primary-color-white) !important;
-    border-color: var(--primary-color-white) !important;
-    text-shadow: none !important;
+    background-color: var(--primary-color-white);
+    border-color: var(--primary-color-white) ;
+    text-shadow: none ;
     box-shadow: none;
 }
 

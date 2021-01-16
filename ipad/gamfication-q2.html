@@ -32,7 +32,7 @@
     <div data-role="header">
         <a href="gamification_intro.html" class="gamification-back-btn"><img src="assets/images/gamification-back.svg"></a>
 
-        <a href="gamification.html" class="gamification-scores-btn" data-theme="b">Scores</a>
+        <a href="gamification.html" class="gamification-scores-btn" data-theme="b" id="scoreId">Scores</a>
     </div>
     <div role="main" class="ui-content  gamifi-quiz-main-container" style="display: flex;
         flex-direction: column; height: 90vh;">
@@ -51,12 +51,12 @@
 
                             <div class="ui-block-solo">
                                 <h3 class="ui-block-a gamifi-ques-title">Where does this belong?</h3>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"
-                                        onclick="onClickHandler(this)">Camden Museum
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn1"
+                                        onclick="incorrectAnswerClicked('ansBtn1')">Camden Museum
                                 </button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Hammersmith Museum</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">British Museum</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">London Museum
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn2" onclick="incorrectAnswerClicked('ansBtn2')">Hammersmith Museum</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn3"onclick="incorrectAnswerClicked('ansBtn3')">British Museum</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn4" onclick="correctAnswerClicked('ansBtn4')">London Museum
                                 </button>
                             </div>
 
@@ -81,12 +81,12 @@
 
                             <div class="ui-block-solo">
                                 <h3 class="ui-block-a gamifi-ques-title">Where is this?</h3>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"
-                                        onclick="onClickHandler(this)">London
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn5"
+                                        onclick="incorrectAnswerClicked('ansBtn5')">London
                                 </button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Kensington</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">Haringey</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">City of
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn6" onclick="correctAnswerClicked('ansBtn6')">Kensington</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn7" onclick="incorrectAnswerClicked('ansBtn7')">Haringey</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn8" onclick="incorrectAnswerClicked('ansBtn8')">City of
                                     Westminster
                                 </button>
                             </div>
@@ -112,12 +112,12 @@
 
                             <div class="ui-block-solo">
                                 <h3 class="ui-block-a gamifi-ques-title">What is this? </h3>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"
-                                        onclick="onClickHandler(this)">Egyptian
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn9"
+                                        onclick="incorrectAnswerClicked('ansBtn9')">Egyptian
                                 </button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Albert</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">Haringey</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">Monalisa
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn10" onclick="incorrectAnswerClicked('ansBtn10')">Albert</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn11" onclick="correctAnswerClicked('ansBtn11')">Haringey</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn12" onclick="incorrectAnswerClicked('ansBtn12')">Monalisa
                                 </button>
                             </div>
 
@@ -141,12 +141,12 @@
 
                             <div class="ui-block-solo">
                                 <h3 class="ui-block-a gamifi-ques-title">Where does this belong?</h3>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"
-                                        onclick="onClickHandler(this)">British Museum
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn13" onclick="correctAnswerClicked('ansBtn13')"
+                                        >British Museum
                                 </button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Hammersmith Museum</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">London Museum</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">Camden Museum
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn14" onclick="incorrectAnswerClicked('ansBtn14')">Hammersmith Museum</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn15" onclick="incorrectAnswerClicked('ansBtn15')">London Museum</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn16" onclick="incorrectAnswerClicked('ansBtn16')">Camden Museum
                                 </button>
                             </div>
 
@@ -174,7 +174,36 @@
         $(document).on("click", ".pathUrl", function () {
             document.location.href = this.accessKey;
         });
+
     });
+
+    function correctAnswerClicked(element) {
+        if(typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            } else {
+                sessionStorage.clickcount = 100;
+            }
+            document.getElementById("scoreId").innerHTML = "Score : "+sessionStorage.clickcount;
+        } else {
+            document.getElementById("scoreId").innerHTML = "Score";
+        }
+        document.getElementById(element).style.setProperty('background','lightgreen','important');
+    }
+
+    function incorrectAnswerClicked(element) {
+        if(typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount)-1;
+            } else {
+                sessionStorage.clickcount = 1;
+            }
+            document.getElementById("scoreId").innerHTML = "Score : "+sessionStorage.clickcount;
+        } else {
+            document.getElementById("scoreId").innerHTML = "Score";
+        }
+        document.getElementById(element).style.setProperty('background','red','important')
+    }
 </script>
 </body>
 
