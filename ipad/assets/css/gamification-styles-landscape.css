@@ -54,71 +54,98 @@
         border: none !important;
         color: black !important;
     }
-.gamification-header{
-    height: 50px;
-    background: transparent;
-}
 
-.gamification-content-height-width{
-    min-height: 100vh;
-    min-width: 768px ;
-}
+    .gamification-header {
+        height: 50px;
+        background: transparent;
+    }
+
+    .gamification-content-height-width {
+        min-height: 100vh;
+        min-width: 768px;
+    }
+    .gamifi-height-100{
+        height: 100%;
+    }
 
 
-    .testcolors{
+    .testcolors {
         background: #00b3ff;
         height: 100px;
-        width:100px;
+        width: 100px;
     }
-    .testcolors2{
+
+    .testcolors2 {
         background: #6c757d;
         height: 100px;
-        width:100px;
+        width: 100px;
     }
-    .question-container{
+
+    .question-container {
         width: 600px;
         background: white;
         /*height: 50vh;*/
 
     }
 
-    .question-img-container{
+    /*.question-container{*/
+    /*    width: 600px;*/
+    /*    background: white;*/
+    /*    !*height: 50vh;*!*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+    .gamifi-quiz-main-container {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+
+    .question-img-container {
         width: 100px;
         height: 50vh;
 
     }
-    .question-img{
+
+    .question-img {
         /*height: auto;*/
         /*width: 100%;*/
-        object-fit:cover;
+        object-fit: cover;
     }
-    .border-radius-20{
+
+    .border-radius-20 {
         border-radius: 20px;
 
     }
-    .gam-box-shadow{
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    .gam-box-shadow {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
-    .gamificaton-ans{
+
+    .gamificaton-ans {
         width: 252px !important;
         margin-bottom: 10px !important;
         background: white !important;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         height: 30px;
     }
-.gamifi-ques-title{
-    margin-bottom: 47px !important;
-}
-.color-black{
-    color: black !important;
-}
-   .gam-ans-btn:focus{
-          background: red !important;
-      }
-    .gam-ans-btn-correct:focus{
-        background: lightgreen !important;
+
+    .gamifi-ques-title {
+        margin-bottom: 47px !important;
     }
 
+    .color-black {
+        color: black !important;
+    }
+
+    .gam-ans-btn:focus {
+        background: red !important;
+    }
+
+    .gam-ans-btn-correct:focus {
+        background: lightgreen !important;
+    }
 
 
 }

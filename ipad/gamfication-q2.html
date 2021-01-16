@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="assets/css/gamification-styles-landscape.css"/>
+    <link rel="stylesheet" href="assets/css/gamification-styles-portrait.css"/>
+
+    <!-- jQuery mobile files -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Font awesome file -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/f083cf2118.js"></script>
+
+    <!-- Swiper script file -->
+    <script src="scripts/preLoginSwiper.js"></script>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom main CSS file -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body class="">
+<div data-role="page"  class=" leaderboard-page ">
+    <!--    <div data-role="header" id="header"></div>-->
+    <div data-role="header">
+        <a href="gamification_intro.html" class="gamification-back-btn"><img src="assets/images/gamification-back.svg"></a>
+
+        <a href="gamification.html" class="gamification-scores-btn" data-theme="b">Scores</a>
+    </div>
+    <div role="main" class="ui-content  gamifi-quiz-main-container" style="display: flex;
+        flex-direction: column; height: 90vh;">
+
+        <div id="1" class="ui-grid-c h90 active g-center-content">
+            <div class="ui-block-solo g-center-content gamifi-height-100">
+                <div class="card question-container">
+                    <div class="ui-grid-a border-radius-20">
+
+                        <div class=" ui-block-a question-img-container ">
+                            <img class="question-img" style="width:100%;height:100%"
+                                 src="./assets/images/uk-best-places-london.svg" alt="">
+                        </div>
+
+                        <div class="ui-block-b question-img-container g-center-content">
+
+                            <div class="ui-block-solo">
+                                <h5 class="ui-block-a gamifi-ques-title">Where is this?</h5>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"
+                                        onclick="onClickHandler(this)">London
+                                </button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Kensington</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">Haringey</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">City of
+                                    Westminster
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="2" class="ui-grid-c h90 d-none g-center-content">
+
+            <div class="ui-block-solo g-center-content gamifi-height-100">
+                <div class="card question-container">
+                    <div class="ui-grid-a border-radius-20">
+
+                        <div class=" ui-block-a question-img-container ">
+                            <img class="question-img" style="width:100%;height:100%"
+                                 src="./assets/images/uk-best-places-london.svg" alt="">
+                        </div>
+
+                        <div class="ui-block-b question-img-container g-center-content">
+
+                            <div class="ui-block-solo">
+                                <h5 class="ui-block-a gamifi-ques-title">Where is this?</h5>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"
+                                        onclick="onClickHandler(this)">London
+                                </button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Kensington</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">Haringey</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">City of
+                                    Westminster
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="3" class="ui-grid-c h90 d-none g-center-content">
+            <div class="ui-block-solo g-center-content gamifi-height-100">
+                <div class="card question-container">
+                    <div class="ui-grid-a border-radius-20">
+
+                        <div class=" ui-block-a question-img-container ">
+                            <img class="question-img" style="width:100%;height:100%"
+                                 src="./assets/images/uk-best-places-london.svg" alt="">
+                        </div>
+
+                        <div class="ui-block-b question-img-container g-center-content">
+
+                            <div class="ui-block-solo">
+                                <h5 class="ui-block-a gamifi-ques-title">Where is this?</h5>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"
+                                        onclick="onClickHandler(this)">London
+                                </button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Kensington</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">Haringey</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">City of
+                                    Westminster
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="4" class="ui-grid-c h90 d-none g-center-content">
+            <div class="ui-block-solo g-center-content gamifi-height-100">
+                <div class="card question-container">
+                    <div class="ui-grid-a border-radius-20">
+
+                        <div class=" ui-block-a question-img-container ">
+                            <img class="question-img" style="width:100%;height:100%"
+                                 src="./assets/images/uk-best-places-london.svg" alt="">
+                        </div>
+
+                        <div class="ui-block-b question-img-container g-center-content">
+
+                            <div class="ui-block-solo">
+                                <h5 class="ui-block-a gamifi-ques-title">Where is this?</h5>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"
+                                        onclick="onClickHandler(this)">London
+                                </button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Kensington</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">Haringey</button>
+                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">City of
+                                    Westminster
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui-block-a text-center h10 d-flex justify-content-center align-items-center">
+            <div class="paginationSection">
+                <span id="c1" class="indicator active"></span>
+                <span id="c2" class="indicator"></span>
+                <span id="c3" class="indicator"></span>
+                <span id="c4" class="indicator"></span>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+        $(document).on("click", ".pathUrl", function () {
+            document.location.href = this.accessKey;
+        });
+    });
+</script>
+</body>
+
+</html>

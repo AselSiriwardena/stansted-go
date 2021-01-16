@@ -6,6 +6,8 @@
     <title>Title</title>
     <link rel="stylesheet" href="assets/css/gamification-styles-landscape.css"/>
     <link rel="stylesheet" href="assets/css/gamification-styles-portrait.css"/>
+    <!-- Swiper script file -->
+<!--    <script src="scripts/preLoginSwiper.js"></script>-->
     <!-- jQuery mobile files -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -38,64 +40,154 @@
 
         <a href="gamification.html" class="gamification-scores-btn" data-theme="b">Scores</a>
     </div>
-    <div data-role="content" class="gamification-content-height-width g-center-content">
+<!--    <div data-role="content" class="gamification-content-height-width g-center-content">-->
 
-        <!--        <div class="ui-grid-a ">-->
-        <!--            <div class="ui-block-solo">-->
-        <!--                <div class="card question-container">-->
-        <!--                    <div class="ui-grid-a">-->
+<!--        &lt;!&ndash;     start   this is the basic layout&ndash;&gt;-->
+<!--        &lt;!&ndash;        <div class="ui-grid-a ">&ndash;&gt;-->
+<!--        &lt;!&ndash;            <div class="ui-block-solo">&ndash;&gt;-->
+<!--        &lt;!&ndash;                <div class="card question-container">&ndash;&gt;-->
+<!--        &lt;!&ndash;                    <div class="ui-grid-a">&ndash;&gt;-->
 
-        <!--                        <div class=" ui-block-a question-img-container g-center-content">-->
-        <!--                            <img class="question-img" style="width:200px;height:400px" src="./assets/images/uk-best-places-london.svg" alt="">-->
-        <!--                        </div>-->
-        <!--                        <div class="ui-block-b question-img-container">-->
-        <!--                            dsd-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
+<!--        &lt;!&ndash;                        <div class=" ui-block-a question-img-container g-center-content">&ndash;&gt;-->
+<!--        &lt;!&ndash;                            <img class="question-img" style="width:200px;height:400px" src="./assets/images/uk-best-places-london.svg" alt="">&ndash;&gt;-->
+<!--        &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--        &lt;!&ndash;                        <div class="ui-block-b question-img-container">&ndash;&gt;-->
+<!--        &lt;!&ndash;                            dsd&ndash;&gt;-->
+<!--        &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--        &lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--        &lt;!&ndash;                </div>&ndash;&gt;-->
+<!--        &lt;!&ndash;            </div>&ndash;&gt;-->
 
-        <!--        </div>-->
-        <div class="ui-grid-a border-radius-20 gam-box-shadow">
-            <div class="ui-block-solo">
-                <div class="card question-container">
-                    <div class="ui-grid-a border-radius-20">
+<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+<!--        &lt;!&ndash;     end   this is the basic layout&ndash;&gt;-->
 
-                        <div class=" ui-block-a question-img-container ">
-                            <img class="question-img" style="width:100%;height:100%"
-                                 src="./assets/images/uk-best-places-london.svg" alt="">
-                        </div>
 
-                        <div class="ui-block-b question-img-container g-center-content">
+<!--        <div class="ui-grid-a border-radius-20 gam-box-shadow">-->
+<!--            <div class="ui-block-solo">-->
+<!--                <div class="card question-container">-->
+<!--                    <div class="ui-grid-a border-radius-20">-->
 
-                            <div class="ui-block-solo">
-                                <h5 class="ui-block-a gamifi-ques-title">Where is this?</h5>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"
-                                        onclick="onClickHandler(this)">London
-                                </button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Kensington</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">Haringey</button>
-                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">City of
-                                    Westminster
-                                </button>
-                            </div>
+<!--                        <div class=" ui-block-a question-img-container ">-->
+<!--                            <img class="question-img" style="width:100%;height:100%"-->
+<!--                                 src="./assets/images/uk-best-places-london.svg" alt="">-->
+<!--                        </div>-->
 
-                        </div>
-                    </div>
-                </div>
+<!--                        <div class="ui-block-b question-img-container g-center-content">-->
+
+<!--                            <div class="ui-block-solo">-->
+<!--                                <h5 class="ui-block-a gamifi-ques-title">Where is this?</h5>-->
+<!--                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn1"-->
+<!--                                        onclick="onClickHandler(this)">London-->
+<!--                                </button>-->
+<!--                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn2">Kensington</button>-->
+<!--                                <button class="ui-block-a gamificaton-ans gam-ans-btn" id="btn3">Haringey</button>-->
+<!--                                <button class="ui-block-a gamificaton-ans gam-ans-btn-correct" id="btn4">City of-->
+<!--                                    Westminster-->
+<!--                                </button>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+
+<!--    code start-->
+
+    <div role="main" class="ui-content px-4">
+
+        <div id="1" class="ui-grid-c h90 active">
+            <div class="ui-block-a font-family-primary h20">
+                <h2 class="text-primary mb-0 font-weight-bold">Fast</h2>
+                <h2 class="text-primary font-weight-bold">and Easy</h2>
             </div>
-
+            <div class="ui-block-b text-center h50">
+                <img src="assets/images/intro-1.svg" height="100%" width="100%">
+            </div>
+            <div class="ui-block-c h30 d-flex align-items-center font-size-m">
+                Don't waste time browsing every corner and let the app take control to give you the perfect customer
+                experience !
+                We'll recommend the best deals, all day every day.
+            </div>
         </div>
 
+        <div id="2" class="ui-grid-c h90 d-none">
+            <div class="ui-block-a font-family-primary h20">
+                <h2 class="text-primary mb-0 font-weight-bold">Loyalty</h2>
+                <h2 class="text-primary font-weight-bold">is Rewarded</h2>
+            </div>
+            <div class="ui-block-b text-center h50">
+                <img src="assets/images/intro-2.svg" height="100%" width="100%">
+            </div>
+            <div class="ui-block-c h30 d-flex align-items-center font-size-m">
+                We treat you for being an enthusiastic shopper through clever discounts, points and coupons !
+                Think you're the ultimate shopper ? Then go ahead, challenge others and rise to the top of the rankings
+                !
+            </div>
+        </div>
+
+        <div id="3" class="ui-grid-c h90 d-none">
+            <div class="ui-block-a font-family-primary h20">
+                <h2 class="text-primary mb-0 font-weight-bold">You're a</h2>
+                <h2 class="text-primary font-weight-bold">valuable customer</h2>
+            </div>
+            <div class="ui-block-b text-center h50">
+                <img src="assets/images/intro-3.svg" height="100%" width="100%">
+            </div>
+            <div class="ui-block-c h30 d-flex align-items-center font-size-m">
+                Welcome to the world of Wooks Mart, where the prices are low and the deals are frequent !
+                Browse through a valley of promotions and products, all designed and available to suit your needs.
+            </div>
+        </div>
+
+        <div id="4" class="ui-grid-c h90 d-none">
+            <div class="ui-block-a font-family-primary h20">
+                <h2 class="text-primary mb-0 font-weight-bold">Defining</h2>
+                <h2 class="text-primary font-weight-bold">reality</h2>
+            </div>
+            <div class="ui-block-b text-center h50">
+                <img src="assets/images/intro-4.svg" height="100%" width="100%">
+            </div>
+            <div class="ui-block-c h30 d-flex align-items-center font-size-m">
+                We take your shopping to a whole new level !
+                Our platform offers you the most interactive and fun way to keep your shopping spirits going. All
+                through the power of Augmented Reality.
+            </div>
+        </div>
+
+        <div class="ui-block-d text-center h10 d-flex justify-content-center align-items-center">
+            <div class="paginationSection">
+                <span id="c1" class="indicator active"></span>
+                <span id="c2" class="indicator"></span>
+                <span id="c3" class="indicator"></span>
+                <span id="c4" class="indicator"></span>
+            </div>
+        </div>
+
+
+
     </div>
-    <div data-role="footer" position="fixed" id="footer2" data-tap-toggle="false" >
+
+<!--    code end-->
+
+
+    <div data-role="footer" position="fixed" id="footer2" data-tap-toggle="false">
         <div class="page-footer" data-fullscreen="true">
             <div class="grid-container  border-rad-max">
-                <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home.svg"></a></a></div>
-                <div class="grid-item"><a href="favouritesAll.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
-                <div class="grid-item"><a href="landing.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
-                <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
-                <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
+                <div class="grid-item"><a href="home.html" data-transition="slide"><img
+                        src="assets/images/nav_home.svg"></a></a></div>
+                <div class="grid-item"><a href="favouritesAll.html" data-transition="slide"><img
+                        src="assets/images/nav_heart.svg"></a></a></div>
+                <div class="grid-item"><a href="landing.html" data-transition="slide"><img
+                        src="assets/images/nav_mini_logo.svg"></a></a></div>
+                <div class="grid-item"><a href="cart.html" data-transition="slide"><img
+                        src="assets/images/nav_trips.svg"></a></a></div>
+                <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img
+                        src="assets/images/nav_profile.svg"></a></a></div>
             </div>
         </div>
     </div>
@@ -117,6 +209,12 @@
 
 </div>
 <script type="text/javascript">
+    $(document).ready(function () {
+        $(document).on("click", ".pathUrl", function () {
+            document.location.href = this.accessKey;
+        });
+    });
+
     function onClickHandler(elem) {
         elem.style.background = 'red';
         elem.style.color = 'black';
