@@ -42,6 +42,8 @@
 
     .gamificaton-intro-play-btn {
         border-radius: 20px !important;
+        font-size: 25px !important;
+        background: white!important;
     }
 
     .gamification-back-btn {
@@ -153,6 +155,7 @@
     .t1class{
         background: black!important;
     }
+    
 
 
 }
@@ -166,10 +169,16 @@
 /*    align-items: center;*/
 /*}*/
 
-/*.gamification_intro_text_content_p {*/
-/*    margin: 20px;*/
-/*    text-align: justify;*/
-/*}*/
+.gamification_intro_text_content_p {
+    /*margin: 20px;*/
+    /*text-align: justify;*/
+    font-size: 17px !important;
+    font-family: 'sans-serif' !important;
+}
+.gamification_intro_big_content_p{
+    font-size: 26px !important;
+    font-family: 'sans-serif' !important;
+}
 
 /*.gamification_into_block_1 {*/
 /*    background: white;*/

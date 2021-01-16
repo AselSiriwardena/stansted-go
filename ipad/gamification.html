@@ -4,10 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <link rel="stylesheet" href="assets/css/gamification-styles-landscape.css" />
-    <link rel="stylesheet" href="assets/css/gamification-styles-portrait.css" />
+    <link rel="stylesheet" href="assets/css/gamification-styles-landscape.css"/>
+    <link rel="stylesheet" href="assets/css/gamification-styles-portrait.css"/>
     <!-- jQuery mobile files -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -31,7 +31,13 @@
 
 <body class="post-login">
 <div data-role="page" class="home leaderboard-page">
-    <div class="align-stuff" data-role="main">
+<!--    <div class="align-stuff" data-role="main">-->
+    <div data-role="header">
+        <a href="gamification_intro.html" class="gamification-back-btn"><img src="assets/images/gamification-back.svg"></a>
+
+
+    </div>
+    <div  data-role="main">
 
 
         <div class="container">
@@ -45,25 +51,28 @@
                 <div class="ui-block-a w40 pr-3">
                     <div class="card">
                         <div class="ui-grid-solo text-center mb-3">
-                            <img src="assets/images/gamification-avatar.svg" id="userImage" width="100" class="img-fluid">
-<!--                            <p class="primary-color-grey-text f16 mb-0 mt-3">Rank</p>-->
+                            <img src="assets/images/gamification-avatar.svg" id="userImage" width="100"
+                                 class="img-fluid">
+                            <!--                            <p class="primary-color-grey-text f16 mb-0 mt-3">Rank</p>-->
                             <h2 class="primary-color-black-text"><span class="primary-color-black-text user_name"
-                                                                              id="username">Pesh</span></h2>
+                                                                       id="username">Pesh</span></h2>
                             <div class="ui-grid-a ">
-                                <img src="assets/images/gamification-stars.svg" id="gamifiStars" width="100" class="img-fluid">
+                                <img src="assets/images/gamification-stars.svg" id="gamifiStars" width="100"
+                                     class="img-fluid">
                             </div>
                             <div class="ui-grid-b">
-                                <img src="assets/images/gamificationBadges.svg" id="gamifiBadges" width="100" class="img-fluid">
+                                <img src="assets/images/gamificationBadges.svg" id="gamifiBadges" width="100"
+                                     class="img-fluid">
                             </div>
                             <div class="ui-grid-c leaderboard-score-container">
-                              <div class="ui-block-b">
+                                <div class="ui-block-b">
                                     <h4 class="primary-color-black-text">Rank</h4>
                                     <h4 class="primary-color-black-text ">Score</h4>
 
                                 </div>
                                 <div class="ui-block-c">
                                     <h4 class="primary-color-red-text ">1225</h4>
-                                    <h4 class="primary-color-black-text " id="leaderboardScore">1850</h4>
+                                    <h4 class="primary-color-black-text " id="leaderboardScore">100</h4>
 
                                 </div>
                             </div>
@@ -74,103 +83,132 @@
                 <div class="ui-block-b w60 pl-3 mt-4" style="height: 500px;overflow-y:scroll;">
 
                     <ul data-role="listview" data-inset="true">
-                       <li class="leaderboard-li" >
-                           <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Nishie Ramanz
-                           <span class="leaderboard-li-container"><span  class="leaderboard_li_rank_span"> Rank 1</span>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Nishie
+                            Ramanz
+                            <span class="leaderboard-li-container"><span class="leaderboard_li_rank_span"> Rank 1</span>
                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
                            <span class="leaderboard_li_score_span">20585  </span>
-                               <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" ></span>
-                       </li>
-                        <li class="leaderboard-li" >
-                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Asie Siriei
-                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
-                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
-                            <span class="leaderboard_li_score_span">20585  </span>
-                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                               <img src="assets/images/gamificationBadges.svg"
+                                    class="ui-li-icon leaderboard_li_badge_img"></span>
                         </li>
-                        <li class="leaderboard-li" >
-                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Rasi Gamiz
-                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Asie
+                            Siriei
+                            <span class="leaderboard_li_rank_span"> Rank 1</span>
                             <span class="leaderboard_li_score_span hide-visibility">Score </span>
                             <span class="leaderboard_li_score_span">20585  </span>
-                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                            <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
                         </li>
-                        <li class="leaderboard-li" >
-                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Pesh R
-                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Rasi
+                            Gamiz
+                            <span class="leaderboard_li_rank_span"> Rank 1</span>
                             <span class="leaderboard_li_score_span hide-visibility">Score </span>
                             <span class="leaderboard_li_score_span">20585  </span>
-                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                            <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
                         </li>
-                        <li class="leaderboard-li" >
-                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Thomas AI
-                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Pesh R
+                            <span class="leaderboard_li_rank_span"> Rank 1</span>
                             <span class="leaderboard_li_score_span hide-visibility">Score </span>
                             <span class="leaderboard_li_score_span">20585  </span>
-                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                            <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
                         </li>
-                        <li class="leaderboard-li" >
-                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Aristptle Gr
-                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Thomas
+                            AI
+                            <span class="leaderboard_li_rank_span"> Rank 1</span>
                             <span class="leaderboard_li_score_span hide-visibility">Score </span>
                             <span class="leaderboard_li_score_span">20585  </span>
-                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
+                            <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
                         </li>
-                        <li class="leaderboard-li" >
-                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Harry Pottz
-                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Aristptle
+                            Gr
+                            <span class="leaderboard_li_rank_span"> Rank 1</span>
                             <span class="leaderboard_li_score_span hide-visibility">Score </span>
                             <span class="leaderboard_li_score_span">20585  </span>
-                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
-                        </li><li class="leaderboard-li" >
-                        <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Tare Sami
-                        <span  class="leaderboard_li_rank_span"> Rank 1</span>
-                        <span class="leaderboard_li_score_span hide-visibility">Score </span>
-                        <span class="leaderboard_li_score_span">20585  </span>
-                        <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
-                    </li>
-                        <li class="leaderboard-li" >
-                            <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Sanu Raz
-                            <span  class="leaderboard_li_rank_span"> Rank 1</span>
+                            <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
+                        </li>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Harry
+                            Pottz
+                            <span class="leaderboard_li_rank_span"> Rank 1</span>
                             <span class="leaderboard_li_score_span hide-visibility">Score </span>
                             <span class="leaderboard_li_score_span">20585  </span>
-                            <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
-                        </li><li class="leaderboard-li" >
-                        <img src="assets/images/gamification-gold-user.svg"  class="ui-li-icon ui-corner-none">Riva Rag
-                        <span  class="leaderboard_li_rank_span"> Rank 1</span>
-                        <span class="leaderboard_li_score_span hide-visibility">Score </span>
-                        <span class="leaderboard_li_score_span">20585  </span>
-                        <img src="assets/images/gamificationBadges.svg"  class="ui-li-icon leaderboard_li_badge_img" >
-                    </li>
+                            <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
+                        </li>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Tare
+                            Sami
+                            <span class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
+                        </li>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Sanu
+                            Raz
+                            <span class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
+                        </li>
+                        <li class="leaderboard-li">
+                            <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Riva
+                            Rag
+                            <span class="leaderboard_li_rank_span"> Rank 1</span>
+                            <span class="leaderboard_li_score_span hide-visibility">Score </span>
+                            <span class="leaderboard_li_score_span">20585  </span>
+                            <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div data-role="footer" position="fixed" id="footer2" data-tap-toggle="false" >
+    <div data-role="footer" position="fixed" id="footer2" data-tap-toggle="false">
         <div class="page-footer" data-fullscreen="true">
             <div class="grid-container  border-rad-max">
-                <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home.svg"></a></a></div>
-                <div class="grid-item"><a href="favouritesAll.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
-                <div class="grid-item"><a href="landing.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
-                <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
-                <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
+                <div class="grid-item"><a href="home.html" data-transition="slide"><img
+                        src="assets/images/nav_home.svg"></a></a></div>
+                <div class="grid-item"><a href="favouritesAll.html" data-transition="slide"><img
+                        src="assets/images/nav_heart.svg"></a></a></div>
+                <div class="grid-item"><a href="landing.html" data-transition="slide"><img
+                        src="assets/images/nav_mini_logo.svg"></a></a></div>
+                <div class="grid-item"><a href="cart.html" data-transition="slide"><img
+                        src="assets/images/nav_trips.svg"></a></a></div>
+                <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img
+                        src="assets/images/nav_profile.svg"></a></a></div>
             </div>
         </div>
     </div>
 </div>
+
 
 </body>
 
 </html>
 <script>
     $(document).ready(function () {
-        // window.setTimeout(function () {
-        //     window.location.reload();
-        // }, 5000);
+
+        // $(window).on('load', function() {
+        //     $('#myModal').modal('show');
+        // });
+        // function hide(){
+        //     document.getElementById("myModal").click();
+        // }
+        // // window.setTimeout(function () {
+        // //     window.location.reload();
+        // // }, 5000);
 
         document.getElementById("leaderboardScore").innerHTML = sessionStorage.clickcount;
 
+
+        setTimeout(function () {
+            alert("Your score is " + sessionStorage.clickcount + ". You will be awarded one free ticket to Edinburg");
+        }, 2000);
 
         $.post("backend/userData.php", {
             action: 'view',
