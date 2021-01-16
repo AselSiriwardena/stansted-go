@@ -84,6 +84,7 @@
     .question-container {
         width: 600px;
         background: white;
+        padding: unset !important;
         /*height: 50vh;*/
 
     }
