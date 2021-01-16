@@ -24,28 +24,12 @@ db.collection("Places").doc('place_id_01').collection('Ratings').get().then((sna
         rating_obj[x.data().rating]=rating_obj[x.data().rating]+1
         console.log("x",parseInt(x.data().rating,10))
     });
-    var newElement=(`
-                                            <div class="rating__bars">
-                                <div class="rating__bar rating__bar--1">
 
-                                </div>
-                                <div class="rating__bar rating__bar--2"></div>
-                                <div class="rating__bar rating__bar--3" style="width: ${count?(rating_obj/count)*200:0}px"></div>
-                                <div class="rating__bar rating__bar--4"></div>
-                                <div class="rating__bar rating__bar--5"></div>
-                            </div>
-
-`)
-    // var p = document.getElementById("ratingBars");
-    // var newElement = document.createElement(newElement);
-    // newElement.setAttribute('id', elementId);
-    // newElement.innerHTML = html;
-    // p.appendChild(newElement);
-    // document.getElementById("bar1").style.width=count ? ((rating_obj.1/count)*200): 0;
-    // document.getElementById("bar2").style.width=`${count ? (rating_obj.2/count)*200: 0}px`;
-    // document.getElementById("bar3").style.width=`${count ? (rating_obj.3/count)*200: 0}px`;
-    // document.getElementById("bar4").style.width=`${count ? (rating_obj.4/count)*200: 0}px`;
-    // document.getElementById("bar5").style.width=`${count ? (rating_obj.5/count)*200: 0}px`;
+    document.getElementById("bar5").style.width= count ? ((rating_obj["1"]/count)*200).toString()+'px' : '0px';
+    document.getElementById("bar1").style.width= count ? ((rating_obj["5"]/count)*200).toString()+'px' : '0px';
+    document.getElementById("bar2").style.width= count ? ((rating_obj["4"]/count)*200).toString()+'px' : '0px';
+    document.getElementById("bar3").style.width= count ? ((rating_obj["3"]/count)*200).toString()+'px' : '0px';
+    document.getElementById("bar4").style.width= count ? ((rating_obj["2"]/count)*200).toString()+'px' : '0px';
     const rating = count?(total_rating/count).toFixed(1):0
     var span = document.getElementById("rating_value");
     span.textContent = rating.toString();
