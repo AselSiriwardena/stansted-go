@@ -192,7 +192,19 @@
         });
 
     });
-    sessionStorage.clickcount = 100;
+
+    $.post("backend/userData.php", {
+        action: 'view',
+        currentUser: sessionStorage.getItem("loggedUser")
+    }, function (data, status) {
+        const json = JSON.parse(data);
+        // document.getElementById("username").innerHTML = json.name
+        $("#scoreId").html("Scores : "+json.points);
+        sessionStorage.clickcount = Number(json.points);
+
+    });
+
+    // sessionStorage.clickcount = 100;
 
     function correctAnswerClicked(element) {
         if(typeof(Storage) !== "undefined") {
@@ -206,6 +218,18 @@
             document.getElementById("scoreId").innerHTML = "Score";
         }
         document.getElementById(element).style.setProperty('background','lightgreen','important');
+
+
+        $.post("backend/Gamification.php", {
+            points: sessionStorage.clickcount,
+            currentUser: sessionStorage.getItem("loggedUser")
+
+        }, function (data, status) {
+            const json = JSON.parse(data);
+            // document.getElementById("username").innerHTML = json.name
+            console.log(json)
+
+        });
     }
 
     function incorrectAnswerClicked(element) {
@@ -219,7 +243,17 @@
         } else {
             document.getElementById("scoreId").innerHTML = "Score";
         }
-        document.getElementById(element).style.setProperty('background','red','important')
+        document.getElementById(element).style.setProperty('background','red','important');
+        $.post("backend/Gamification.php", {
+            points: sessionStorage.clickcount,
+            currentUser: sessionStorage.getItem("loggedUser")
+
+        }, function (data, status) {
+            const json = JSON.parse(data);
+            // document.getElementById("username").innerHTML = json.name
+            console.log(json)
+
+        });
     }
 </script>
 </body>
