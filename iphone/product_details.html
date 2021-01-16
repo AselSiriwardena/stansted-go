@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +28,20 @@
 
     <!-- Custom main CSS file -->
     <link rel="stylesheet" href="index.css">
+    <!--Normal API key -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initAutocomplete&libraries=places&v=weekly"
+            defer
+    ></script>
+    <!--    With Marker-->
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initMap&libraries=places&v=weekly"
+            defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/map_style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/rating_style.css" />
+    <script src="scripts/map.js"></script>
 
 </head>
 
@@ -38,104 +55,171 @@
                 </a>
             </div>
             <div class="ui-block-b icons w50">
-                <i class="fa fa-heart-o"></i>
+                <i class=""></i>
                 <i class="fas fa-share-alt"></i>
-                <a class="primary-color-black-text" data-rel="popup" href="#overlay" data-position-to="origin"><i
-                        class="fas fa-search"></i></a>
-                <div class="ui-content" data-shadow="false" data-theme="none" data-overlay-theme="a" data-role="popup"
-                     id="overlay">
-                    <div class="deals-search-bar">
-                        <ul data-role="listview" data-filter="true" data-filter-reveal="true"
-                            data-filter-placeholder="Searching Promotions" data-inset="true">
-                            <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>
-                            <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>
-                            <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>
-                            <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <i class="fas fa-camera"></i>
+                <i class="fa fa-heart-o"></i>
+<!--                <div class="ui-content" data-shadow="false" data-theme="none" data-overlay-theme="a" data-role="popup"-->
+<!--                     id="overlay">-->
+<!--                    <div class="deals-search-bar">-->
+<!--                        <ul data-role="listview" data-filter="true" data-filter-reveal="true"-->
+<!--                            data-filter-placeholder="Searching Promotions" data-inset="true">-->
+<!--                            <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>-->
+<!--                            <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>-->
+<!--                            <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>-->
+<!--                            <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <i class="fas fa-camera"></i>-->
 
             </div>
         </div>
+
         <div class="header-content text-center">
+<!--            <div class="productImg">-->
+<!--                <img class="img-fluid text-center pt-4" src="assets/img/product.png" id="image">-->
+<!--            </div>-->
             <div class="productImg">
-                <img class="img-fluid text-center pt-4" src="assets/img/product.png" id="image">
+                <iframe width="100%" height="300" src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="px-4">
+                <div class="font-size-xl truncate mb-2" id="productTitle"> Stok Cold Brew Coffee</div>
+                <div class="font-size-s text-muted font-weight-bold truncate productSubTitle">Medium Caffeine - Hazelnut
+                    Vanilla in Cold Brew Coffee
+                </div>
+
+                <div class="ui-grid-a d-flex align-items-center mt-1 ratingSection">
+                    <div class="ui-block-a w40 font-size-l">
+                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                        <i class="fa fa-star secondary-color-yellow-text"></i>
+                        <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                    </div>
+                    <div class="ui-block-b w60 px-2">
+                        <a class="font-weight-bold m-0 primary-color-blue-text v-align-middle pathurl" accesskey="reviews">58
+                            Reviews</a>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a mt-3 d-flex align-items-baseline priceSection">
+                    <div class="ui-block-b font-weight-heavy font-size-xxl">
+                        <div class="red">
+                            <h3 class="primary-color-red-text"><b>Euro 10.99</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3 text-justify line-height-small">
+                    <p id="productDetails">
+                        Brewed from the heart of Kashmir, Stok presents the
+                        best cold brew coffee of the 21st Century. This new line
+                        of cold brews gives twice the motivation and energy
+                        while keeping the nostalgic taste everybody loves...
+                    </p>
+                </div>
+                <div class="ui-grid-a px-4 w-landscape-50">
+                    <div class="ui-block-a w30">
+                        <a rel="external" class="ui-btn btn primary-btn mb-3 pathurl" id="play" accesskey="proceed">PLAY
+                            </a>
+                    </div>
+                    <div class="ui-block-b w50 pl-3">
+                        <a rel="external" class="ui-btn btn primary-btn mb-3 pathurl" id="submit" accesskey="proceed">BUY
+                            NOW</a>
+                    </div>
+                </div>
+                <div class="card py-0 px-0">
+                    <div id="map"></div>
+                </div>
+                <div class="rating">
+                    <div class="rating__number"><span id="rating_value">5.0</span></div>
+                    <div class="rating__stars">
+                        <div class="rating__stars-line">
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+                        </div>
+                        <div class="rating__stars-line">
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+
+                        </div>
+                        <div class="rating__stars-line">
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+
+                        </div>
+                        <div class="rating__stars-line">
+                            <i class="fas fa-star rating__star"></i>
+                            <i class="fas fa-star rating__star"></i>
+
+                        </div>
+                        <div class="rating__stars-line">
+                            <i class="fas fa-star rating__star"></i>
+
+                        </div>
+                    </div>
+                    <div id="ratingBars" class="rating__bars">
+                        <div id ="bar1" class="rating__bar rating__bar--1">
+
+                        </div>
+                        <div id ="bar2" class="rating__bar rating__bar--2"></div>
+                        <div id ="bar3" class="rating__bar rating__bar--3"></div>
+                        <div id ="bar4" class="rating__bar rating__bar--4"></div>
+                        <div id ="bar5" class="rating__bar rating__bar--5"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="ui-grid-a">
+                        <div class="ui-block-b w100 pl-2">
+                            <div class="ui-grid-a">
+                                <div class="ui-block-a w40">
+                                    <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                </div>
+                                <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="review-content pt-2">
+                                <p style="word-wrap: break-word;" class="primary-color-black text f16">
+                                    Great product ! This is
+                                    the
+                                    best
+                                    coffee I've tasted in a while. Definitely recommended if you're a
+                                    coffee
+                                    lover.</p>
+                            </div>
+                            <div class="ui-grid-a">
+                                <div class="ui-block-a">
+                                    <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
+                                </div>
+                                <div class="ui-block-b f16 text-right">
+                                    <i class="far fa-heart"></i> 57
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-grid-a px-4 w-landscape-50">
+                <div class="ui-block-a w100 pl-3">
+                    <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-3 pathurl" accesskey="proceed">Show ALL Review</a>
+                </div></div>
             </div>
         </div>
     </div>
     <div role="main" class="mt-4">
-
-        <div class="px-4">
-            <div class="font-size-xl truncate mb-1" id="productTitle"> Stok Cold Brew Coffee</div>
-            <div class="font-size-s text-muted font-weight-bold truncate productSubTitle">Medium Caffeine - Hazelnut
-                Vanilla in Cold Brew Coffee
-            </div>
-
-            <div class="ui-grid-a d-flex align-items-center mt-1 ratingSection">
-                <div class="ui-block-a w40 font-size-l">
-                    <i class="fa fa-star secondary-color-yellow-text"></i>
-                    <i class="fa fa-star secondary-color-yellow-text"></i>
-                    <i class="fa fa-star secondary-color-yellow-text"></i>
-                    <i class="fa fa-star secondary-color-yellow-text"></i>
-                    <i class="fa fa-star-o secondary-color-yellow-text"></i>
-                </div>
-                <div class="ui-block-b w60 px-2">
-                    <a class="font-weight-bold m-0 primary-color-blue-text v-align-middle pathurl" accesskey="reviews">58
-                        Reviews</a>
-                </div>
-            </div>
-
-            <div class="ui-grid-a mt-3 d-flex align-items-baseline priceSection">
-                <div class="ui-block-a font-size-s text-muted font-weight-bold w15">
-                    <h5 class="text-muted m-0">
-                        <del>20.99</del>
-                    </h5>
-                </div>
-                <div class="ui-block-b font-weight-heavy font-size-xxl">
-                    <div class="red">
-                        <span class="font-size-m font-weight-bold">USD</span><span id="price">10.99</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-3 text-justify line-height-small">
-                <p id="productDetails">
-                    Brewed from the heart of Kashmir, Stok presents the
-                    best cold brew coffee of the 21st Century. This new line
-                    of cold brews gives twice the motivation and energy
-                    while keeping the nostalgic taste everybody loves...
-                </p>
-            </div>
-
-            <div class="w100 d-flex justify-content-center pt-3">
-                <div class="ui-grid-b counter w45 w-landscape-20">
-                    <div class="ui-block-a">
-                        <a class="minusCount"><i class="fas fa-minus box-shadow-default"></i></a>
-                    </div>
-                    <div class="ui-block-b">
-                        <p class="count">1</p>
-                    </div>
-                    <div class="ui-block-c">
-                        <a class="plusCount"><i class="fas fa-plus box-shadow-default"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="mt-4 detailsBuy">
-            <div class="ui-grid-a px-4 w-landscape-50">
-                <div class="ui-block-a w30">
-                    <a rel="external" class="ui-btn btn secondary-btn mb-3 pathurl" id="add" accesskey="nope">
-                        <i class="fas fa-shopping-cart primary-color font-size-xl pr-2"></i>
-                        <span class="primary-color-red-text font-size-xl">+</span>
-                    </a>
-                </div>
-                <div class="ui-block-b w70 pl-3">
-                    <a rel="external" class="ui-btn btn primary-btn mb-3 pathurl" id="submit" accesskey="proceed">BUY
-                        NOW</a>
-                </div>
-            </div>
+
         </div>
 
     </div>
@@ -254,6 +338,7 @@
         });
     });
 </script>
+<script src="scripts/rating_process.js"></script>
 </body>
 
 </html>
