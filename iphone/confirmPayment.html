@@ -54,30 +54,9 @@
                     <img alt="back button" height="auto" src="assets/img/back.svg" width="30">
                 </a>
             </div>
-            <div class="ui-block-b icons w50">
-                <i class=""></i>
-<!--                <div class="ui-content" data-shadow="false" data-theme="none" data-overlay-theme="a" data-role="popup"-->
-<!--                     id="overlay">-->
-<!--                    <div class="deals-search-bar">-->
-<!--                        <ul data-role="listview" data-filter="true" data-filter-reveal="true"-->
-<!--                            data-filter-placeholder="Searching Promotions" data-inset="true">-->
-<!--                            <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>-->
-<!--                            <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>-->
-<!--                            <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>-->
-<!--                            <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <i class="fas fa-camera"></i>-->
-
-            </div>
         </div>
 
         <div class="header-content text-center">
-<!--            <div class="productImg">-->
-<!--                <img class="img-fluid text-center pt-4" src="assets/img/product.png" id="image">-->
-<!--            </div>-->
-
             <div class="px-4">
                 <div class="font-size-xl truncate mb-2 text-justify" id="productTitle"> Payment Details</div>
                 <div class="card py-0 px-0">
@@ -253,6 +232,74 @@
     });
 </script>
 <script src="scripts/rating_process.js"></script>
+
+<script>
+    $.post("backend/payment.php", {
+        currentPromotion: sessionStorage.getItem("price")
+    }, function (data, status) {
+        data = JSON.parse(data);
+    });
+</script>
+
+<script>
+    jQuery(function ($) {
+        var $form = $('#frmBooking');
+        var handler = StripeCheckout.configure({
+            key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
+            token: function (token) {
+                if (token.id) {
+                    $("#thankyouPayment").html('Thank you, your payment was successful!');
+                }
+            }
+        });
+        $('#customButton').on('click', function (e) {
+            handler.open({
+                name: 'Train app',
+                currency: 'lkr',
+                description: $('#item_name').val(),
+                amount: $('#total_value').val() * 100
+            });
+            e.preventDefault();
+        });
+        $(window).on('popstate', function () {
+            handler.close();
+        });
+    });
+
+    // Add remove loading class on body element depending on Ajax request status
+    $(document).on({
+        ajaxStart: function(){
+            $("body").addClass("loading");
+        },
+        ajaxStop: function(){
+            $("body").removeClass("loading");
+        }
+    });
+</script>
+
+<style>
+    .overlay{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: rgba(255,255,255,0.8) url("assets/images/spinner.gif") center no-repeat;
+    }
+    body{
+        text-align: center;
+    }
+    /* Turn off scrollbar when body element has the loading class */
+    body.loading{
+        overflow: hidden;
+    }
+    /* Make spinner image visible when body element has the loading class */
+    body.loading .overlay{
+        display: block;
+    }
+</style>
 </body>
 
 </html>
