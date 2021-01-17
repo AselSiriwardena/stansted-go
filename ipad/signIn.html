@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    <title>NOICE</title>
+    <title>StanstedGo</title>
 
     <!-- jQuery mobile files -->
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -27,6 +27,7 @@
 
     <!-- Custom main CSS file -->
     <link rel="stylesheet" href="index.css">
+    <meta name="google-signin-client_id" content="400905764622-obi03qfofue0slttfgsai30q23vev1kd.apps.googleusercontent.com">
 
 </head>
 
@@ -60,6 +61,10 @@
             <div class="ui-grid-solo w50 mx-auto text-center">
                 <a data-position-to="window" data-rel="popup" id="submit" data-role="button"
                     class="primary-btn ui-btn btn mt-5">Login</a>
+                <div class="ui-field-contain" align="center">
+                    <!--    google sign in-->
+                    <div class="g-signin2" data-longtitle="true" data-onsuccess="Google_signIn" data-theme="light" data-width="200"></div>
+                </div>
                 <p class="f16 primary-color-grey-text"><a href="forgotPassword.html" rel="external" class="f16">Forgot
                         Password?</a></p>
                 <p class="f16 primary-color-grey-text">Dont have an Account? <a href="createAccount.html" rel="external"
@@ -78,6 +83,20 @@
 </body>
 
 </html>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+    function Google_signIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId());
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail());
+
+        sessionStorage.setItem("cart", '{"total":"0","coupon":"0","items":[]}');
+        sessionStorage.setItem("loggedUser", profile.getEmail().toString());
+        document.location.href = 'home.html';
+    }
+</script>
 <script>
     $(document).ready(function () {
 

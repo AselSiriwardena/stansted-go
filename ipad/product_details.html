@@ -37,7 +37,24 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initMap&libraries=places&v=weekly"
             defer
     ></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/slider_style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsiveslides.css" />
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "slider-callback",
+                maxwidth: "550px"
+            });
 
+        });
+    </script>
 
     <!--custom css and js files -->
     <link rel="stylesheet" type="text/css" href="assets/css/map_style.css" />
@@ -64,6 +81,8 @@
                         </div>
                     </div>
                     <div class="ui-block-b icons w90">
+                        <i class="fas fa-share-alt"></i>
+                        <i id="favourite"></i>
                     </div>
 
                 </div>
@@ -79,21 +98,33 @@
                                 <i class="fa fa-star-o secondary-color-yellow-text"></i>
                             </div>
                             <div class="ui-block-b w60">
-                                <a href="reviews.html" rel="external">
-                                    <p class="fw-bold f10">58 Reviews</p>
+                                <a rel="external">
+                                    <p class="fw-bold f16" style="color: white" >58 Reviews</p>
                                 </a>
                             </div>
                             <div class="ui-block-b icons w95">
-                                <iframe width="100%" height="300" boxShadow = '0 2px 6px rgba(0,0,0,.3)' src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            <i class="fas fa-share-alt"></i>
-                            <i id="favourite"></i>
+                                <div class="responsive-slider">
+                                    <ul class="rslides" id="slider">
+                                        <li>
+                                            <img src="assets/images/bigbenslider.jfif" alt="">
+                                            <p class="caption">Travel</p>
+                                        </li>
+                                        <li>
+                                            <video width="100%" controls><source src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" type="video/mp4"></video>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/bigbenslider1.jfif" alt="">
+                                            <p class="caption">Explore</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/bigbenslider2.jfif" alt="">
+                                            <p class="caption">Enjoy</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         <p class="primary-color-grey-text f16 w95" id="productDetails">
-                            Brewed from the heart of Kashmir, Stok presents the
-                            best cold brew coffee of the 21st Century. This new line
-                            of cold brews gives twice the motivation and energy
-                            while keeping the nostalgic taste everybody loves...
+                            Big Ben, situated at the Palace of Westminster, is one of the best known icons of London, and has been voted the Most Iconic Film Location in London. The clock, on its own, has been working since May 1859.
                         </p>
                             <hr class="rounded w95" >
                         <h3 class="primary-color-red-text"><b>Euro 10.99</b>
@@ -108,7 +139,7 @@
                                     <div class="ui-block-b w100 pl-2">
                                         <div class="ui-grid-a">
                                             <div class="ui-block-a w40">
-                                                <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                                <h4 style="line-height: 1.5;" class="black"><b>Jane Doe</b></h4>
                                             </div>
                                             <div style="color: #E2C224;" class="ui-block-b w60 text-right">
                                                 <i class="fas fa-star"></i>
@@ -119,13 +150,8 @@
                                             </div>
                                         </div>
                                         <div class="review-content pt-2">
-                                            <p style="word-wrap: break-word;" class="primary-color-black text f16">
-                                                Great product ! This is
-                                                the
-                                                best
-                                                coffee I've tasted in a while. Definitely recommended if you're a
-                                                coffee
-                                                lover.</p>
+                                            <p style="word-wrap: break-word;" class="primary-color-black text f16 text-justify">
+                                                One of the most famous and important London landmarks since the past, the most famous measure of time and age of the watch, I think a century and a half...</p>
                                         </div>
                                         <div class="ui-grid-a">
                                             <div class="ui-block-a">
@@ -140,7 +166,7 @@
                             </div>
                             <div class="ui-grid-a d-none hideInStore">
                                 <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-3 w100 pathUrl"
-                                       accesskey="proceed">Show All Review </a>
+                                       accesskey="proceed">Show All Review<span id = "review_count">(0)</span></a>
                             </div>
                         </div>
 
