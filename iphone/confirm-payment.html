@@ -35,4 +35,30 @@
         data = JSON.parse(data);
     });
 </script>
+
+<script>
+    jQuery(function ($) {
+        var $form = $('#frmBooking');
+        var handler = StripeCheckout.configure({
+            key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
+            token: function (token) {
+                if (token.id) {
+                    $("#thankyouPayment").html('Thank you, your payment was successful!');
+                }
+            }
+        });
+        $('#customButton').on('click', function (e) {
+            handler.open({
+                name: 'Train app',
+                currency: 'lkr',
+                description: $('#item_name').val(),
+                amount: $('#total_value').val() * 100
+            });
+            e.preventDefault();
+        });
+        $(window).on('popstate', function () {
+            handler.close();
+        });
+    });
+</script>
 </html>

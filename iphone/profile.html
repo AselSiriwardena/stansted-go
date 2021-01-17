@@ -1414,7 +1414,7 @@
             document.location.href = 'promotion_details.html';
         });
         $.post("backend/coupons.php", {type: 'null'}, function (data, status) {
-            alert(data);
+            // alert(data);
             userData = JSON.parse(data);
             $('#name').text(userData.name);
             $('#email').text(sessionStorage.getItem('loggedUser'));
