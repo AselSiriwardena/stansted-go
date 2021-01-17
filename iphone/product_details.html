@@ -41,8 +41,25 @@
     ></script>
     <link rel="stylesheet" type="text/css" href="assets/css/map_style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/rating_style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/slider_style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsiveslides.css" />
     <script src="scripts/map.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "slider-callback",
+                maxwidth: "550px"
+            });
 
+        });
+    </script>
 </head>
 
 <body class="post-login">
@@ -58,20 +75,6 @@
                 <i class=""></i>
                 <i class="fas fa-share-alt"></i>
                 <i class="fa fa-heart-o"></i>
-<!--                <div class="ui-content" data-shadow="false" data-theme="none" data-overlay-theme="a" data-role="popup"-->
-<!--                     id="overlay">-->
-<!--                    <div class="deals-search-bar">-->
-<!--                        <ul data-role="listview" data-filter="true" data-filter-reveal="true"-->
-<!--                            data-filter-placeholder="Searching Promotions" data-inset="true">-->
-<!--                            <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>-->
-<!--                            <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>-->
-<!--                            <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>-->
-<!--                            <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <i class="fas fa-camera"></i>-->
-
             </div>
         </div>
 
@@ -79,9 +82,13 @@
 <!--            <div class="productImg">-->
 <!--                <img class="img-fluid text-center pt-4" src="assets/img/product.png" id="image">-->
 <!--            </div>-->
-            <div class="productImg">
-                <iframe width="100%" height="300" src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+<!--            <div class="embed-responsive embed-responsive-16by9 hoverable">-->
+<!--                <video class="embed-responsive-item" controls>-->
+<!--                    <source src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" type="video/mp4">-->
+<!--                </video>-->
+<!--            </div>-->
+<!--            <div id="wrapper">-->
+
             <div class="px-4">
                 <div class="font-size-xl truncate mb-2 text-justify" id="productTitle"> Cambridge</div>
 
@@ -102,12 +109,35 @@
                 <div class="ui-grid-a mt-3 d-flex align-items-baseline priceSection">
                     <div class="ui-block-b font-weight-heavy font-size-xxl">
                         <div class="red">
-                            <h4 class="primary-color-red-text text-justify"><b>Euro 10.99</b>
+                            <h4 class="primary-color-red-text text-justify"><b>Euro 10.99</b></h4>
                         </div>
                     </div>
                 </div>
+                <div id="ui-grid-a">
+                    <div class="responsive-slider">
+                        <ul class="rslides" id="slider">
+                            <li>
+                                <video width="100%" controls><source src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" type="video/mp4"></video>
+<!--                                <p class="caption">Sweets and Cherries</p>-->
+                            </li>
+                            <li>
+                                <img src="assets/images/cream-shake.jpg" alt="">
+                                <p class="caption">Sweets and Cherries</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/fruity-orange-ice-cream.jpg" alt="">
+                                <p class="caption">Fruity Orange Ice Cream</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/cream-shake.jpg" alt="">
+                                <p class="caption">Ice Cream with Fruit Salad</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="rounded">
 
-                <div class="mt-3 text-justify line-height-small">
+                <div class="text-justify line-height-small">
                     <p id="productDetails">
                         Brewed from the heart of Kashmir, Stok presents the
                         best cold brew coffee of the 21st Century. This new line
