@@ -37,7 +37,24 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initMap&libraries=places&v=weekly"
             defer
     ></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/slider_style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsiveslides.css" />
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "slider-callback",
+                maxwidth: "550px"
+            });
 
+        });
+    </script>
 
     <!--custom css and js files -->
     <link rel="stylesheet" type="text/css" href="assets/css/map_style.css" />
@@ -64,6 +81,8 @@
                         </div>
                     </div>
                     <div class="ui-block-b icons w90">
+                        <i class="fas fa-share-alt"></i>
+                        <i id="favourite"></i>
                     </div>
 
                 </div>
@@ -79,15 +98,31 @@
                                 <i class="fa fa-star-o secondary-color-yellow-text"></i>
                             </div>
                             <div class="ui-block-b w60">
-                                <a href="reviews.html" rel="external">
-                                    <p class="fw-bold f10">58 Reviews</p>
+                                <a rel="external">
+                                    <p class="fw-bold f16" style="color: white" >58 Reviews</p>
                                 </a>
                             </div>
                             <div class="ui-block-b icons w95">
-                                <iframe width="100%" height="300" boxShadow = '0 2px 6px rgba(0,0,0,.3)' src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                            <i class="fas fa-share-alt"></i>
-                            <i id="favourite"></i>
+                                <div class="responsive-slider">
+                                    <ul class="rslides" id="slider">
+                                        <li>
+                                            <video width="100%" controls><source src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" type="video/mp4"></video>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/cream-shake.jpg" alt="">
+                                            <p class="caption">Travel</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/fruity-orange-ice-cream.jpg" alt="">
+                                            <p class="caption">Explore</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/cream-shake.jpg" alt="">
+                                            <p class="caption">Enjoy</p>
+                                        </li>
+                                    </ul>
+                                </div>
+<!--                                <iframe width="100%" height="300" boxShadow = '0 2px 6px rgba(0,0,0,.3)' src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                             </div>
                         <p class="primary-color-grey-text f16 w95" id="productDetails">
                             Brewed from the heart of Kashmir, Stok presents the
@@ -140,7 +175,7 @@
                             </div>
                             <div class="ui-grid-a d-none hideInStore">
                                 <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-3 w100 pathUrl"
-                                       accesskey="proceed">Show All Review </a>
+                                       accesskey="proceed">Show All Review<span id = "review_count">(0)</span></a>
                             </div>
                         </div>
 
