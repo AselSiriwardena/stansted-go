@@ -39,11 +39,13 @@
         /*text-shadow: 3px 4px 7px black;*/
         text-shadow:1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
         font-weight: bold;
+        color: white !important;
     }
     .bottom-right {
         position: absolute;
         bottom: 8px;
         right: 16px;
+        color: white !important;
     }
     .bottom-right-1 {
         position: absolute;
@@ -53,6 +55,38 @@
         /*text-shadow: 3px 4px 7px black;*/
         text-shadow:1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
         font-weight: bold;
+        color: white !important;
+    }
+
+    .imageTextOverlayContainer{
+        padding: unset !important;
+
+    }
+
+   .polaroid {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+    }
+
+    .promotionalContainer {
+        /*text-align: left;*/
+        padding: 10px 20px;
+
+
+    }
+
+    .carouselItemExplore{
+        width: 50% !important;
+        margin-right: 20px;
+    }
+
+    .colorRed{
+        color: red;
+        /*right: 0px;*/
+        float: right;
+
     }
 
 
