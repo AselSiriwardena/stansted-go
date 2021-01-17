@@ -168,8 +168,8 @@
 
     /* Buttons start */
     .ui-btn {
-        background-color: var(--primary-color-white) !important;
-        border-color: var(--primary-color-white) !important;
+        background-color: var(--primary-color-white) ;
+        border-color: var(--primary-color-white) ;
         text-shadow: none !important;
         box-shadow: none;
     }
