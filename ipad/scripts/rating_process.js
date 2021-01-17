@@ -32,7 +32,10 @@ db.collection("Places").doc('place_id_01').collection('Ratings').get().then((sna
     document.getElementById("bar4").style.width= count ? ((rating_obj["2"]/count)*200).toString()+'px' : '0px';
     const rating = count?(total_rating/count).toFixed(1):0
     var span = document.getElementById("rating_value");
+    var span2 = document.getElementById("review_count");
     span.textContent = rating.toString();
+    span2.textContent = " ( "+count.toString()+" )";
+    // span2.textContent = "("+count.toString()+")";
 });
 console.log("x2",total_rating,count)
 
