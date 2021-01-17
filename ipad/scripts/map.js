@@ -61,21 +61,6 @@ function initAutocomplete() {
     map.fitBounds(bounds);
   });
 }
-
-// //function for promt a marker
-// function initMap() {
-//         const myLatLng = { lat: 6.8653, lng: 79.8599 };
-//         const map = new google.maps.Map(document.getElementById("map"), {
-//           zoom: 4,
-//           center: myLatLng,
-//         });
-//         new google.maps.Marker({
-//           position: myLatLng,
-//           map,
-//           title: "Gedarta Foods",
-//         });
-//       }
-//function for promt a marker
 function initMap() {
   var mapOptions = {
     zoom: 8,
