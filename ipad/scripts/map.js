@@ -64,16 +64,16 @@ function initAutocomplete() {
 function initMap() {
   var mapOptions = {
     zoom: 8,
-    center: new google.maps.LatLng(42.3751, -71.10561),
+    center: new google.maps.LatLng(51.510357, -0.116773),
     mapTypeId: 'roadmap'
   };
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-  var goldenGatePosition = {lat: 42.3751,lng:  -71.10561};
+  var bigBenPosition = {lat: 51.510357,lng:  -0.116773};
   var marker = new google.maps.Marker({
-    position: goldenGatePosition,
+    position: bigBenPosition,
     map: map,
-    title: 'Golden Gate Bridge'
+    title: 'Big Ben Position'
   });
 
 }

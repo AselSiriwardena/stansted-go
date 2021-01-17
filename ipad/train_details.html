@@ -30,6 +30,24 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initAutocomplete&libraries=places&v=weekly"
             defer
     ></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/slider_style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsiveslides.css" />
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "slider-callback",
+                maxwidth: "550px"
+            });
+
+        });
+    </script>
 
     <!--custom css and js files -->
     <link rel="stylesheet" type="text/css" href="assets/css/map_style.css" />
@@ -53,31 +71,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ui-block-b icons w90">
-<!--                        <i id="favourite"></i>-->
-<!--                        <i class="fas fa-share-alt"></i>-->
-<!--                        <a class="primary-color-black-text" data-rel="popup" href="#overlay"-->
-<!--                            data-position-to="#optionz"><i class="fas fa-search"></i></a>-->
-<!--                        <div class="ui-content pt-0 mb-1" data-shadow="false" data-theme="none" data-overlay-theme="a"-->
-<!--                            data-role="popup" id="overlay">-->
-<!--                            <div class="deals-search-bar">-->
-<!--                                <ul data-role="listview" data-filter="true" data-filter-reveal="true"-->
-<!--                                    data-filter-placeholder="Searching Promotions" data-inset="true">-->
-<!--                                    <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>-->
-<!--                                    <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>-->
-<!--                                    <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>-->
-<!--                                    <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <a class="primary-color-black-text" href="realAR.html" rel="external"><i-->
-<!--                                class="fas fa-camera"></i></a>-->
-                    </div>
 
+                    <div class="ui-block-b icons w90">
+                        <i class="fas fa-share-alt"></i>
+                        <i id="favourite"></i>
+                    </div>
                 </div>
                 <div class="ui-grid-a pl-4 mt-3">
                     <div class="ui-block-a w60 prod-deets">
-                        <h3 id="productTitle">Stok Cold Brew Coffee - Med Caff</h3>
+                        <h3 id="productTitle">London Station</h3>
                         <div class="ui-grid-a">
                             <div class="ui-block-a w40">
                                 <i class="fa fa-star secondary-color-yellow-text"></i>
@@ -91,55 +93,40 @@
                                     <p class="fw-bold f16">58 Reviews</p>
                                 </a>
                             </div>
-                                <iframe width="95%" height="95%" src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <div class="ui-block-b icons w90">
-<!--                                need to align to both side-->
-                                <i class="fas fa-share-alt"></i>
-                                <i id="favourite"></i>
-
-<!--                                <a class="primary-color-black-text" data-rel="popup" href="#overlay"-->
-<!--                                   data-position-to="#optionz"><i class="fas fa-search"></i></a>-->
-<!--                                <div class="ui-content pt-0 mb-1" data-shadow="false" data-theme="none" data-overlay-theme="a"-->
-<!--                                     data-role="popup" id="overlay">-->
-<!--                                    <div class="deals-search-bar">-->
-<!--                                        <ul data-role="listview" data-filter="true" data-filter-reveal="true"-->
-<!--                                            data-filter-placeholder="Searching Promotions" data-inset="true">-->
-<!--                                            <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>-->
-<!--                                            <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>-->
-<!--                                            <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>-->
-<!--                                            <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>-->
-<!--                                        </ul>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <a class="primary-color-black-text" href="realAR.html" rel="external"><i-->
-<!--                                        class="fas fa-camera"></i></a>-->
+<!--                                <iframe width="95%" height="95%" src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                            <div class="ui-block-b icons w95">
+                                <div class="responsive-slider">
+                                    <ul class="rslides" id="slider">
+                                        <li>
+                                            <img src="assets/images/london.jfif" alt="">
+                                            <p class="caption">Travel</p>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/london1.jfif" alt="">
+                                            <p class="caption">Enjoy</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-
                         </div>
 
 
-                        <p class="primary-color-grey-text f16 w95" id="productDetails">
-                            Brewed from the heart of Kashmir, Stok presents the
-                            best cold brew coffee of the 21st Century. This new line
-                            of cold brews gives twice the motivation and energy
-                            while keeping the nostalgic taste everybody loves...
+                        <p class="primary-color-grey-text f16 w95 text-justify" id="productDetails">
+                            Many of the principal central London stations are managed by Network Rail and together form a London station group. Most other London stations are managed by Network Rail and together form a London station group...
                         </p>
+                        <hr class="rounded w95" >
                         <p class="primary-color-black-text f16 w95" id="trainDetails">
                             <b>Address</b> : 1121 W. Berwyn Ave., Chicago, IL 60640<br>
                             <b>Type of station</b> : Elevated<br>
                             <b>Notes</b> : Connections: CTA Buses #36, #92, #146<br>
                         </p>
                         <hr class="rounded w95" >
-                        <h4 class="primary-color-red-text"><b>Euro<span
-                                style="font-size: 20px; padding-left: 5px" id="price">10.99</span></b>
+                        <h4 class="primary-color-red-text"><b>Euro 10.99</b>
                         </h4>
 
                         <div class="ui-block-b w95">
                             <div class="card">
                                 <div class="ui-grid-a">
-<!--                                    <div class="ui-block-a w20">-->
-<!--                                        <img src="assets/img/profile_2.png" alt="Profile Avatar" width="50px">-->
-<!--                                    </div>-->
                                     <div class="ui-block-b w100 pl-2">
                                         <div class="ui-grid-a">
                                             <div class="ui-block-a w40">
@@ -174,49 +161,24 @@
                                 </div>
                             </div>
                             <div class="ui-grid-a d-none hideInStore">
-<!--                                <div class="ui-block-a ">-->
-
                                 <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-3 w100 pathUrl"
                                        accesskey="proceed">Show All Review </a>
-<!--                                </div>-->
-                                <!--                                </div>-->
                             </div>
                         </div>
 
                         <div class="ui-grid-a pt-3">
-
-                            <!--<div class="ui-block-a w20">
-                                <p class="primary-color-grey-text f22 mt-2"><strike>20.99</strike></p>
-                            </div>-->
-                            <!--<div class="ui-block-b">
-                                <h3 class="primary-color-red-text"><b>USD<span
-                                            style="font-size: 32px; padding-left: 7px" id="price">10.99</span></b>
-                                </h3>
-                            </div>-->
-
                         </div>
                     </div>
                     <div class="ui-block-b w40 ">
                         <div class="text-center h40">
                             <div id="row">
                             </div>
-
-                           <!-- <input
-                                    id="pac-input"
-                                    class="controls"
-                                    type="text"
-&lt;!&ndash;                                    placeholder="Search Box"&ndash;&gt;
-                            />-->
-<!--                            <div class="card">-->
                             <div id="map"></div>
-<!--                            </div>-->
-<!--                            <div class="ui-block-b pt-5 pr-3">-->
                                 <div class="ui-grid-a d-none hideInStore">
                                     <div class="ui-block-a w100">
                                         <a rel="external" class="ui-btn btn secondary-btn mb-3 w95 pathUrl"
                                            accesskey="proceed">Book Ticket</a>
                                     </div>
-<!--                                </div>-->
                         </div>
                                 <div class="ui-grid-a d-none hideInStore">
                                     <div class="ui-block-b w100">
@@ -226,77 +188,6 @@
                         </div>
                             <hr class="rounded w95" >
                     </div>
-<!--                        <div class="rating">-->
-<!--                            <div  class="rating__number">4.3</div>-->
-<!--                            <div class="rating__stars">-->
-<!--                                <div class="rating__stars-line">-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;1">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;2">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;3">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;4">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;5">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                </div>-->
-<!--                                <div class="rating__stars-line">-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;1">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;2">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;3">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;4">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                </div>-->
-<!--                                <div class="rating__stars-line">-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;1">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;2">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;3">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                </div>-->
-<!--                                <div class="rating__stars-line">-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;1">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;2">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                </div>-->
-<!--                                <div class="rating__stars-line">-->
-<!--                                    <svg class="rating__star rating__star&#45;&#45;1">-->
-<!--                                        <use xlink:href="assets/img/sprite.svg#icon-star"></use>-->
-<!--                                    </svg>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="rating__bars">-->
-<!--                                <div class="rating__bar rating__bar&#45;&#45;1">-->
-
-<!--                                </div>-->
-<!--                                <div class="rating__bar rating__bar&#45;&#45;2"></div>-->
-<!--                                <div class="rating__bar rating__bar&#45;&#45;3"></div>-->
-<!--                                <div class="rating__bar rating__bar&#45;&#45;4"></div>-->
-<!--                                <div class="rating__bar rating__bar&#45;&#45;5"></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="ui-grid-a">-->
-<!--                        </div>-->
                 </div>
             </div>
         </div>
@@ -304,51 +195,7 @@
             <div class="container">
                 <div class="ui-grid-a">
                     <div class="ui-block-a pt-5 pl-4 mt-2 d-none hideInStore">
-                        <!--<div class="ui-grid-b counter pb-2 my-auto w45">
-                            <div class="ui-block-a minusCount">
-                                <i class="fas fa-minus box-shadow-default"></i>
-                            </div>
-                            <div class="ui-block-b">
-                                <p class="count">1</p>
-                            </div>
-                            <div class="ui-block-c plusCount">
-                                <i class="fas fa-plus box-shadow-default"></i>
-                            </div>
-                        </div>-->
                     </div>
-<!--                    <div class="ui-block-b pt-5 pr-3">-->
-<!--                        <div class="ui-grid-a d-none hideInStore">-->
-<!--                            <div class="ui-block-a ">-->
-<!--                                <a id="added" class="ui-btn btn secondary-btn w90 pathUrl" accesskey="nope">ADD TO CART</a>-->
-
-<!--                                <div style="background-color: #F6FAFF; text-shadow: none; border: none;"-->
-<!--                                    data-role="popup" data-position-to="window" id="addedPop" class="ui-content">-->
-<!--                                    <div class="cart-popup">-->
-<!--                                        <div class="container">-->
-<!--                                            <div class="text-center">-->
-<!--                                                <img src="assets/img/success.png" width="250" alt="">-->
-<!--                                                <h3 class="secondary-color f28">Success</h3>-->
-<!--                                                <h6 style="font-weight: 500;" class="primary-color-grey-text f22">Your-->
-<!--                                                    item has been added to-->
-<!--                                                    the-->
-<!--                                                    cart!</h6>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="ui-block-b">-->
-<!--                                <a rel="external" class="ui-btn btn primary-btn mb-3 w90 pathUrl"-->
-<!--                                    accesskey="proceed">BUY NOW</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash;<div class="ui-grid-solo d-none showInStore">-->
-<!--                            <div class="ui-block-a">-->
-<!--                                <a rel="external" class="ui-btn btn primary-btn mb-3 w90 pathUrl"-->
-<!--                                    accesskey="map.html">View Store Location</a>-->
-<!--                            </div>-->
-<!--                        </div>&ndash;&gt;-->
-<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -442,51 +289,7 @@
                             </div>
                         </div>
                         <div class="ui-block-a pt-5 pl-4 mt-2 d-none hideInStore">
-                            <!--<div class="ui-grid-b counter pb-2 my-auto w45">
-                                <div class="ui-block-a minusCount">
-                                    <i class="fas fa-minus box-shadow-default"></i>
-                                </div>
-                                <div class="ui-block-b">
-                                    <p class="count">1</p>
-                                </div>
-                                <div class="ui-block-c plusCount">
-                                    <i class="fas fa-plus box-shadow-default"></i>
-                                </div>
-                            </div>-->
                         </div>
-                        <!--                    <div class="ui-block-b pt-5 pr-3">-->
-                        <!--                        <div class="ui-grid-a d-none hideInStore">-->
-                        <!--                            <div class="ui-block-a ">-->
-                        <!--                                <a id="added" class="ui-btn btn secondary-btn w90 pathUrl" accesskey="nope">ADD TO CART</a>-->
-
-                        <!--                                <div style="background-color: #F6FAFF; text-shadow: none; border: none;"-->
-                        <!--                                    data-role="popup" data-position-to="window" id="addedPop" class="ui-content">-->
-                        <!--                                    <div class="cart-popup">-->
-                        <!--                                        <div class="container">-->
-                        <!--                                            <div class="text-center">-->
-                        <!--                                                <img src="assets/img/success.png" width="250" alt="">-->
-                        <!--                                                <h3 class="secondary-color f28">Success</h3>-->
-                        <!--                                                <h6 style="font-weight: 500;" class="primary-color-grey-text f22">Your-->
-                        <!--                                                    item has been added to-->
-                        <!--                                                    the-->
-                        <!--                                                    cart!</h6>-->
-                        <!--                                            </div>-->
-                        <!--                                        </div>-->
-                        <!--                                    </div>-->
-                        <!--                                </div>-->
-                        <!--                            </div>-->
-                        <!--                            <div class="ui-block-b">-->
-                        <!--                                <a rel="external" class="ui-btn btn primary-btn mb-3 w90 pathUrl"-->
-                        <!--                                    accesskey="proceed">BUY NOW</a>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-                        <!--                        &lt;!&ndash;<div class="ui-grid-solo d-none showInStore">-->
-                        <!--                            <div class="ui-block-a">-->
-                        <!--                                <a rel="external" class="ui-btn btn primary-btn mb-3 w90 pathUrl"-->
-                        <!--                                    accesskey="map.html">View Store Location</a>-->
-                        <!--                            </div>-->
-                        <!--                        </div>&ndash;&gt;-->
-                        <!--                    </div>-->
                     </div>
                 </div>
             </div>
