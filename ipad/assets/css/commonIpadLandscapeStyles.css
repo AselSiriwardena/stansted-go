@@ -39,11 +39,13 @@
         /*text-shadow: 3px 4px 7px black;*/
         text-shadow:1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
         font-weight: bold;
+        color: white !important;
     }
     .bottom-right {
         position: absolute;
         bottom: 8px;
         right: 16px;
+        color: white !important;
     }
     .bottom-right-1 {
         position: absolute;
@@ -53,7 +55,14 @@
         /*text-shadow: 3px 4px 7px black;*/
         text-shadow:1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
         font-weight: bold;
+        color: white !important;
     }
+
+    .imageTextOverlayContainer{
+        padding: unset !important;
+
+    }
+
 
 
 
