@@ -35,7 +35,6 @@ db.collection("Places").doc('place_id_01').collection('Ratings').get().then((sna
     var span2 = document.getElementById("review_count");
     span.textContent = rating.toString();
     span2.textContent = " ( "+count.toString()+" )";
-    // span2.textContent = "("+count.toString()+")";
 });
 console.log("x2",total_rating,count)
 
