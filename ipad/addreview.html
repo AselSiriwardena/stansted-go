@@ -132,6 +132,7 @@
 
     $("#submit").click(function () {
         docRef.add({
+            name:"Nishara Ramasinghe",
             email: sessionStorage.getItem("loggedUser"),
             prodId: sessionStorage.getItem("currentProduct"),
             description: $("#feedback").val(),
