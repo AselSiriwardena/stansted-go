@@ -1,1 +1,19 @@
-[{"id":"2","name":"Atok Cold Brew Coffee","details":"Brewed from the heart of Kashmir, Stok presents the best cold brew coffee of the 21st Century. This new line of cold brews gives twice the motivation and energy while keeping the nostalgic taste everybody loves...","price":"50.99","rating":"5.0","noReviews":"58","image":"assets\/img\/productCoffee2.png","review":[{"email":"123@gmail.com","description":"\n                                        Great product ! This is the best\n                                        coffee I've tasted in a while. Definitely recommended if you're a coffee\n                                        lover.\n                                    ","time":"2 days","rating":"2.5"},{"email":"123@gmail.com","description":"nice product","time":"2 days ago","rating":"3"}]}]
+[
+  {"id":"2",
+  "name":"Cornwall",
+    "details":"Cornwall is a county on England’s rugged southwestern tip. It forms a peninsula encompassing wild moorland and hundreds of sandy beaches, culminating at the promontory Land’s End. The south coast, dubbed the Cornish Riviera, is home to picturesque harbour villages such as Fowey and Falmouth. The north coast is lined with towering cliffs and seaside resorts like Newquay, known for surfing.",
+    "price":"8.99",
+    "rating":"5.0",
+    "noReviews":"58",
+    "image":"assets\/images\/Cornwall.jpg",
+    "review":[
+      {"email":"123@gmail.com",
+      "description":"\n                                        Great product ! This is the best\n                                        coffee I've tasted in a while. Definitely recommended if you're a coffee\n                                        lover.\n                                    ",
+      "time":"2 days","rating":"2.5"},
+      {"email":"123@gmail.com",
+        "description":"nice product",
+        "time":"2 days ago",
+        "rating":"3"}
+    ]
+  }
+]

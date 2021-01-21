@@ -59,7 +59,6 @@
     </div>
     <div role="main" class="px-4">
         <div class="my-4 text-center">
-            <a accesskey="addcomments.html" data-rel="dialog" data-transition="pop" class="ui-link pathUrl">Add a Comment</a>
         </div>
         <ul class="nav nav-tabs nav-justified nav-primary">
             <li class="nav-item">
@@ -114,6 +113,33 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+            <h4>Comments</h4>
+            <div class=" ui-grid-a pt-2 primary-color-blue-bg">
+                <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
+                <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">Comment_1</p>
+            </div>
+            <div class=" ui-grid-a pt-2 primary-color-white-bg">
+                <img class="ui-block-a" src="assets/images/reply_profile_2.svg" height="50px">
+                <p style="word-wrap: break-word;" class="ui-block-b primary-color-black-text text f16">Comment_2</p>
+            </div>
+            <div class=" ui-grid-a pt-2 primary-color-blue-bg">
+                <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
+                <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">Comment_3</p>
+            </div>
+        </div>
+        <div class="input-comment-footer">
+        <div class="ui-field-contain mt-4">
+            <div class="font-size-l font-weight-heavy mb-3">Your Comment</div>
+            <textarea type="text" name="feedback" id="feedbackInput"
+                      placeholder="Share your comments on reviews..."></textarea>
+            <div class="ui-grid-solo text-center sort-apply px-4">
+                <div class="ui-block-a w100 mb-3">
+                    <a class="ui-btn btn primary-btn m-0" id="submit">POST COMMENT</a>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 </div>

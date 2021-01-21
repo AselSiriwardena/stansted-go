@@ -1,12 +1,12 @@
 [
   {
     "id":"3",
-    "name":"Stok Cold Brew Coffee",
-    "details":"Brewed from the heart of Kashmir, Stok presents the best cold brew coffee of the 21st Century. This new line of cold brews gives twice the motivation and energy while keeping the nostalgic taste everybody loves...",
-    "price":"100.99",
+    "name":"Cambridge",
+    "details":"Cambridge is a city on the River Cam in eastern England, home to the prestigious University of Cambridge, dating to 1209. University colleges include King’s, famed for its choir and towering Gothic chapel, as well as Trinity, founded by Henry VIII, and St John’s, with its 16th-century Great Gate. University museums have exhibits on archaeology and anthropology, polar exploration, the history of science and zoology.",
+    "price":"24.99",
     "rating":"3.5",
     "noReviews":"58",
-    "image":"assets/img/productCoffee1.png",
+    "image":"assets/images/Cambridge.jpg",
     "review":[
       {
         "email":"123@gmail.com",

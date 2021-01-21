@@ -85,11 +85,11 @@
 
                 <div class="ui-grid-a d-flex align-items-center mt-1 ratingSection">
                     <div class="ui-block-a w40 font-size-l">
-                        <i class="fa fa-star secondary-color-yellow-text"></i>
-                        <i class="fa fa-star secondary-color-yellow-text"></i>
-                        <i class="fa fa-star secondary-color-yellow-text"></i>
-                        <i class="fa fa-star secondary-color-yellow-text"></i>
-                        <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                        <i id="star1" class="fa fa-star secondary-color-yellow-text"></i>
+                        <i id="star2" class="fa fa-star secondary-color-yellow-text"></i>
+                        <i id="star3" class="fa fa-star secondary-color-yellow-text"></i>
+                        <i id="star4" class="fa fa-star secondary-color-yellow-text"></i>
+                        <i id="star5" class="fa fa-star-o secondary-color-yellow-text"></i>
                     </div>
                     <div class="ui-block-b w60 px-2">
                         <a class="font-weight-bold m-0 primary-color-blue-text v-align-middle pathurl" accesskey="reviews">58
@@ -125,9 +125,9 @@
                         </ul>
                     </div>
                 </div>
-                <hr class="rounded">
+                <hr class="rounded" >
 
-                <div class="text-justify line-height-small">
+                <div class="text-justify line-height-small w-landscape-50">
                     <p id="productDetails">
                         Big Ben, situated at the Palace of Westminster, is one of the best known icons of London, and has been voted the Most Iconic Film Location in London. The clock, on its own, has been working since May 1859...
                     </p>
@@ -137,6 +137,7 @@
                     <div class="w-landscape-50">
                         <a href="gamification_intro.html" accesskey="" class="ui-btn btn primary-btn mb-3 pathUrl">PLAY</a>
                         <a accesskey="createAccount.html" class="ui-btn btn secondary-btn pathUrl">BUY NOW</a>
+                        <a accesskey="proceed" rel="external" href="viewinAR.html" class="ui-btn btn secondary-btn pathUrl">VIEW IN AR</a>
                     </div>
                 </div>
                 <hr class="rounded">
@@ -233,7 +234,8 @@
                 <div class="w100 pl-2">
                     <!--                <div class="ui-grid-a px-3 w-landscape-50">-->
                     <div class="w-landscape-50">
-                        <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-2 pathurl" accesskey="proceed">Show ALL Review</a>
+                        <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-2 pathurl"
+                        accesskey="proceed">Show All Reviews<span id = "review_count">(0)</span></a>
                     </div>
                 </div>
             </div>
