@@ -2,40 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8c99bae-1f29-4591-90b9-2fd52f997bbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-landscape.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-portrait.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gami-q3-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gami-q4-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gami-qimg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gamifi-q5-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gamifi_bg_img_ipad_landscape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gamification-avatar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gamification-back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gamification-gold-user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gamification-stars.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gamificationBadges.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/gamification_background_portrait.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/heartIconPoi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/poiListImg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/poiListImg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/poiListImg3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/poiListImg4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/poiListImg5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/poiListImg6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/poiListImg7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/poiListImg8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/station1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/station2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/station3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/station4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iphone/gamification_intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Noice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/gamification_intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamification_intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/product_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iphone/gamfication-q2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/gamification_intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/gamification_intro.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +29,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/iphone/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/iphone" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\newux\iphone" />
       <recent name="C:\wamp64\www\newux\iphone\assets\images" />
       <recent name="C:\wamp64\www\newux\iphone\assets\css" />
     </key>
@@ -77,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611241824993</updated>
-      <workItem from="1611241826512" duration="6632000" />
+      <workItem from="1611241826512" duration="8814000" />
     </task>
     <servers />
   </component>
