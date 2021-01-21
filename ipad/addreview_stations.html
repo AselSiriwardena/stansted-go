@@ -132,7 +132,7 @@
 
     $("#submit").click(function () {
         docRef.add({
-            name:"Nishara Ramasinghe",
+            name:"Nish Ram",
             email: sessionStorage.getItem("loggedUser"),
             prodId: sessionStorage.getItem("currentProduct"),
             description: $("#feedback").val(),
@@ -141,7 +141,7 @@
         })
             .then(function(docRef) {
                 console.log("Document written with ID: ", docRef.id);
-                document.location.href = 'reviews_stations.html';
+                document.location.href = 'reviews.html';
             })
             .catch(function(error) {
                 console.error("Error adding document: ", error);

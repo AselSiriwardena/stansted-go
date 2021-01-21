@@ -3,10 +3,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reviews Places</title>
+    <title>Reviews</title>
 
     <!-- jQuery mobile files -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -22,7 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
+
     <!-- Custom main CSS file -->
     <link rel="stylesheet" href="index.css">
 
@@ -30,59 +30,64 @@
 
 <body class="post-login">
 <div data-role="page" class="reviews">
-    <div data-role="header" id="header2">
-        <div class="ui-grid-a">
-            <div class="container">
-                <div class="ui-block-a w5">
-                    <a data-rel="back" rel="external"><img src="assets/img/back.svg" height="30" width="30"></a>
-                </div>
-                <div class="-ui-block-b w95">
-                    <h3 class="ui-block-b text-primary text-center">Reviews</h3>
+    <div data-role="header" id="header" class="px-4 pt-5 pb-4">
+        <div class="ui-grid-a d-flex align-items-center header-title-back">
+            <div class="ui-block-a d-flex align-items-center">
+                <a class="ui-btn p-0 m-0 pathUrl" data-transition="slide" accesskey="product_details.html"
+                   rel="external">
+                    <img alt="back button" height="auto" src="assets/img/back.svg" width="30">
+                </a>
+                <h3 class="m-0 pl-3">Reviews</h3>
+            </div>
+            <div class="ui-block-b icons">
+                <a class="primary-color-black-text" data-rel="popup" href="#overlay" data-position-to="origin"><i
+                        class="fas fa-search"></i></a>
+                <div class="ui-content" data-shadow="false" data-theme="none" data-overlay-theme="a" data-role="popup"
+                     id="overlay">
+                    <div class="deals-search-bar">
+                        <ul data-role="listview" data-filter="true" data-filter-reveal="true"
+                            data-filter-placeholder="Searching Promotions" data-inset="true">
+                            <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>
+                            <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>
+                            <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>
+                            <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div data-role="main">
-        <div class="container pb-5">
-            <div class="head mt-5">
-                <a href="addreview.html" rel="external">
-                    <h3 class="text-center">Add a Review</h3>
-                </a>
+    <div role="main" class="px-4">
+        <div class="my-4 text-center">
+            <a accesskey="addreview.html" rel="external" class="ui-link pathUrl">Add a Review</a>
+        </div>
+        <ul class="nav nav-tabs nav-justified nav-primary">
+            <li class="nav-item">
+                <a href="#latest" class="nav-link active" data-toggle="tab">Latest</a>
+            </li>
+            <li class="nav-item">
+                <a href="#highest" class="nav-link" data-toggle="tab">Highest</a>
+            </li>
+            <li class="nav-item">
+                <a href="#lowest" class="nav-link" data-toggle="tab">Lowest</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="latest">
+                <div id="reviewList"></div>
             </div>
-            <ul class="nav nav-tabs nav-justified nav-primary mt-4">
-                <li class="nav-item">
-                    <a href="#latest" class="nav-link active" data-toggle="tab">Latest</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#highest" class="nav-link" data-toggle="tab">Highest</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#lowest" class="nav-link" data-toggle="tab">Lowest</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="latest">
-                    <div class="ui-grid-a">
-                        <div id="test1" >
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade show active" id="highest">
-                    <div class="ui-grid-a">
-                        <div id="test2" >
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade show active" id="lowest">
-                    <div class="ui-grid-a">
-                        <div id="test3" >
-                        </div>
-                    </div>
-                </div>
+            <div class="tab-pane fade show active" id="highest">
+                <div id="reviewList_highest"></div>
+            </div>
+            <div class="tab-pane fade show active" id="lowest">
+                <div id="reviewList_lowest"></div>
             </div>
         </div>
     </div>
 </div>
+</body>
+
+</html>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
 <script>
@@ -102,10 +107,10 @@
 
     let i = 0;
 
-    db.collection("Places").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
+    db.collection("stations").doc('lb568IJxcibiauAEwzAI').collection('Ratings').get().then((snapshot) => {
         snapshot.forEach(function(x) {
-            $("#test1").append(`
-                            ${!Boolean(i % 2) ? `<div class="ui-block-a w50 pl-3">` : `<div class="ui-block-b w50 pl-3">`}
+            $("#reviewList").append(`
+                            ${!Boolean(i % 2) ? `<div class="ui-block-a w100 w-landscape-50">` : `<div class="ui-block-b w100 w-landscape-50">`}
                             <div class="ui-block-a pl-3">
                                 <div class="card">
                                     <div class="ui-grid-a">
@@ -168,8 +173,8 @@
                             </div>
                 `);
             if(parseInt(x.data().rating,10)>3){
-                $("#test2").append(`
-                            ${!Boolean(i % 2) ? `<div class="ui-block-a w50 pl-3">` : `<div class="ui-block-b w50 pl-3">`}
+                $("#reviewList_highest").append(`
+                            ${!Boolean(i % 2) ? `<div class="ui-block-a w100 w-landscape-50">` : `<div class="ui-block-b w100 w-landscape-50">`}
                             <div class="ui-block-a pl-3">
                                 <div class="card">
                                     <div class="ui-grid-a">
@@ -232,8 +237,8 @@
                             </div>
                 `);
             }else {
-                $("#test3").append(`
-                            ${!Boolean(i % 2) ? `<div class="ui-block-a w50 pl-3">` : `<div class="ui-block-b w50 pl-3">`}
+                $("#reviewList_lowest").append(`
+                            ${!Boolean(i % 2) ? `<div class="ui-block-a w100 w-landscape-50">` : `<div class="ui-block-b w100 w-landscape-50">`}
                             <div class="ui-block-a pl-3">
                                 <div class="card">
                                     <div class="ui-grid-a">
@@ -302,8 +307,3 @@
 
 
 </script>
-
-
-</body>
-
-</html>

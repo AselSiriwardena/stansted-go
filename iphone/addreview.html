@@ -47,10 +47,7 @@
     <div role="main" id="content" class="px-4">
         <div class="review pt-5">
             <div class="">
-                <div class="font-size-xl truncate mb-1 productTitle"> Stok Cold Brew Coffee</div>
-                <div class="font-size-s text-muted font-weight-bold truncate productSubTitle">Medium Caffeine - Hazelnut
-                    Vanilla in Cold Brew Coffee
-                </div>
+                <div class="font-size-xl truncate mb-1 productTitle"> Big Ben</div>
             </div>
             <hr>
             <div class="mt-4 mb-3">
@@ -96,10 +93,24 @@
 
 </html>
 <script>
-    $(document).ready(function () {
-        alert(sessionStorage.getItem("loggedUser"));
+    var config = {
+        apiKey: "AIzaSyDC0db7ssF55Q-yfiGUeCqB8wtHZ4_tyZw",
+        authDomain: "ui-ux-b3439.firebaseapp.com",
+        projectId: "ui-ux-b3439",
+        storageBucket: "ui-ux-b3439.appspot.com",
+        messagingSenderId: "628403705685",
+        appId: "1:628403705685:web:bebfe39d9d923bbf74c1dc",
+        measurementId: "G-CMKJ405F25"
+    };
+    // Initialize Firebase
+    var app = firebase.initializeApp(config);
+    // Initialize Cloud Firestore through Firebase
+    const db = app.firestore();
+    const docRef = db.collection("Places").doc('place_id_01').collection('Ratings');
 
-        $('#rating li').on('click', function () {
+    $(document).ready(function () {
+
+        $('#rating li ').on('click', function () {
 
             const onStar = parseInt(this.value); // The star currently selected
             const stars = $(this).parent().children('li.rate');
@@ -117,21 +128,37 @@
     });
 
     $("#submit").click(function () {
-        $.post("backend/review.php", {
-            action: "add",
+        docRef.add({
+            name:"Nish Ram",
             email: sessionStorage.getItem("loggedUser"),
             prodId: sessionStorage.getItem("currentProduct"),
-            description: $("#feedbackInput").val(),
-            time: '2 days ago',
-            rating: $('#ratedVal').val(),
-        }, function (data, status) {
-            if (data === 'error') {
-                alert('Error');
-            } else if (data === 'success') {
+            description: $("#feedback").val(),
+            time: 'Just Now',
+            rating: $('#ratedVal').val()
+        })
+            .then(function(docRef) {
+                console.log("Document written with ID: ", docRef.id);
                 document.location.href = 'reviews.html';
-            } else {
+            })
+            .catch(function(error) {
+                console.error("Error adding document: ", error);
+            });
 
-            }
-        });
+        // $.post("backend/review.php", {
+        //     action: "add",
+        //     email: sessionStorage.getItem("loggedUser"),
+        //     prodId: sessionStorage.getItem("currentProduct"),
+        //     description: $("#feedback").val(),
+        //     time: '2 days ago',
+        //     rating: $('#ratedVal').val(),
+        // }, function (data, status) {
+        //     if (data === 'error') {
+        //         alert('Error');
+        //     } else if (data === 'success') {
+        //         document.location.href = 'reviews.html';
+        //     } else {
+        //
+        //     }
+        // });
     });
 </script>
