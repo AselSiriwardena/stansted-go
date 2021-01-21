@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add a Comment</title>
+
+    <!-- jQuery mobile files -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <!-- Font awesome file -->
+    <script src="https://kit.fontawesome.com/f083cf2118.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom main CSS file -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body class="post-login">
+<div data-theme="b" data-role="page" class="addreview">
+    <div data-role="header" id="header2">
+        <div class="ui-grid-a">
+            <div class="container">
+                <div class="ui-block-a w5">
+                    <a data-rel="back" rel="external"><img src="assets/img/back.svg" height="30" width="30"></a>
+                </div>
+                <div class="-ui-block-b w95">
+                    <h3 class="ui-block-b text-primary text-center">Add Comment</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="main">
+        <div class="container pb-5">
+            <div class="">
+                <div class="head mt-5">
+                    <h2>Big Ben Tower</h2>
+                    <hr>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-b">
+                        <div class="feedback ui-field-contain">
+                            <label class="w100 mb-4" for="feedback">Your Comment</label><br />
+                            <textarea rows="5" cols="10" type="text" name="feedback" id="feedback"
+                                      placeholder="Tell us your experience..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-grid-solo w50 mx-auto pt-5">
+                    <a id="submit" rel="external"><button class="primary-btn ui-btn btn">Post Comment</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+<!--
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+<script>
+    var config = {
+        apiKey: "AIzaSyDC0db7ssF55Q-yfiGUeCqB8wtHZ4_tyZw",
+        authDomain: "ui-ux-b3439.firebaseapp.com",
+        projectId: "ui-ux-b3439",
+        storageBucket: "ui-ux-b3439.appspot.com",
+        messagingSenderId: "628403705685",
+        appId: "1:628403705685:web:bebfe39d9d923bbf74c1dc",
+        measurementId: "G-CMKJ405F25"
+    };
+    // Initialize Firebase
+    var app = firebase.initializeApp(config);
+    // Initialize Cloud Firestore through Firebase
+    const db = app.firestore();
+    const docRef = db.collection("Places").doc('place_id_01').collection('Ratings');
+
+    $(document).ready(function () {
+
+        $('#rating li ').on('click', function () {
+
+            const onStar = parseInt(this.value); // The star currently selected
+            const stars = $(this).parent().children('li.rate');
+
+            for (i = 0; i < stars.length; i++) {
+                $(stars[i]).removeClass('secondary-color-yellow-text');
+            }
+            for (i = 0; i < onStar; i++) {
+                $(stars[i]).addClass('secondary-color-yellow-text');
+            }
+            const ratingValue = parseInt($('#rating li.secondary-color-yellow-text').last().val());
+
+            $('#ratedVal').val(ratingValue);
+        })
+    });
+
+    $("#submit").click(function () {
+        docRef.add({
+            name:"Nishara Ramasinghe",
+            email: sessionStorage.getItem("loggedUser"),
+            prodId: sessionStorage.getItem("currentProduct"),
+            description: $("#feedback").val(),
+            time: 'Just Now',
+            rating: $('#ratedVal').val()
+        })
+            .then(function(docRef) {
+                console.log("Document written with ID: ", docRef.id);
+                document.location.href = 'reviews.html';
+            })
+            .catch(function(error) {
+                console.error("Error adding document: ", error);
+            });
+
+        // $.post("backend/review.php", {
+        //     action: "add",
+        //     email: sessionStorage.getItem("loggedUser"),
+        //     prodId: sessionStorage.getItem("currentProduct"),
+        //     description: $("#feedback").val(),
+        //     time: '2 days ago',
+        //     rating: $('#ratedVal').val(),
+        // }, function (data, status) {
+        //     if (data === 'error') {
+        //         alert('Error');
+        //     } else if (data === 'success') {
+        //         document.location.href = 'reviews.html';
+        //     } else {
+        //
+        //     }
+        // });
+    });
+</script>
+-->
