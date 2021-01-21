@@ -33,58 +33,54 @@
 <body class="post-login">
 <div data-role="page" class=" leaderboard-page ">
     <div data-role="header">
-        <a href="product_details.html" rel="external" class="gamification-back-btn"><img src="assets/images/gamification-back.svg"></a>
+        <a href="product_details.html" rel="external" class="gamification-back-btn"><img
+                src="assets/images/gamification-back.svg"></a>
 
-        <a href="gamification.html" class="gamification-scores-btn" data-theme="b" id="scoreId">Scores</a>
+        <!--        <a href="gamification.html" class="gamification-scores-btn" data-theme="b" id="scoreId">Scores</a>-->
+        <a href="#gameInfo" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="info"
+           id="popupLink"></a>
     </div>
     <div class="g-center-content minHeight90vh" data-role="main">
 
 
         <div class=" g-center-content">
 
-            <div class="ui-grid-a g-center-content">
-                <div class="ui-block-a w40 pr-3">
-                    <div class="card">
-                        <div class="ui-grid-solo text-center mb-3">
 
-                            <p class="gamification_intro_text_content_p">
-                                Are you good at finding destinations? Then, join our place hunt game and right now !!!
-                                <br/>
+            <div data-role="popup" id="gameInfo" data-theme="a" data-overlay-theme="b" class="ui-content"
+                 style="max-width:340px; padding-bottom:2em;">
+                <h3>Guidelines</h3>
+                <p>
+                    Your task is simple. Answer the questions related to well known destination.For a
+                    correct answer,
+                    your score will increase by 5 or 10 according to the question weight respectively.
+                    Your earned score, add to your full score.
+                    Once you answer one question, you can move to the next or previous
+                    question by taping
+                    next or back icon.
+                    Your full score will record in leaderboard.
+                </p>
 
-                                Your task is simple. Answer the questions related to well known destination.For a
-                                correct answer,
-                                your score will increase by 5 or 10 according to the question weight respectively.
-                                Your earned score, add to your full score.
-                                Once you answer one question, you can move to the next or previous question by taping
-                                next or back icon.
-                                Your full score will record in leaderboard.
+            </div>
+
+
+            <div class="ui-grid-a gamifi-intro-container">
+                <div class="card ui-grid-a">
+                    <div class=" text-center mb-3">
+
+                        <div class="gamification_intro_block_2 gamification-content-block-inner">
+                            <p class="gamification_intro_big_content_p">
+                                Stand a chance to win free tickets by earning more scores
                             </p>
-
-
                         </div>
+
+
                     </div>
+
                 </div>
-                <div class="ui-block-b w40 pr-3">
-                    <div class="ui-grid-a">
-                        <div class="card ui-grid-a">
-                            <div class=" text-center mb-3">
-
-                                <div class="gamification_intro_block_2 gamification-content-block-inner">
-                                    <p class="gamification_intro_big_content_p">
-                                        Stand a chance to win free tickets by earning more scores
-                                    </p>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                        <button class="ui-grid-b gamificaton-intro-play-btn"
-                                onclick="window.location.href='gamfication-q2.html';">
-                            Play
-                        </button>
-                    </div>
-                </div>
+                <button class="ui-grid-b gamificaton-intro-play-btn"
+                        onclick="window.location.href='gamfication-q2.html';">
+                    Play
+                </button>
 
 
             </div>
@@ -107,7 +103,14 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            document.getElementById("popupLink").click();
+        }, 2000); // 5000 to load it after 5 seconds from page load
+    });
 
+</script>
 
 </body>
 
