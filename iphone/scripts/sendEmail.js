@@ -54,11 +54,11 @@ function productItems(favouriteList) {
         });
         Email.send({
             Host: "smtp.gmail.com",
-            Username: "yaka.noice@gmail.com",
-            Password: "kavi@1234",
-            To: "kavishmaj@gmail.com",//sessionStorage.getItem("loggedUser"),
-            From: "yaka.noice@gmail.com",
-            Subject: "Your Favourite Items",
+            Username: "stanstedgo@gmail.com",
+            Password: "1234!acd",
+            To: sessionStorage.getItem("loggedUser"),
+            From: "stanstedgo@gmail.com",
+            Subject: "Your Favourite Destinations",
             Body:
             `<div style = " background: #4444C8;padding: 16px;">
     <div style="box-sizing: border-box;color:white;">

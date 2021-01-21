@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Train Details</title>
+
+    <!-- jQuery mobile files -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <!-- Font awesome file -->
+    <script src="https://kit.fontawesome.com/f083cf2118.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom main CSS file -->
+    <link rel="stylesheet" href="index.css">
+    <!--Normal API key -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initAutocomplete&libraries=places&v=weekly"
+            defer
+    ></script>
+    <!--    With Marker-->
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initMap&libraries=places&v=weekly"
+            defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/map_style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/rating_style.css" />
+    <script src="scripts/map.js"></script>
+
+</head>
+
+<body class="post-login">
+<div data-role="page" class="productDetails">
+    <div data-role="header" id="header" class="px-4 pt-5 pb-4">
+        <div class="ui-grid-a header-title-icons d-flex align-items-center">
+            <div class="ui-block-a w50 d-flex align-items-center">
+                <a class="ui-btn p-0 m-0" data-transition="slide" data-rel="back" rel="external">
+                    <img alt="back button" height="auto" src="assets/img/back.svg" width="30">
+                </a>
+            </div>
+        </div>
+
+        <div class="header-content text-center">
+            <div class="px-4">
+                <div class="font-size-xl truncate mb-2 text-justify" id="productTitle"> Payment Details</div>
+                <div class="card py-0 px-0">
+                    <div id="map"></div>
+                </div>
+                <hr class="rounded">
+                <div class="items my-4">
+                    <h5 class="my-3 font-weight-heavy text-justify">Westminster - Cambridge</h5>
+                    <div class="calc">
+                        <div class="ui-grid-a mb-2">
+                            <div class="ui-block-a gray">
+                                <p class="mb-0 font-weight-bold text-justify">Trip Total</p>
+                            </div>
+                            <div class="ui-block-b text-right">
+                                <p class="mb-0 font-weight-bold" id="fakeTotal">880.00</p>
+                            </div>
+                        </div>
+                        <div class="ui-grid-a mb-2">
+                            <div class="ui-block-a gray">
+                                <p class="mb-0 font-weight-bold text-justify">Tax</p>
+                            </div>
+                            <div class="ui-block-b text-right">
+                                <p class="mb-0 font-weight-bold">20.00</p>
+                            </div>
+                        </div>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a gray">
+                                <p class="mb-0 font-weight-bold text-justify">Coupon Discount</p>
+                            </div>
+                            <div class="ui-block-b red text-right">
+                                <p class="mb-0 font-weight-bold">-<span id="coupon">0.00</span></p>
+                            </div>
+                        </div>
+                        <hr class="mb-1">
+                        <div class="ui-grid-a d-flex align-items-center">
+                            <div class="ui-block-a black">
+                                <h4 class="mb-0 font-weight-bold text-justify">Total</h4>
+                            </div>
+                            <div class="ui-block-b red text-right font-size-xxl font-weight-heavy">
+                                <span class="font-size-m font-weight-bold">USD </span><span id="total">900.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w100 pl-2">
+                    <!--                <div class="ui-grid-a px-3 w-landscape-50">-->
+                    <div class="w-landscape-50">
+                        <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-2 pathurl" accesskey="proceed">Confirm Payment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div role="main" class="mt-4">
+        <div class="mt-4 detailsBuy">
+
+        </div>
+
+    </div>
+    <div data-role="footer" data-position="fixed" id="footer" data-tap-toggle="false" transition="fade" class="py-2">
+        <div data-role="navbar" data-grid="d" class="h100">
+            <ul>
+                <li>
+                    <a class="pathUrl" accesskey="home.html">
+                        <i class="fa fa-home"></i>
+                        <div>Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="pathUrl" accesskey="deals.html">
+                        <i class="fa fa-tag font"></i>
+                        <div>Deals</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="pathUrl" accesskey="store.html">
+                        <i class="fa fa-store-alt"></i>
+                        <div>Store</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="pathUrl" accesskey="cart.html">
+                        <i class="fa fa-shopping-cart"></i>
+                        <div>Cart</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="pathUrl" accesskey="profile.html">
+                        <i class="fa fa-user"></i>
+                        <div>Profile</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(document).on("click", ".dealsClick", function () {
+            sessionStorage.setItem("currentDeal", this.accessKey);
+            sessionStorage.setItem("ratingFilter", '0');
+            sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"145"}');
+            sessionStorage.setItem("sort", 'default');
+            document.location.href = 'promotion_details.html';
+        });
+        quantity = 1;
+        var prodId;
+        $.post("backend/singleProduct.php", {currentProduct: sessionStorage.getItem("currentProduct")}, function (data, status) {
+            data = JSON.parse(data);
+            $.each(data, function (i, v) {
+                prodId = v.id;
+                $('#productTitle').text(v.name);
+                $('#productDetails').text(v.details);
+                $('#price').text(' ' + v.price);
+                $("#image").attr("src", v.image);
+            });
+        });
+        $(".count").text("1");
+
+
+        $(".plusCount").bind("click", function (event, ui) {
+            quantity += 1;
+            $(".count").text(quantity.toString());
+        });
+
+        $(".minusCount").bind("click", function (event, ui) {
+            quantity -= 1;
+            if (parseInt(quantity) > 0) {
+                $(".count").text(quantity.toString());
+            } else {
+                quantity = 0;
+                $(".count").text(quantity.toString());
+            }
+        });
+        var alreadyCart = false;
+        var index;
+        $(".pathurl").click(function () {
+            var currentCart = JSON.parse(sessionStorage.getItem('cart'));
+            $.each(currentCart['items'], function (i, item) {
+                if (item['id'] === prodId) {
+                    alreadyCart = true;
+                    index = i;
+                    return false;
+                }
+            });
+            if (alreadyCart) {
+                currentCart['total'] = (parseFloat(currentCart['total']) - (parseFloat(currentCart['items'][index]['amount']) * parseFloat(currentCart['items'][index]['price']))).toFixed(2);
+                currentCart['items'][index]['amount'] = quantity;
+                currentCart['total'] = (parseFloat(currentCart['total']) + (parseFloat(currentCart['items'][index]['amount']) * parseFloat(currentCart['items'][index]['price']))).toFixed(2);
+                sessionStorage.setItem('cart', JSON.stringify(currentCart));
+            }
+            else {
+                var thisItem = {};
+                thisItem['id'] = prodId;
+                thisItem['name'] = $('#productTitle').text();
+                thisItem['price'] = $('#price').text();
+                thisItem['amount'] = quantity;
+                currentCart['total'] = (parseFloat(currentCart['total']) + (parseFloat(thisItem['amount']) * parseFloat(thisItem['price']))).toFixed(2);
+                currentCart['items'].push(thisItem);
+                sessionStorage.setItem('cart', JSON.stringify(currentCart));
+            }
+
+            if (this.accessKey === 'proceed') {
+                document.location.href = "cart.html";
+            } else if (this.accessKey === 'reviews') {
+                document.location.href = "reviews.html";
+            }
+            else {
+
+            }
+
+        });
+    });
+</script>
+<script src="scripts/rating_process.js"></script>
+</body>
+
+</html>

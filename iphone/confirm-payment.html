@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Confirm Payment</title>
+
+    <!-- jQuery mobile files -->
+    <link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <!-- Font awesome file -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/f083cf2118.js"></script>
+
+    <!-- Bootstrap CSS file -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+
+    <!-- Custom main CSS file -->
+    <link href="index.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="w-landscape-50">
+    <label class="ui-btn btn primary-btn mt-3" id="submit">Confirm Payment</label>
+</div>
+</body>
+
+<script>
+    $.post("backend/payment.php", {
+        currentPromotion: sessionStorage.getItem("price")
+    }, function (data, status) {
+        data = JSON.parse(data);
+    });
+</script>
+
+<script>
+    jQuery(function ($) {
+        var $form = $('#frmBooking');
+        var handler = StripeCheckout.configure({
+            key: 'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
+            token: function (token) {
+                if (token.id) {
+                    $("#thankyouPayment").html('Thank you, your payment was successful!');
+                }
+            }
+        });
+        $('#customButton').on('click', function (e) {
+            handler.open({
+                name: 'Train app',
+                currency: 'lkr',
+                description: $('#item_name').val(),
+                amount: $('#total_value').val() * 100
+            });
+            e.preventDefault();
+        });
+        $(window).on('popstate', function () {
+            handler.close();
+        });
+    });
+</script>
+</html>
