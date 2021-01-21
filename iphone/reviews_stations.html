@@ -107,7 +107,7 @@
 
     let i = 0;
 
-    db.collection("Places").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
+    db.collection("stations").doc('lb568IJxcibiauAEwzAI').collection('Ratings').get().then((snapshot) => {
         snapshot.forEach(function(x) {
             $("#reviewList").append(`
                             ${!Boolean(i % 2) ? `<div class="ui-block-a w100 w-landscape-50">` : `<div class="ui-block-b w100 w-landscape-50">`}

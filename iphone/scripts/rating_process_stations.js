@@ -16,7 +16,7 @@ let count = 0;
 const rating_obj = {1:0,2:0,3:0,4:0,5:0,}
 
 
-db.collection("Places").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
+db.collection("stations").doc('lb568IJxcibiauAEwzAI').collection('Ratings').get().then((snapshot) => {
     snapshot.forEach(function (x) {
 
         count = count + 1;

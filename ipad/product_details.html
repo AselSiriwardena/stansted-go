@@ -28,10 +28,6 @@
 
     <!--Normal API key -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initAutocomplete&libraries=places&v=weekly"
-            defer
-    ></script>
 <!--    With Marker-->
     <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initMap&libraries=places&v=weekly"
@@ -91,11 +87,11 @@
                         <h3 id="productTitle">Big Ben Tower</h3>
                         <div class="ui-grid-a">
                             <div class="ui-block-a w40">
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                <i id="star1" class="fa fa-star secondary-color-yellow-text"></i>
+                                <i id="star2" class="fa fa-star secondary-color-yellow-text"></i>
+                                <i id="star3" class="fa fa-star secondary-color-yellow-text"></i>
+                                <i id="star4" class="fa fa-star secondary-color-yellow-text"></i>
+                                <i id="star5" class="fa fa-star-o secondary-color-yellow-text"></i>
                             </div>
                             <div class="ui-block-b w60">
                                 <a rel="external">
@@ -106,19 +102,15 @@
                                 <div class="responsive-slider">
                                     <ul class="rslides" id="slider">
                                         <li>
+                                            <video width="100%" height="100%" controls><source src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" type="video/mp4"></video>
+                                        </li>
+                                        <li>
                                             <img src="assets/images/bigbenslider.jfif" alt="">
                                             <p class="caption">Travel</p>
                                         </li>
                                         <li>
-                                            <video width="100%" controls><source src="https://firebasestorage.googleapis.com/v0/b/ui-ux-b3439.appspot.com/o/Videos%2Fvideoplayback.mp4?alt=media&token=8b7813d9-1150-470e-9f3c-66fb669dad47" type="video/mp4"></video>
-                                        </li>
-                                        <li>
                                             <img src="assets/images/bigbenslider1.jfif" alt="">
                                             <p class="caption">Explore</p>
-                                        </li>
-                                        <li>
-                                            <img src="assets/images/bigbenslider2.jfif" alt="">
-                                            <p class="caption">Enjoy</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -157,6 +149,11 @@
                                             <div class="ui-block-a">
                                                 <h6 class="primary-color-grey-text f16 fw-bold">2 Days ago</h6>
                                             </div>
+                                            <div class="ui-block-a w50 d-flex align-items-center">
+                                                <a href="comments.html" class=" p-0 m-0" data-transition="slide" rel="external">
+                                                    <img height="auto" src="assets/images/comments.svg" width="20">
+                                                </a>
+                                            </div>
                                             <div class="ui-block-b f16 text-right">
                                                 <i class="far fa-heart"></i> 57
                                             </div>
@@ -166,7 +163,7 @@
                             </div>
                             <div class="ui-grid-a d-none hideInStore">
                                 <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-3 w100 pathUrl"
-                                       accesskey="proceed">Show All Review<span id = "review_count">(0)</span></a>
+                                       accesskey="proceed">Show All Reviews<span id = "review_count">(0)</span></a>
                             </div>
                         </div>
 
@@ -196,7 +193,9 @@
                                     <div class="ui-block-b w100">
                                         <a rel="external" href="gamification_intro.html" class="ui-btn btn primary-btn mb-3 w95 pathUrl"
                                            accesskey="proceed">PLAY</a>
+                                        <a accesskey="proceed" rel="external" href="viewinAR.html" class="ui-btn btn secondary-btn mb-3 w95 pathUrl">VIEW IN AR</a>
                                     </div>
+
                         </div>
                     </div>
                         <br>

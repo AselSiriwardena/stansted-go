@@ -31,12 +31,12 @@
 </head>
 <body class="post-login">
 <div data-role="page" class="home">
-    <div data-role="header" id="header" class="pt-5 pb-4">
-        <div class="ui-grid-a d-flex align-items-center header-title px-4 ">
-            <div class="ui-block-a">
+    <div data-role="header" id="header" class="px-4 pt-5 pb-4">
+        <div class="ui-grid-a d-flex align-items-center header-title-back">
+            <div class="ui-block-a d-flex align-items-center">
                 <h3 class="m-0">Destination</h3>
             </div>
-            <div class="ui-block-b icons">
+            <div class="ui-block-b">
                 <a class="primary-color-black-text" data-rel="popup" href="#overlay" data-position-to="origin"><i
                         class="fas fa-search"></i></a>
                 <div class="ui-content" data-shadow="false" data-theme="none" data-overlay-theme="a" data-role="popup"
@@ -51,7 +51,6 @@
                         </ul>
                     </div>
                 </div>
-                <i class="fas fa-camera" id="wow"></i>
             </div>
         </div>
     </div>
@@ -70,10 +69,43 @@
             </ul>
         </div>
         <div class="trending px-4 px-landscape-0">
-            <div class="ui-grid-a mt-4 mb-3 d-flex align-items-center px-landscape-4">
-            </div>
-            <div class="trending-items">
-                <div class="ui-grid-b px-landscape-4">
+
+            <div class="slider carousell">
+                <div class="item ui-grid-b px-landscape-4">
+                    <div class="ui-block-a w100 justify-content-center">
+                        <div class="promotion-banner ui-block-a">
+                            <a class="dealsClick" accesskey="1">
+                                <img alt="Trending promotion" class="img-fluid" width="100%"
+                                     src="assets/images/destination_1.svg">
+                            </a>
+                            <div class="ui-block-a w70">
+                                <div class="font-size font-weight-heavy">Tower Bridge</div>
+                                <h6 class="text-muted font-weight-bold">London</h6>
+                            </div>
+                            <div class="ui-block-b w30 bottom">
+                                <img src="assets/images/destination_star_rate.svg" width="100%" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ui-grid-b px-landscape-4">
+                    <div class="ui-block-a w100 justify-content-center">
+                        <div class="promotion-banner ui-block-a">
+                            <a class="dealsClick" accesskey="1">
+                                <img alt="Trending promotion" class="img-fluid" width="100%"
+                                     src="assets/images/destination_1.svg">
+                            </a>
+                            <div class="ui-block-a w70">
+                                <div class="font-size font-weight-heavy">Tower Bridge</div>
+                                <h6 class="text-muted font-weight-bold">London</h6>
+                            </div>
+                            <div class="ui-block-b w30 bottom">
+                                <img src="assets/images/destination_star_rate.svg" width="100%" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ui-grid-b px-landscape-4">
                     <div class="ui-block-a w100 justify-content-center">
                         <div class="promotion-banner ui-block-a">
                             <a class="dealsClick" accesskey="1">
@@ -93,7 +125,7 @@
             </div>
             <ul class="nav nav-tabs nav-justified nav-primary">
                 <li class="nav-item">
-                    <a href="AR.html" class="nav-link active" id="card_link" data-toggle="tab">Explore AR</a>
+                    <a rel="external" href="exploreAR.html" class="nav-link active" id="card_link" accesskey="proceed">Explore AR</a>
                 </li>
                 <li class="nav-item">
                     <a href="#paypal" class="nav-link" id="paypal_link" data-toggle="tab">Explore More</a>
@@ -371,7 +403,7 @@
     </div>
     <div data-role="footer" class="page-footer" position="fixed" data-fullscreen="true">
         <div class="grid-container  border-rad-max">
-            <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home.svg"></a></a></div>
+            <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home_selected.svg"></a></a></div>
             <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
             <div class="grid-item"><a href="store.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
             <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>

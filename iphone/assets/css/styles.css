@@ -301,13 +301,15 @@ a {
 .home #header {
     height: 100px;
 }
-
+.post-login #header {
+    padding-top: 2rem!important;
+}
 .post-login #header .header-title .ui-block-a {
-    width: 75% !important;
+    width: 10% !important;
 }
 
 .post-login #header .header-title .ui-block-b {
-    width: 25% !important;
+    width: 100% !important;
 }
 
 .post-login .header-title .ui-block-b,
@@ -333,7 +335,7 @@ a {
 }
 
 .home .search-items {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .carousell {
@@ -523,6 +525,7 @@ a {
 
 .icons {
     text-align: right;
+    padding-left: 180px;
 }
 
 .icons i {

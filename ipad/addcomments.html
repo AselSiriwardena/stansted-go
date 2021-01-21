@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Add a Review for Places</title>
+    <title>Add a Comment</title>
 
     <!-- jQuery mobile files -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -16,7 +16,7 @@
 
     <!-- Bootstrap CSS file -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom JS Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -29,70 +29,46 @@
 </head>
 
 <body class="post-login">
-    <div data-theme="b" data-role="page" class="addreview">
-        <div data-role="header" id="header2">
-            <div class="ui-grid-a">
-                <div class="container">
-                    <div class="ui-block-a w5">
-                        <a data-rel="back" rel="external"><img src="assets/img/back.svg" height="30" width="30"></a>
-                    </div>
-                    <div class="-ui-block-b w95">
-                        <h3 class="ui-block-b text-primary text-center">Add Review</h3>
-                    </div>
+<div data-theme="b" data-role="page" class="addreview">
+    <div data-role="header" id="header2">
+        <div class="ui-grid-a">
+            <div class="container">
+                <div class="ui-block-a w5">
+                    <a data-rel="back" rel="external"><img src="assets/img/back.svg" height="30" width="30"></a>
                 </div>
-            </div>
-        </div>
-        <div data-role="main">
-            <div class="container pb-5">
-                <div class="">
-                    <div class="head mt-5">
-                        <h2>Big Ben Tower</h2>
-                        <hr>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a">
-                            <div class="body mt-5 mb-3">
-                                <h3>Rating</h3>
-                                <div class="stars text-center">
-                                    <ul id="rating">
-                                        <li class="rate" value="1">
-                                            <i class="fas fa-star"></i>
-                                        </li>
-                                        <li class="rate" value="2">
-                                            <i class="fas fa-star"></i>
-                                        </li>
-                                        <li class="rate" value="3">
-                                            <i class="fas fa-star"></i>
-                                        </li>
-                                        <li class="rate" value="4">
-                                            <i class="fas fa-star"></i>
-                                        </li>
-                                        <li class="rate" value="5">
-                                            <i class="fas fa-star"></i>
-                                        </li>
-                                    </ul>
-                                    <input type="text" id="ratedVal" name="ratedVal" class="d-none"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui-block-b">
-                            <div class="feedback ui-field-contain">
-                                <label class="w100 mb-4" for="feedback">Feedback</label><br />
-                                <textarea rows="5" cols="10" type="text" name="feedback" id="feedback"
-                                    placeholder="Tell us your experience..."></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui-grid-solo w50 mx-auto pt-5">
-                        <a id="submit" rel="external"><button class="primary-btn ui-btn btn">Post Review</button></a>
-                    </div>
+                <div class="-ui-block-b w95">
+                    <h3 class="ui-block-b text-primary text-center">Add Comment</h3>
                 </div>
             </div>
         </div>
     </div>
+    <div data-role="main">
+        <div class="container pb-5">
+            <div class="">
+                <div class="head mt-5">
+                    <h2>Big Ben Tower</h2>
+                    <hr>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-b">
+                        <div class="feedback ui-field-contain">
+                            <label class="w100 mb-4" for="feedback">Your Comment</label><br />
+                            <textarea rows="5" cols="10" type="text" name="feedback" id="feedback"
+                                      placeholder="Tell us your experience..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-grid-solo w50 mx-auto pt-5">
+                    <a id="submit" rel="external"><button class="primary-btn ui-btn btn">Post Comment</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
+<!--
 <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
 <script>
@@ -132,7 +108,7 @@
 
     $("#submit").click(function () {
         docRef.add({
-            name:"Nish Ram",
+            name:"Nishara Ramasinghe",
             email: sessionStorage.getItem("loggedUser"),
             prodId: sessionStorage.getItem("currentProduct"),
             description: $("#feedback").val(),
@@ -165,3 +141,4 @@
         // });
     });
 </script>
+-->

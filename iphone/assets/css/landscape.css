@@ -136,10 +136,20 @@ and (orientation: landscape) {
 
     /* Home Page styles start */
     .post-login #header {
-        padding-top: 1.5rem!important;
+        padding-top: 1rem!important;
     }
     .home #header {
-        height: 175px;
+        height: 75px;
+    }
+    .home .search-items {
+        padding-top: 10px;
+    }
+    .post-login #header .header-title .ui-block-a {
+        width: 10% !important;
+    }
+
+    .post-login #header .header-title .ui-block-b {
+        width: 85% !important;
     }
     .post-login .header-title .ui-block-b,
     .post-login .header-title-back .ui-block-b,
@@ -159,11 +169,22 @@ and (orientation: landscape) {
     .carousell .item .card {
         width: 300px;
     }
+    .trending{
+        padding-top: 0rem!important;
+        margin-top: 0px !important;
+    }
+
     .trending-items > .ui-grid-b {
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
         display: flex;
+    }
+    .trending .trending-items {
+        justify-content: center;
+        margin-left: 10px;
+        margin-top: 5px;
+
     }
     .promotion-banner {
         width: 330px;
