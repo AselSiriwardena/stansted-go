@@ -135,6 +135,10 @@ h6 {
     left: 51.6%;
     width: 30.5%;
 }
+#feedbackInput {
+    height: 70px !important;
+    padding-top: 12px;
+}
 
 /* Breadcrumb end */
 
