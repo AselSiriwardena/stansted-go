@@ -42,8 +42,6 @@ db.collection("stations").doc('lb568IJxcibiauAEwzAI').collection('Ratings').get(
     var span2 = document.getElementById("review_count");
     span.textContent = rating.toString();
     span2.textContent = " ( "+count.toString()+" )";
+    console.log("rating count :",count.toString())
+    console.log("rating value :",rating.toString())
 });
-console.log("x2",total_rating,count)
-
-
-console.log("rating",rating)
