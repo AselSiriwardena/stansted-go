@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reviews Places</title>
+    <title>Station Reviews</title>
 
     <!-- jQuery mobile files -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -45,7 +45,7 @@
     <div data-role="main">
         <div class="container pb-5">
             <div class="head mt-5">
-                <a href="addreview.html" rel="external">
+                <a href="addreview_stations.html" rel="external">
                     <h3 class="text-center">Add a Review</h3>
                 </a>
             </div>
@@ -404,7 +404,7 @@
 
     let i = 0;
 
-    db.collection("Places").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
+    db.collection("stations").doc('lb568IJxcibiauAEwzAI').collection('Ratings').get().then((snapshot) => {
         snapshot.forEach(function(x) {
             $("#test1").append(`
                             ${!Boolean(i % 2) ? `<div class="ui-block-a w50 pl-3">` : `<div class="ui-block-b w50 pl-3">`}

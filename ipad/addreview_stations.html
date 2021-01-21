@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Add a Review for Places</title>
+    <title>Add Rating for Station</title>
 
     <!-- jQuery mobile files -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -46,7 +46,7 @@
             <div class="container pb-5">
                 <div class="">
                     <div class="head mt-5">
-                        <h2>Big Ben Tower</h2>
+                        <h2>London Stations</h2>
                         <hr>
                     </div>
                     <div class="ui-grid-a">
@@ -109,7 +109,7 @@
     var app = firebase.initializeApp(config);
     // Initialize Cloud Firestore through Firebase
     const db = app.firestore();
-    const docRef = db.collection("Places").doc('place_id_01').collection('Ratings');
+    const docRef = db.collection("stations").doc('lb568IJxcibiauAEwzAI').collection('Ratings');
 
     $(document).ready(function () {
 
@@ -141,7 +141,7 @@
         })
             .then(function(docRef) {
                 console.log("Document written with ID: ", docRef.id);
-                document.location.href = 'reviews.html';
+                document.location.href = 'reviews_stations.html';
             })
             .catch(function(error) {
                 console.error("Error adding document: ", error);

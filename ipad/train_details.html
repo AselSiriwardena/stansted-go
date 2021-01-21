@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,11 +84,11 @@
                         <h3 id="productTitle">London Station</h3>
                         <div class="ui-grid-a">
                             <div class="ui-block-a w40">
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star secondary-color-yellow-text"></i>
-                                <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                <i id="star1" class="fa fa-star secondary-color-yellow-text"></i>
+                                <i id="star2" class="fa fa-star secondary-color-yellow-text"></i>
+                                <i id="star3" class="fa fa-star secondary-color-yellow-text"></i>
+                                <i id="star4" class="fa fa-star secondary-color-yellow-text"></i>
+                                <i id="star5" class="fa fa-star-o secondary-color-yellow-text"></i>
                             </div>
                             <div class="ui-block-b w60">
                                 <a href="reviews.html" rel="external">
@@ -160,8 +162,8 @@
                                 </div>
                             </div>
                             <div class="ui-grid-a d-none hideInStore">
-                                <a href="reviews.html" rel="external" class="ui-btn btn secondary-btn mb-3 w100 pathUrl"
-                                       accesskey="proceed">Show All Review </a>
+                                <a href="reviews_stations.html" rel="external" class="ui-btn btn secondary-btn mb-3 w100 pathUrl"
+                                   accesskey="proceed">Show All Review<span id = "review_count">(0)</span></a>
                             </div>
                         </div>
 
@@ -187,6 +189,49 @@
                         </div>
                             <hr class="rounded w95" >
                     </div>
+                        <div class="rating">
+                            <div class="rating__number"><span id="rating_value">5.0</span></div>
+                            <div class="rating__stars">
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                </div>
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+
+                                </div>
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+
+                                </div>
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+                                    <i class="fas fa-star rating__star"></i>
+
+                                </div>
+                                <div class="rating__stars-line">
+                                    <i class="fas fa-star rating__star"></i>
+
+                                </div>
+                            </div>
+                            <div id="ratingBars" class="rating__bars">
+                                <div id ="bar1" class="rating__bar rating__bar--1">
+
+                                </div>
+                                <div id ="bar2" class="rating__bar rating__bar--2"></div>
+                                <div id ="bar3" class="rating__bar rating__bar--3"></div>
+                                <div id ="bar4" class="rating__bar rating__bar--4"></div>
+                                <div id ="bar5" class="rating__bar rating__bar--5"></div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -488,6 +533,7 @@
             });
         })
     </script>
+        <script src="scripts/rating_process_stations.js"></script>
 </body>
 
 </html>
