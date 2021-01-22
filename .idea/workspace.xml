@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8c99bae-1f29-4591-90b9-2fd52f997bbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/iphone/gamfication-q2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iphone/gamification.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/gamification_intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/gamification_intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-landscape.css" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-landscape.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-portrait.css" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-portrait.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/gamfication-q2.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/gamfication-q2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="pesh" />
+                    <option name="lastUsedInstant" value="1611254472" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1611254465" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1nNsKnwHRkcFUYI7S75QMKOTiSe" />
   <component name="ProjectViewState">
@@ -65,5 +90,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
