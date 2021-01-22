@@ -1,12 +1,12 @@
 [
     {
       "id":"6",
-      "name":"London",
+      "name":"Alcester",
       "details":"Embark on a quest around London by solving clues that will take you to the most haunted places in the city, all with the help of your smartphone. ...",
       "price":"199.99",
       "rating":"3",
       "noReviews":"27",
-      "image":"assets/images/poiListImg5.jpg",
+      "image":"assets/images/poiListImg7.jpg",
       "review":[
         {
           "email":"123@gmail.com",
