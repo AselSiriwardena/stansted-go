@@ -54,7 +54,7 @@
                                         <div class="ui-block-b w80 pl-2">
                                             <div class="ui-grid-a">
                                                 <div class="ui-block-a w40">
-                                                    <h4 style="line-height: 1.5;" class="black"><b>Jane Doe</b></h4>
+                                                    <h4 style="line-height: 1.5;" class="black"><b>Nish Ram</b></h4>
                                                 </div>
                                                 <div style="color: #E2C224;" class="ui-block-b w60 text-right">
                                                     <i class="fas fa-star"></i>
@@ -88,18 +88,6 @@
         </div>
         <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" id="collapse">
             <h4>Comments</h4>
-            <div class=" ui-grid-a pt-2 primary-color-blue-bg">
-                <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
-                <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">Comment_1</p>
-            </div>
-            <div class=" ui-grid-a pt-2 primary-color-white-bg">
-                <img class="ui-block-a" src="assets/images/reply_profile_2.svg" height="50px">
-                <p style="word-wrap: break-word;" class="ui-block-b primary-color-black-text text f16">Comment_2</p>
-            </div>
-            <div class=" ui-grid-a pt-2 primary-color-blue-bg">
-                <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
-                <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">Comment_3</p>
-            </div>
             <div id="comments_nish">
             </div>
         </div>
@@ -133,23 +121,24 @@
     var app = firebase.initializeApp(config);
     // Initialize Cloud Firestore through Firebase
     const db = app.firestore();
+    const docRef = db.collection("Places").doc('place_id_01').collection('comments');
 
     let i = 0;
-    $("#submit").click(function () {
-        console.log($("#feedbackInput").val())
-        $("#comments_nish").append(`
+    db.collection("Places").doc('place_id_01').collection('comments').get().then((snapshot) => {
+        snapshot.forEach(function(x) {
+            $("#comments_nish").append(`
         <div class=" ui-grid-a pt-2 primary-color-blue-bg">
                 <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
-                <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">${$("#feedbackInput").val()}</p>
+                <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">${x.data().comment}</p>
             </div>
         `)
-        /*docRef.add({
-            name:"Nish Ram",
-            email: sessionStorage.getItem("loggedUser"),
-            prodId: sessionStorage.getItem("currentProduct"),
-            description: $("#feedback").val(),
-            time: 'Just Now',
-            rating: $('#ratedVal').val()
+        })
+    })
+    $("#submit").click(function () {
+        console.log($("#feedbackInput").val())
+        docRef.add({
+            comment : $("#feedbackInput").val()
+
         })
             .then(function(docRef) {
                 console.log("Document written with ID: ", docRef.id);
@@ -158,7 +147,6 @@
             .catch(function(error) {
                 console.error("Error adding document: ", error);
             });
-*/
         // $.post("backend/review.php", {
         //     action: "add",
         //     email: sessionStorage.getItem("loggedUser"),
