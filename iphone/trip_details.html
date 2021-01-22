@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trip details</title>
+
+    <!-- jQuery mobile files -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <!-- Font awesome file -->
+    <script src="https://kit.fontawesome.com/f083cf2118.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom JS Files -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+    <!-- Custom main CSS file -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--Normal API key -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initAutocomplete&libraries=places&v=weekly"
+            defer
+    ></script>
+    <!--    With Marker-->
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1qVGFzRPQQ1Ii5v78fJ5q0OsIUaBobUM&callback=initMap&libraries=places&v=weekly"
+            defer
+    ></script>
+
+    <!--custom css and js files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/map_style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/rating_style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/card_style.css"/>
+    <script src="scripts/map.js"></script>
+
+</head>
+
+<body class="post-login">
+<div data-role="page" class="productDetails">
+    <div data-role="header" id="header" class="align-stuff">
+        <div class="container">
+            <div class="ui-grid-a">
+                <div class="ui-block-a w10">
+                    <div class="ui-grid-a">
+                        <div class="container">
+                            <div class="ui-block-a w10">
+                                <a data-rel="back" rel="external"><img src="assets/img/back.svg" height="30"
+                                                                       width="30"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ui-grid-a pl-4 mt-3">
+                <div class="ui-block-a w60 prod-deets">
+                    <h3 id="productTitle">Trip Details</h3>
+                </div>
+                <div class="ui-block-a w100 ">
+                    <div class="card py-0 px-0">
+                        <div id="map"></div>
+                    </div>
+                    <div class="ui-block-a w100 ">
+                        <div class="ui-grid-solo mt-1">
+                            <div class="card pb-3">
+                                <div class="ui-grid-a mt-3">
+                                    <div class="ui-block-a pl-3">
+                                        <h3 class="primary-color-black-text fw-bold"> Summary</h3>
+                                    </div>
+                                    <div class="ui-block-b pr-3 text-right">
+                                        <p class="primary-color-blue-text f16 fw-bold">Back to cart</p>
+                                    </div>
+                                </div>
+                                <div class=" mt-4">
+                                        <div class=" pl-3">
+                                            <h3 class="primary-color-black-text fw-bold f22">Routes</h3>
+                                            <div class="items pt-3 pr-5">
+                                                <div class="ui-grid-a">
+                                                    <div class="ui-block-a w60">
+                                                        <p class="primary-color-grey-text f16">Stok Coffee Medium Brew</br><span
+                                                                class="primary-color-red-text fw-bold">x3</span></p>
+                                                    </div>
+                                                    <div class="ui-block-b w40 text-right">
+                                                        <p class="primary-color-black-text f16 fw-bold">220.00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ui-grid-a">
+                                                    <div class="ui-block-a w60">
+                                                        <p class="primary-color-grey-text f16">Stok Coffee Medium Brew</br><span
+                                                                class="primary-color-red-text fw-bold">x3</span></p>
+                                                    </div>
+                                                    <div class="ui-block-b w40 text-right">
+                                                        <p class="primary-color-black-text f16 fw-bold">220.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" pl-5">
+                                            <h3 class="primary-color-black-text fw-bold f22">Payment</h3>
+                                            <div class="total pt-3 pr-3">
+                                                <div class="ui-grid-a">
+                                                    <div class="ui-block-a">
+                                                        <p class="primary-color-grey-text f16"> Total</p>
+                                                    </div>
+                                                    <div class="ui-block-b text-right">
+                                                        <p class="primary-color-black-text f16 fw-bold">220.00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ui-grid-a">
+                                                    <div class="ui-block-a">
+                                                        <p class="primary-color-grey-text f16">Tax</p>
+                                                    </div>
+                                                    <div class="ui-block-b text-right">
+                                                        <p class="primary-color-black-text f16 fw-bold">10.00</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ui-grid-a">
+                                                    <div class="ui-block-a">
+                                                        <p class="primary-color-grey-text f16">Coupon Discount</p>
+                                                    </div>
+                                                    <div class="ui-block-b text-right">
+                                                        <p class="primary-color-red-text f16 fw-bold">-0.00</p>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="ui-grid-a">
+                                                    <div class="ui-block-a">
+                                                        <h3 class="primary-color-black-text f22 fw-bold">Total</h3>
+                                                    </div>
+                                                    <div class="ui-block-b text-right">
+                                                        <p class="primary-color-red-text fw-bold f16">USD<span class="f22"> 230.00</span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="ui-grid-a">
+                                                    <div class="ui-block-a">
+                                                        <h3 class="primary-color-black-text f22 fw-bold"></h3>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="ui-block-b text-right">
+                                                        <p class="primary-color-red-text fw-bold f16"><span class="f22"> </span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div data-role="footer" position="fixed" id="footer2" data-tap-toggle="false">
+            <div class="page-footer" data-fullscreen="true">
+                <div class="grid-container  border-rad-max">
+                    <div class="grid-item"><a href="home.html" data-transition="slide"><img
+                            src="assets/images/nav_home_selected.svg"></a></a></div>
+                    <div class="grid-item"><a href="favouritesAll.html" data-transition="slide"><img
+                            src="assets/images/nav_heart.svg"></a></a></div>
+                    <div class="grid-item"><a href="explore_more.html" data-transition="slide"><img
+                            src="assets/images/nav_mini_logo.svg"></a></a></div>
+                    <div class="grid-item"><a href="cart.html" data-transition="slide"><img
+                            src="assets/images/nav_trips.svg"></a></a></div>
+                    <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img
+                            src="assets/images/nav_profile.svg"></a></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $("#added").on("click", function () {
+                $("#addedPop").popup("open");
+                setTimeout(function () {
+                    $("#addedPop").popup("close");
+                }, 2000);
+            });
+
+            if (sessionStorage.getItem("currentDeal") === "2") {
+                $(".showInStore").removeClass("d-none");
+
+            } else {
+                $(".hideInStore").removeClass("d-none");
+            }
+
+
+            $(document).on("click", ".dealsClick", function () {
+                sessionStorage.setItem("currentDeal", this.accessKey);
+                sessionStorage.setItem("ratingFilter", '0');
+                sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"999"}');
+                sessionStorage.setItem("sort", 'default');
+                document.location.href = 'promotion_details.html';
+            });
+            quantity = 1;
+            var thisimage;
+            var prodId;
+
+            $.post("backend/singleProduct.php", {
+                currentProduct: sessionStorage.getItem("currentProduct")
+            }, function (data, status) {
+                data = JSON.parse(data);
+                $.each(data, function (i, v) {
+                    prodId = v.id;
+                    thisimage = v.image;
+                    $('#productTitle').text(v.name);
+                    $('#productDetails').text(v.details);
+                    $('#price').text(' ' + v.price);
+                    $("#image").attr("src", v.image);
+                });
+            });
+
+            $(".count").text("1");
+
+
+            $(".plusCount").bind("click", function (event, ui) {
+                quantity += 1;
+                $(".count").text(quantity.toString());
+            });
+
+            $(".minusCount").bind("click", function (event, ui) {
+                quantity -= 1;
+                if (parseInt(quantity) > 0) {
+                    $(".count").text(quantity.toString());
+                } else {
+                    quantity = 1;
+                    $(".count").text(quantity.toString());
+                }
+            });
+            var alreadyCart = false;
+            var index;
+            $(".pathUrl").click(function () {
+                if (sessionStorage.getItem("currentDeal") === "2") {
+                    document.location.href = this.accessKey;
+                }
+                var currentCart = JSON.parse(sessionStorage.getItem('cart'));
+                $.each(currentCart['items'], function (i, item) {
+                    if (item['id'] === prodId) {
+                        alreadyCart = true;
+                        index = i;
+                        return false;
+                    }
+                });
+                if (alreadyCart) {
+                    currentCart['total'] = (parseFloat(currentCart['total']) - (parseFloat(currentCart[
+                        'items'][index]['amount']) * parseFloat(currentCart['items'][index][
+                        'price'
+                        ]))).toFixed(2);
+                    currentCart['items'][index]['amount'] = quantity;
+                    currentCart['total'] = (parseFloat(currentCart['total']) + (parseFloat(currentCart[
+                        'items'][index]['amount']) * parseFloat(currentCart['items'][index][
+                        'price'
+                        ]))).toFixed(2);
+                    sessionStorage.setItem('cart', JSON.stringify(currentCart));
+                } else {
+                    var thisItem = {};
+                    thisItem['image'] = thisimage;
+                    thisItem['id'] = prodId;
+                    thisItem['name'] = $('#productTitle').text();
+                    thisItem['price'] = $('#price').text();
+                    thisItem['amount'] = quantity;
+                    currentCart['total'] = (parseFloat(currentCart['total']) + (parseFloat(thisItem[
+                        'amount']) * parseFloat(thisItem['price']))).toFixed(2);
+                    currentCart['items'].push(thisItem);
+                    sessionStorage.setItem('cart', JSON.stringify(currentCart));
+                }
+
+                if (this.accessKey === 'proceed') {
+                    document.location.href = "cart.html";
+                } else if (this.accessKey === 'reviews') {
+                    document.location.href = "reviews.html";
+                } else {
+
+                }
+
+            });
+            $.post("backend/userData.php", {
+                action: 'view',
+                currentUser: sessionStorage.getItem("loggedUser")
+            }, function (data, status) {
+                const json = JSON.parse(data);
+                const favArray = json.favoriteList;
+                const parseProductNo = parseInt(sessionStorage.getItem("currentProduct"));
+                if (jQuery.inArray(parseProductNo, favArray) !== -1) {
+                    const heart = `fas fa-heart primary-color-red-text pointer removeClick`;
+                    $("#favourite").addClass(heart);
+
+                } else {
+                    const heart = `far fa-heart pointer addClick`;
+                    $("#favourite").addClass(heart);
+                }
+
+            });
+            $(document).on("click", ".addClick", function () {
+                const that = this;
+                $.post("backend/favourite.php", {
+                    action: 'add',
+                    currentUser: sessionStorage.getItem("loggedUser"),
+                    prodId: sessionStorage.getItem("currentProduct")
+                }, function (data, status) {
+                    $(that).removeClass('far fa-heart pointer addClick');
+                    $(that).addClass('fas fa-heart primary-color-red-text pointer removeClick');
+                });
+            });
+            $(document).on("click", ".removeClick", function () {
+                const that = this;
+                $.post("backend/favourite.php", {
+                    action: 'remove',
+                    currentUser: sessionStorage.getItem("loggedUser"),
+                    prodId: sessionStorage.getItem("currentProduct")
+                }, function (data, status) {
+                    $(that).removeClass(
+                        'fas fa-heart primary-color-red-text pointer removeClick');
+                    $(that).addClass('far fa-heart pointer addClick');
+                });
+            });
+        })
+    </script>
+</body>
+
+</html>
