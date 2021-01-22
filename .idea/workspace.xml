@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="723b33f1-2a23-4c41-8eaa-9d1b943f3486" name="Default Changelist" comment="email changes">
-      <change afterPath="$PROJECT_DIR$/iphone/assets/images/Scotland.svg" afterDir="false" />
+    <list default="true" id="723b33f1-2a23-4c41-8eaa-9d1b943f3486" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/assets/images/Scotland.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/assets/images/Scotland.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/4.json" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/data/products/4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/5.json" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/data/products/5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/promotions/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/data/promotions/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/data/products/10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/data/products/11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/data/products/12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/data/products/13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/data/products/6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/data/products/7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/data/products/8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/data/products/9.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iphone/data/users/asel.2017454@iit.ac.lk.json" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/data/users/asel.2017454@iit.ac.lk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/favourites.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/favourites.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/product_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iphone/payment_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/payment_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iphone/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/promotion_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/promotion_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iphone/ticket-options.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/ticket-options.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/iphone/assets/images" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/stanstedGo-iPad" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -87,6 +87,14 @@
       <updated>1611241824993</updated>
       <workItem from="1611241826512" duration="8814000" />
     </task>
+    <task id="LOCAL-00001" summary="ticket options changes">
+      <created>1611306346405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611306346405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,38 +113,46 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ticket options changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ticket options changes" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1611296282393">
+    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1611306344812">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611296282393" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1611302313888">
+    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306344812" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1611309682610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611302313888" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611309682610" />
     <state x="147" y="22" width="1242" height="802" key="MergeDialog" timestamp="1611291284483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="22" width="1242" height="802" key="MergeDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611291284483" />
-    <state x="481" y="128" key="MultipleFileMergeDialog" timestamp="1611291284489">
+    <state x="481" y="128" key="MultipleFileMergeDialog" timestamp="1611306359458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="481" y="128" key="MultipleFileMergeDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611291284489" />
+    <state x="481" y="128" key="MultipleFileMergeDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306359458" />
+    <state x="565" y="123" key="RollbackChangesDialog" timestamp="1611306389020">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="565" y="123" key="RollbackChangesDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306389020" />
     <state x="461" y="181" key="Vcs.Multiple.Commit.Info.Dialog.Key" timestamp="1611291278034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="461" y="181" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611291278034" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611298113671">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611307313587">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611298113671" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611307313587" />
     <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1611306172354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306172354" />
-    <state x="471" y="203" key="git4idea.merge.GitPullDialog" timestamp="1611298107175">
+    <state x="471" y="203" key="git4idea.merge.GitPullDialog" timestamp="1611306350397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="471" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611298107175" />
+    <state x="471" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306350397" />
   </component>
 </project>
