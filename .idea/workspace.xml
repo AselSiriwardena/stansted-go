@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a816f1cd-fa10-45fb-8156-361805933921" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/product_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/aboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/explore_more.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/explore_more.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/favouritesAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/favouritesAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/gamfication-q2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamfication-q2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/gamification.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/gamification_intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamification_intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/promotion_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/promotion_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/sort_filtering.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/sort_filtering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/trip_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/trip_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,12 +84,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c8c99bae-1f29-4591-90b9-2fd52f997bbc" name="Default Changelist" comment="" />
+      <changelist id="a816f1cd-fa10-45fb-8156-361805933921" name="Default Changelist" comment="" />
       <created>1611241824993</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611241824993</updated>
       <workItem from="1611241826512" duration="8814000" />
+      <workItem from="1611308393762" duration="1207000" />
     </task>
     <servers />
   </component>
