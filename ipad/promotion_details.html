@@ -24,13 +24,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom main CSS file -->
+    <link rel="stylesheet" type="text/css" href="assets/css/commonIpadLandscapeStyles.css"/>
     <link href="index.css" rel="stylesheet">
 
 </head>
 
 <body class="post-login">
     <div data-role="page" class="promoDetails">
-        <div data-role="header" id="header" class="align-stuff">
+        <div data-role="header" id="header" class="">
             <div class="container ">
                 <div class="ui-grid-a head-head">
                     <div class="ui-block-a pt-2 primary-color-blue-text">
@@ -44,20 +45,19 @@
                             <div class="deals-search-bar">
                                 <ul data-role="listview" data-filter="true" data-filter-reveal="true"
                                     data-filter-placeholder="Searching Promotions" data-inset="true">
-                                    <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>
-                                    <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>
-                                    <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>
-                                    <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>
+                                    <li><a class="dealsClick" accesskey="1">Trains</a></li>
+                                    <li><a class="dealsClick" accesskey="2">Places</a></li>
+                                    <li><a class="dealsClick" accesskey="3">Hotels</a></li>
+<!--                                    <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>-->
                                 </ul>
                             </div>
                         </div>
-                        <a class="primary-color-black-text" href="realAR.html" rel="external"><i
-                                class="fas fa-camera"></i></a>
+<!--                        <a class="primary-color-black-text" href="realAR.html" rel="external"><i-->
+<!--                                class="fas fa-camera"></i></a>-->
                     </div>
                 </div>
                 <div class="ui-grid-a head-body">
-                    <div class="ui-block-a text-uppercase w80 f50 font-weight-bold" id="promotionTitle">Winter Coffee
-                        Sale</div>
+                    <div class="ui-block-a text-uppercase w80 f50 font-weight-bold" id="promotionTitle">Trips</div>
                     <div class="ui-block-a w100 secondary-color-gold-text pt-3"> Up to <span id="discount"></span>% Off
                     </div>
                     <div style="font-size: 22px;" class="ui-block-a w70 f16 small pt-3" id="promotionDetails">Winter is
@@ -68,13 +68,13 @@
                     <div class="ui-block-a w100 d-flex pt-4">
                         <div class="primary-color-grey-text small f16 w65">Offer Valid till <span id="duration"></span>
                         </div>
-                        <div class="small w35 primary-color-blue-text f16 text-right pr-3"><span id="type"></span> Store
-                            Offer</div>
+<!--                        <div class="small w35 primary-color-blue-text f16 text-right pr-3"><span id="type"></span> Store-->
+<!--                            Offer</div>-->
                     </div>
                 </div>
             </div>
         </div>
-        <div role="main" class="align-stuff">
+        <div role="main" class="">
             <div class="container">
                 <div class="favourites pb-5">
                     <div class="ui-grid-a main-head">
@@ -94,77 +94,13 @@
                 </div>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed" id="footer" data-tap-toggle="false" transition="fade"
-            class="py-2">
-            <div data-role="navbar" data-grid="d" class="h90 text-center footer">
-                <ul class="h100">
-                    <li class="w100 h20 nav-footer">
-                        <a href="home.html" rel="external">
-                            <i class="fa fa-home"></i>
-                            <div>Home</div>
-                        </a>
-                    </li>
-                    <li class="w100 h20 nav-footer">
-                        <a href="deals.html" rel="external" class="active">
-                            <i class="fa fa-tag font"></i>
-                            <div>Deals</div>
-                        </a>
-                    </li>
-                    <li class="w100 h20 nav-footer">
-                        <a href="explore_more.html" rel="external">
-                            <i class="fa fa-store-alt"></i>
-                            <div>Store</div>
-                        </a>
-                    </li>
-                    <li class="w100 h20 nav-footer">
-                        <a href="cart.html" rel="external">
-                            <i class="fa fa-shopping-cart"></i>
-                            <div>Cart</div>
-                        </a>
-                    </li>
-                    <li class="w100 h20 nav-footer">
-                        <a href="profile.html" rel="external">
-                            <i class="fa fa-user"></i>
-                            <div>Profile</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div data-role="footer" data-position="fixed" id="footer2" data-tap-toggle="false" transition="fade">
-            <div data-role="navbar" data-grid="d" class="text-center footer2">
-                <ul class="w100">
-                    <li class="w20 nav-footer">
-                        <a href="home.html" rel="external">
-                            <i class="fa fa-home"></i>
-                            <div>Home</div>
-                        </a>
-                    </li>
-                    <li class="w20 nav-footer">
-                        <a href="deals.html" rel="external" class="active">
-                            <i class="fa fa-tag font"></i>
-                            <div>Deals</div>
-                        </a>
-                    </li>
-                    <li class="w20 nav-footer">
-                        <a href="explore_more.html" rel="external">
-                            <i class="fa fa-store-alt"></i>
-                            <div>Store</div>
-                        </a>
-                    </li>
-                    <li class="w20 nav-footer">
-                        <a href="cart.html" rel="external">
-                            <i class="fa fa-shopping-cart"></i>
-                            <div>Cart</div>
-                        </a>
-                    </li>
-                    <li class="w20 nav-footer">
-                        <a href="profile.html" rel="external">
-                            <i class="fa fa-user"></i>
-                            <div>Profile</div>
-                        </a>
-                    </li>
-                </ul>
+        <div data-role="footer" class="page-footer" position="fixed" data-fullscreen="true">
+            <div class="grid-container  border-rad-max">
+                <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home_selected.svg"></a></a></div>
+                <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
+                <div class="grid-item"><a href="store.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
+                <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
+                <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
             </div>
         </div>
     </div>
@@ -243,52 +179,57 @@
                             item['id'] + '"';
                     }
                     const viewshowProducts = divTag + `
+
+
+
+
+
+
+
                             <div class="card py-0 px-0">
-                                <div class="top px-2 py-4 productClick"  accessKey=` + item['id'] + `>
-                                    <div class="ui-block-a w40">
-                                        <a href="product_details.html" rel="external">
-                                            <img alt="product Image" class="img-fluid"
-                                                src="` + item['image'] + `">
-                                        </a>
+                                <div class="top  productClick"  accessKey=` + item['id'] + `>
+                                    <div class=" ui-grid-a">
+                                <div class="ui-block-solo">
+                                    <img src="` + item['image'] + `" alt="5 Terre" class="imgHeight200" style="border-radius: 20px 20px 0 0;">
+                                </div>
+
+                                <div class="promotionalContainer ">
+                                    <div class="ui-block-a">
+                                        <h3>` + item['name'] + `</h3>
                                     </div>
-                                    <div class="ui-block-b w60">
-                                        <div class="ui-grid-solo">
-                                            <div class="ui-block-a">
-                                                <h4 class="fw-bold mt-0">` + item['name'] + `</h4>
-                                            </div>
-                                        </div>
-                                        <div class="ui-grid-a">
-                                            <div class="ui-block-a w100">
-                                                <i class="fas fa-star secondary-color-yellow-text"></i>
-                                                <i class="fas fa-star secondary-color-yellow-text"></i>
-                                                <i class="fas fa-star secondary-color-yellow-text"></i>
-                                                <i class="fas fa-star secondary-color-yellow-text"></i>
-                                                <i class="far fa-star secondary-color-yellow-text"></i>
-                                            </div>
-                                            <div class="ui-block-a">
-                                                <del>20.99</del>
-                                            </div>
-                                            <div class="ui-block-a">
-                                                <div class="red">USD ` + item['price'] + `</div>
-                                            </div>
-                                        </div>
+                                    <div class="ui-block-b" style="float:right; color: orange;margin-left: 5px;">
+                                        <h3>` + item['rating'] + `</h3>
                                     </div>
+                                    <div class="ui-block-b" style="float:right;">
+                                        <img src="assets/images/destination_star_rate.svg" alt="" >
+                                    </div>
+
+
+
+                                    <div class="ui-block-a">
+                                        <p>Brimsdown railway station is on the Lea Valley line
+                                            that forms part of the West Anglia Main Line,
+                                            serving the neighbourhood of Brimsdown in the London </p>
+                                    </div>
+
+                                </div>
+                            </div>
                                 </div>
                                 <div class="ui-grid-b mb-0 mx-0 product_foot mt-2">
-                                    <div class="ui-block-a w20 text-left">
-                                        <i ` + palaceHolder + `style="font-size: 26px;"></i>
-                                    </div>
-                                    <div class="ui-block-b w40 text-right share">
-                                        <i class="fa fa-share-alt d-inline"></i>
-                                        <h6 class="primary-color-black-text d-inline">Share</h6>
-                                    </div>
-                                    <div class="ui-block-c w40 text-right">
-                                        <a >
-                                            <i class="fa fa-shopping-cart text-primary d-inline"></i>
-                                            <h6 class="text-primary d-inline buyNow" accessKey="` + item['id'] +`">Buy Now</h6>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="ui-block-a w20 text-left">
+                                <i class="far fa-heart" style="font-size: 26px;"></i>
+                            </div>
+                            <div class="ui-block-b w40 text-right share">
+                                <i class="fa fa-share-alt d-inline"></i>
+                                <h6 class="primary-color-black-text d-inline">Share</h6>
+                            </div>
+                            <div class="ui-block-c w40 text-right">
+                                <a href="#" rel="external">
+                                    <i class="fa fa-shopping-cart text-primary d-inline"></i>
+                                    <h6 class="text-primary d-inline">Book Now</h6>
+                                </a>
+                            </div>
+                        </div>
                             </div>
                         </div>`;
                     $("#itemContain").append(viewshowProducts);

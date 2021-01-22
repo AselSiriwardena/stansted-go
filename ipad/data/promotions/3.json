@@ -1,1 +1,17 @@
-[{"name":"TRAIN CLEARANCE","discount":"30","details":"We know how much furniture is important to transform a house into a home. You will not belive with our prices anyone can afford furniture.","duration":"24/11/2019","type":"Online","productList":[6,7,8,9,10,11]}]
+[
+  {
+    "name":"TRAIN CLEARANCE",
+    "discount":"30",
+    "details":"Winter is here and we know how precious travelling is to keep you warm. Browse through an extensive collection of renowned packages to help you survive the cold holiday season...",
+    "duration":"24/11/2019",
+    "type":"Online",
+    "productList":[
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  }
+]
