@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="723b33f1-2a23-4c41-8eaa-9d1b943f3486" name="Default Changelist" comment="">
+    <list default="true" id="a816f1cd-fa10-45fb-8156-361805933921" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/12.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/products/9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/data/users/asel.2017454@iit.ac.lk.json" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/data/users/asel.2017454@iit.ac.lk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/payment_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/payment_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/ticket-options.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/ticket-options.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/aboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/explore_more.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/explore_more.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/favouritesAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/favouritesAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/gamfication-q2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamfication-q2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/gamification.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/gamification_intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamification_intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/promotion_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/promotion_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/sort_filtering.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/sort_filtering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/trip_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/trip_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -37,12 +39,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="pesh_backup1" />
+                    <option name="lastUsedInstant" value="1611305078" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="pesh" />
-                    <option name="lastUsedInstant" value="1611254472" />
+                    <option name="lastUsedInstant" value="1611286480" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="develop" />
-                    <option name="lastUsedInstant" value="1611254465" />
+                    <option name="lastUsedInstant" value="1611286388" />
                   </RecentBranch>
                 </list>
               </option>
@@ -62,39 +68,30 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/stanstedGo-iPad" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/iphone/backend" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Noice\iphone\assets\images" />
-      <recent name="C:\wamp64\www\newux\iphone" />
+      <recent name="C:\wamp64\www\newux\iphone\backend" />
       <recent name="C:\wamp64\www\newux\iphone\assets\images" />
+      <recent name="C:\wamp64\www\newux\ipad\assets\images" />
+      <recent name="C:\wamp64\www\newux\iphone" />
       <recent name="C:\wamp64\www\newux\iphone\assets\css" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c8c99bae-1f29-4591-90b9-2fd52f997bbc" name="Default Changelist" comment="" />
+      <changelist id="a816f1cd-fa10-45fb-8156-361805933921" name="Default Changelist" comment="" />
       <created>1611241824993</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611241824993</updated>
       <workItem from="1611241826512" duration="8814000" />
+      <workItem from="1611308393762" duration="1207000" />
     </task>
-    <task id="LOCAL-00001" summary="ticket options changes">
-      <created>1611306346405</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1611306346405</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,53 +103,22 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="COLUMN_ORDER" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="pesh" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="ticket options changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ticket options changes" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="393" y="6" key="CommitChangelistDialog2" timestamp="1611306344812">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="393" y="6" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306344812" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1611309682610">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611309682610" />
-    <state x="147" y="22" width="1242" height="802" key="MergeDialog" timestamp="1611291284483">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="147" y="22" width="1242" height="802" key="MergeDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611291284483" />
-    <state x="481" y="128" key="MultipleFileMergeDialog" timestamp="1611306359458">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="481" y="128" key="MultipleFileMergeDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306359458" />
-    <state x="565" y="123" key="RollbackChangesDialog" timestamp="1611306389020">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="565" y="123" key="RollbackChangesDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306389020" />
-    <state x="461" y="181" key="Vcs.Multiple.Commit.Info.Dialog.Key" timestamp="1611291278034">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="461" y="181" key="Vcs.Multiple.Commit.Info.Dialog.Key/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611291278034" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611307313587">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611307313587" />
-    <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1611306172354">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306172354" />
-    <state x="471" y="203" key="git4idea.merge.GitPullDialog" timestamp="1611306350397">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="471" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824/1920.0.1304.768@0.0.1536.824" timestamp="1611306350397" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
