@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a816f1cd-fa10-45fb-8156-361805933921" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/data/users/peshala@pesh.com.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/users/peshala@pesh.com.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ipad/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/product_details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +30,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="pesh_backup1" />
+                    <option name="lastUsedInstant" value="1611305078" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="pesh" />
                     <option name="lastUsedInstant" value="1611286480" />
