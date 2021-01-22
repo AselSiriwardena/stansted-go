@@ -46,7 +46,7 @@
         <div class="container pb-5">
             <div class="head mt-5">
                 <a href="addreview.html" rel="external">
-                    <h3 class="text-center">Add a Review</h3>
+                    <h3 class="text-center">Add Rating to Place</h3>
                 </a>
             </div>
             <ul class="nav nav-tabs nav-justified nav-primary mt-4">
@@ -67,15 +67,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show active" id="highest">
+                <div class="tab-pane fade" id="highest">
                     <div class="ui-grid-a">
-                        <div id="test2" >
+                        <div id="highest_reviews" >
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade show active" id="lowest">
+                <div class="tab-pane fade" id="lowest">
                     <div class="ui-grid-a">
-                        <div id="test3" >
+                        <div id="lowest_reviews" >
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                             </div>
                 `);
             if(parseInt(x.data().rating,10)>3){
-                $("#test2").append(`
+                $("#highest_reviews").append(`
                             ${!Boolean(i % 2) ? `<div class="ui-block-a w50 pl-3">` : `<div class="ui-block-b w50 pl-3">`}
                             <div class="ui-block-a pl-3">
                                 <div class="card">
@@ -232,7 +232,7 @@
                             </div>
                 `);
             }else {
-                $("#test3").append(`
+                $("#lowest_reviews").append(`
                             ${!Boolean(i % 2) ? `<div class="ui-block-a w50 pl-3">` : `<div class="ui-block-b w50 pl-3">`}
                             <div class="ui-block-a pl-3">
                                 <div class="card">

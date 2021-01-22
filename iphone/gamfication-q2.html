@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="assets/css/gamification-styles-landscape.css"/>
+    <link rel="stylesheet" href="assets/css/gamification-styles-portrait.css"/>
+
+    <!-- jQuery mobile files -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Font awesome file -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/f083cf2118.js"></script>
+
+    <!-- Swiper script file -->
+    <script src="scripts/preLoginSwiper.js"></script>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom main CSS file -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body class="">
+<div data-role="page"  class=" leaderboard-page ">
+    <!--    <div data-role="header" id="header"></div>-->
+    <div data-role="header">
+        <a href="gamification_intro.html" class="gamification-back-btn"><img src="assets/images/gamification-back.svg"></a>
+
+        <a href="gamification.html" class="gamification-scores-btn" data-theme="b" id="scoreId">Scores</a>
+    </div>
+    <div role="main" class="ui-content  gamifi-quiz-main-container" style="display: flex;
+        flex-direction: column; height: 90vh;">
+
+        <div id="1" class="ui-grid-c h90 active g-center-content">
+            <div class="ui-block-solo g-center-content gamifi-height-100">
+                <div class="card question-container" style="padding: unset">
+                    <div class="ui-grid-a border-radius-20 quiz-container">
+
+                        <div class=" ui-block-a question-img-container ">
+                            <img class="question-img" style="width:100%;height:100%"
+                                 src="./assets/images/museumItem1.jpg" alt="">
+                        </div>
+
+                        <div class="ui-block-b question-img-container g-center-content">
+
+                            <div class="ui-block-solo">
+                                <h3 class="ui-block-a gamifi-ques-title">Where does this belong?</h3>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn1"
+                                        onclick="incorrectAnswerClicked('ansBtn1')">Camden Museum
+                                </button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn2" onclick="incorrectAnswerClicked('ansBtn2')">Hammersmith Museum</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn3"onclick="incorrectAnswerClicked('ansBtn3')">British Museum</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn4" onclick="correctAnswerClicked('ansBtn4')">London Museum
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="2" class="ui-grid-c h90 d-none g-center-content">
+
+            <div class="ui-block-solo g-center-content gamifi-height-100">
+                <div class="card question-container">
+                    <div class="ui-grid-a border-radius-20 quiz-container">
+
+                        <div class=" ui-block-a question-img-container ">
+                            <img class="question-img" style="width:100%;height:100%"
+                                 src="./assets/images/gamifi-q5-img.jpg" alt="">
+                        </div>
+
+                        <div class="ui-block-b question-img-container g-center-content">
+
+                            <div class="ui-block-solo">
+                                <h3 class="ui-block-a gamifi-ques-title">Where is this?</h3>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn5"
+                                        onclick="incorrectAnswerClicked('ansBtn5')">London
+                                </button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn6" onclick="correctAnswerClicked('ansBtn6')">Kensington</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn7" onclick="incorrectAnswerClicked('ansBtn7')">Haringey</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn8" onclick="incorrectAnswerClicked('ansBtn8')">City of
+                                    Westminster
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="3" class="ui-grid-c h90 d-none g-center-content">
+            <div class="ui-block-solo g-center-content gamifi-height-100">
+                <div class="card question-container">
+                    <div class="ui-grid-a border-radius-20 quiz-container">
+
+                        <div class=" ui-block-a question-img-container ">
+                            <img class="question-img" style="width:100%;height:100%"
+                                 src="./assets/images/gami-q4-img.jpg" alt="">
+                        </div>
+
+                        <div class="ui-block-b question-img-container g-center-content">
+
+                            <div class="ui-block-solo">
+                                <h3 class="ui-block-a gamifi-ques-title">What is this? </h3>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn9"
+                                        onclick="incorrectAnswerClicked('ansBtn9')">Egyptian
+                                </button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn10" onclick="incorrectAnswerClicked('ansBtn10')">Albert</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn11" onclick="correctAnswerClicked('ansBtn11')">Haringey</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn12" onclick="incorrectAnswerClicked('ansBtn12')">Monalisa
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="4" class="ui-grid-c h90 d-none g-center-content">
+            <div class="ui-block-solo g-center-content gamifi-height-100">
+                <div class="card question-container">
+                    <div class="ui-grid-a border-radius-20 quiz-container">
+
+                        <div class=" ui-block-a question-img-container ">
+                            <img class="question-img" style="width:100%;height:100%"
+                                 src="./assets/images/gami-q3-img.jpg" alt="">
+                        </div>
+
+                        <div class="ui-block-b question-img-container g-center-content">
+
+                            <div class="ui-block-solo">
+                                <h3 class="ui-block-a gamifi-ques-title">Where does this belong?</h3>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn13" onclick="correctAnswerClicked('ansBtn13')"
+                                        >British Museum
+                                </button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn14" onclick="incorrectAnswerClicked('ansBtn14')">Hammersmith Museum</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn15" onclick="incorrectAnswerClicked('ansBtn15')">London Museum</button>
+                                <button class="ui-block-a gamificaton-ans " id="ansBtn16" onclick="incorrectAnswerClicked('ansBtn16')">Camden Museum
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui-block-a text-center h10 d-flex justify-content-center align-items-center">
+            <div class="paginationSection">
+                <span id="c1" class="indicator active"></span>
+                <span id="c2" class="indicator"></span>
+                <span id="c3" class="indicator"></span>
+                <span id="c4" class="indicator"></span>
+            </div>
+        </div>
+
+
+    </div>
+    <div data-role="footer" class="page-footer" position="fixed" data-fullscreen="true">
+        <div class="grid-container  border-rad-max">
+            <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home_selected.svg"></a></a></div>
+            <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
+            <div class="grid-item"><a href="store.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
+            <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
+            <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
+        </div>
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+        $(document).on("click", ".pathUrl", function () {
+            document.location.href = this.accessKey;
+        });
+
+    });
+
+    $.post("backend/userData.php", {
+        action: 'view',
+        currentUser: sessionStorage.getItem("loggedUser")
+    }, function (data, status) {
+        const json = JSON.parse(data);
+        // document.getElementById("username").innerHTML = json.name
+        $("#scoreId").html("Scores : "+json.points);
+        sessionStorage.clickcount = Number(json.points);
+
+    });
+
+    // sessionStorage.clickcount = 100;
+
+    function correctAnswerClicked(element) {
+        if(typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            } else {
+                sessionStorage.clickcount = 100;
+            }
+            document.getElementById("scoreId").innerHTML = "Score : "+sessionStorage.clickcount;
+        } else {
+            document.getElementById("scoreId").innerHTML = "Score";
+        }
+        document.getElementById(element).style.setProperty('background','lightgreen','important');
+
+
+        $.post("backend/Gamification.php", {
+            points: sessionStorage.clickcount,
+            currentUser: sessionStorage.getItem("loggedUser")
+
+        }, function (data, status) {
+            const json = JSON.parse(data);
+            // document.getElementById("username").innerHTML = json.name
+            console.log(json)
+
+        });
+    }
+
+    function incorrectAnswerClicked(element) {
+        if(typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount)-1;
+            } else {
+                sessionStorage.clickcount = 1;
+            }
+            document.getElementById("scoreId").innerHTML = "Score : "+sessionStorage.clickcount;
+        } else {
+            document.getElementById("scoreId").innerHTML = "Score";
+        }
+        document.getElementById(element).style.setProperty('background','red','important');
+        $.post("backend/Gamification.php", {
+            points: sessionStorage.clickcount,
+            currentUser: sessionStorage.getItem("loggedUser")
+
+        }, function (data, status) {
+            const json = JSON.parse(data);
+            // document.getElementById("username").innerHTML = json.name
+            console.log(json)
+
+        });
+    }
+</script>
+</body>
+
+</html>

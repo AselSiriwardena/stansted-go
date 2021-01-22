@@ -135,6 +135,10 @@ h6 {
     left: 51.6%;
     width: 30.5%;
 }
+#feedbackInput {
+    height: 70px !important;
+    padding-top: 12px;
+}
 
 /* Breadcrumb end */
 
@@ -153,3 +157,15 @@ h6 {
 }
 
 /** Loader END **/
+
+#collapse {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.collapse_1 {
+    position: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+
+}
