@@ -76,7 +76,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked"  accesskey="2">
+                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked"  accesskey="1">
                     <div class="ui-grid-a d-flex align-items-center p-3">
                         <div class="ui-block-b w80 pl-3">
                             <div class="ui-grid-a d-flex align-items-center">
@@ -105,7 +105,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" id="daily" accesskey="3">
+                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" id="daily" accesskey="1">
                     <div class="ui-grid-a d-flex align-items-center p-3">
                         <div class="ui-block-b w80 pl-3">
                             <div class="ui-grid-a d-flex align-items-center">
@@ -160,12 +160,12 @@
             sessionStorage.setItem("trainSelected", this.accessKey);
             if (this.accessKey == 1) {
                 sessionStorage.setItem("price", '19.99');
-            } else if (this.accessKey == 1) {
+            } else if (this.accessKey == 2) {
                 sessionStorage.setItem("price", '15.99');
             } else {
                 sessionStorage.setItem("price", '14.99');
             }
-            document.location.href = 'payment_detail.html';
+            document.location.href = 'trip_details.html';
         });
         // $.post("backend/userData.php", {
         //     action: 'view',

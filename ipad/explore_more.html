@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Explore More</title>
@@ -99,8 +101,15 @@
                             <img alt="product Image" class="img-fluid" src="assets/images/poiListImg2.jpg"
                                  style="">
                             <div class="bottom-left">Big Ben</div>
+
+
+<!--                            <div class="rating__number"><span id="rating_value">5.0</span></div>-->
                             <div class="bottom-right-1">3.2K</div>
+
                             <img class="bottom-right" src="assets/images/heartIconPoi.svg">
+                            <div class="top-right"><span id="rating_value">5.0</span></div>
+                            <i id="star1" class="top-right-1 fa fa-star secondary-color-yellow-text"></i>
+<!--                            <img class="top-right" src="assets/images/destination_star_rate.svg">-->
                         </a>
                     </div>
                 </div>
@@ -114,6 +123,8 @@
                             <div class="bottom-left">Manchester</div>
                             <div class="bottom-right-1">6K</div>
                             <img class="bottom-right" src="assets/images/heartIconPoi.svg"></a>
+                        <div class="top-right"><span id="rating_value1">5.0</span></div>
+                        <i class="top-right-1 fa fa-star secondary-color-yellow-text"></i>
                     </div>
 
 
@@ -127,6 +138,8 @@
                             <div class="bottom-left">Glassglow</div>
                             <div class="bottom-right-1">5.2K</div>
                             <img class="bottom-right" src="assets/images/heartIconPoi.svg"></a>
+                        <div class="top-right">5.0</div>
+                        <i class="top-right-1 fa fa-star secondary-color-yellow-text"></i>
                     </div>
 
                 </div>
@@ -139,6 +152,8 @@
                             <div class="bottom-left">Wareham</div>
                             <div class="bottom-right-1">1.2K</div>
                             <img class="bottom-right" src="assets/images/heartIconPoi.svg"></a>
+                        <div class="top-right">5.0</div>
+                        <i class="top-right-1 fa fa-star secondary-color-yellow-text"></i>
                     </div>
 
                 </div>
@@ -314,6 +329,8 @@
                                             you can disconnect from the normal routine</p>
                                     </div>
 
+                                    <div class="top-right"><span id="rating_value_stations">5.0</span></div>
+                                    <i class="top-right-1 fa fa-star secondary-color-yellow-text"></i>
                                 </div>
                             </div>
                         </div>
@@ -358,7 +375,8 @@
                                             ba range of underground entrances for the
                                             London Underground ('tube') and a shared ..</p>
                                     </div>
-
+                                    <div class="top-right">5.0</div>
+                                    <i class="top-right-1 fa fa-star secondary-color-yellow-text"></i>
                                 </div>
                             </div>
                         </div>
@@ -402,6 +420,8 @@
                                             serving the neighbourhood of Brimsdown in the London </p>
                                     </div>
 
+                                    <div class="top-right">5.0</div>
+                                    <i class="top-right-1 fa fa-star secondary-color-yellow-text"></i>
                                 </div>
                             </div>
                         </div>
@@ -443,6 +463,8 @@
                                             areas south of Orpington, in the London </p>
                                     </div>
 
+                                    <div class="top-right">5.0</div>
+                                    <i class="top-right-1 fa fa-star secondary-color-yellow-text"></i>
                                 </div>
                             </div>
                         </div>
@@ -484,5 +506,72 @@
     </div>
 </div>
 </body>
+<script>
+    var config = {
+        apiKey: "AIzaSyDC0db7ssF55Q-yfiGUeCqB8wtHZ4_tyZw",
+        authDomain: "ui-ux-b3439.firebaseapp.com",
+        projectId: "ui-ux-b3439",
+        storageBucket: "ui-ux-b3439.appspot.com",
+        messagingSenderId: "628403705685",
+        appId: "1:628403705685:web:bebfe39d9d923bbf74c1dc",
+        measurementId: "G-CMKJ405F25"
+    };
+    // Initialize Firebase
+    var app = firebase.initializeApp(config);
+    // Initialize Cloud Firestore through Firebase
+    const db = app.firestore();
+    let total_rating = 0;
+    let count = 0;
+    const rating_obj = {1:0,2:0,3:0,4:0,5:0,}
 
+
+    db.collection("Places").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
+        snapshot.forEach(function (x) {
+
+            count = count + 1;
+            total_rating = total_rating+parseInt(x.data().rating,10)
+            rating_obj[x.data().rating]=rating_obj[x.data().rating]+1
+            console.log("x",parseInt(x.data().rating,10))
+        });
+        const rating = count?(total_rating/count).toFixed(1):0
+        var span = document.getElementById("rating_value");
+        span.textContent = rating.toString();
+        console.log("rating value :",rating.toString())
+    });
+
+</script>
+<script>
+    /*var config = {
+        apiKey: "AIzaSyDC0db7ssF55Q-yfiGUeCqB8wtHZ4_tyZw",
+        authDomain: "ui-ux-b3439.firebaseapp.com",
+        projectId: "ui-ux-b3439",
+        storageBucket: "ui-ux-b3439.appspot.com",
+        messagingSenderId: "628403705685",
+        appId: "1:628403705685:web:bebfe39d9d923bbf74c1dc",
+        measurementId: "G-CMKJ405F25"
+    };
+    // Initialize Firebase
+    var app = firebase.initializeApp(config);
+    // Initialize Cloud Firestore through Firebase
+    const db_s = app.firestore();*/
+    let total_rating_s = 0;
+    let count_s = 0;
+    const rating_obj_s = {1:0,2:0,3:0,4:0,5:0,}
+
+
+    db.collection("stations").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
+        snapshot.forEach(function (x) {
+
+            count_s = count_s + 1;
+            total_rating_s = total_rating_s+parseInt(x.data().rating,10)
+            rating_obj_s[x.data().rating]=rating_obj_s[x.data().rating]+1
+            console.log("x",parseInt(x.data().rating,10))
+        });
+        const rating = count_s?(total_rating_s/count_s).toFixed(1):0
+        var span = document.getElementById("rating_value_stations");
+        span.textContent = rating.toString();
+        console.log("rating value :",rating.toString())
+    });
+
+</script>
 </html>

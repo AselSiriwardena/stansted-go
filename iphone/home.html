@@ -79,11 +79,8 @@
                                      src="assets/images/destination_1.svg">
                             </a>
                             <div class="ui-block-a w70">
-                                <div class="font-size font-weight-heavy">Tower Bridge</div>
-                                <h6 class="text-muted font-weight-bold">London</h6>
-                            </div>
-                            <div class="ui-block-b w30 bottom">
-                                <img src="assets/images/destination_star_rate.svg" width="100%" height="auto">
+                                <div class="font-size font-weight-heavy">Deals in London</div>
+                                <h6 class="text-muted font-weight-bold">10% off</h6>
                             </div>
                         </div>
                     </div>
@@ -406,7 +403,7 @@
             <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home_selected.svg"></a></a></div>
             <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
             <div class="grid-item"><a href="store.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
-            <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
+            <div class="grid-item"><a href="trips.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
             <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
         </div>
     </div>
@@ -427,6 +424,25 @@
             document.location.href = 'promotion_details.html';
         });
 
-    })
+    });
+
+    $(document).on("click", ".addClick", function () {
+        $.post("backend/favourite.php", {
+            action: 'add',
+            currentUser: sessionStorage.getItem("loggedUser"),
+            prodId: this.accessKey
+        }, function (data, status) {
+            location.reload(true);
+        });
+    });
+    $(document).on("click", ".removeClick", function () {
+        $.post("backend/favourite.php", {
+            action: 'remove',
+            currentUser: sessionStorage.getItem("loggedUser"),
+            prodId: this.accessKey
+        }, function (data, status) {
+            location.reload(true);
+        });
+    });
 
 </script>

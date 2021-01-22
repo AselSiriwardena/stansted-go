@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="173.399" height="36" viewBox="0 0 173.399 36">
+  <g id="Group_3707" data-name="Group 3707" transform="translate(-134 -290)">
+    <g id="Group_3706" data-name="Group 3706" transform="translate(289.513 297.859)">
+      <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(2 6)" fill="none" stroke="#000" stroke-width="1">
+        <ellipse cx="7.943" cy="7.571" rx="7.943" ry="7.571" stroke="none"/>
+        <ellipse cx="7.943" cy="7.571" rx="7.443" ry="7.071" fill="none"/>
+      </g>
+      <path id="ic_directions_subway_24px" d="M8.179,2C5.87,2,4,2.257,4,4.059V8.95a1.817,1.817,0,0,0,1.828,1.8l-.784.772v.257h6.268v-.257l-.784-.772a1.817,1.817,0,0,0,1.828-1.8V4.059C12.358,2.257,10.488,2,8.179,2ZM5.828,9.722a.772.772,0,1,1,.784-.772A.777.777,0,0,1,5.828,9.722ZM7.656,6.633H5.045V4.059H7.656Zm2.873,3.089a.772.772,0,1,1,.784-.772A.777.777,0,0,1,10.529,9.722Zm.784-3.089H8.7V4.059h2.612Z" transform="translate(1.666 6.618)" fill="#fff"/>
+    </g>
+    <text id="STYLE" transform="translate(270 320)" fill="#fff" font-size="28" font-family="Lato-Black, Lato" font-weight="800" letter-spacing="0.143em"><tspan x="0" y="0">G</tspan></text>
+    <text id="GUIDE" transform="translate(152 318)" fill="#fff" font-size="28" font-family="Lato-Light, Lato" font-weight="300" letter-spacing="0.143em"><tspan x="0" y="0">tansted</tspan></text>
+    <text id="STYLE-2" data-name="STYLE" transform="translate(134 320)" fill="#fff" font-size="28" font-family="Lato-Black, Lato" font-weight="800" letter-spacing="0.143em"><tspan x="0" y="0">S</tspan></text>
+  </g>
+</svg>

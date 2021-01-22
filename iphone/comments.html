@@ -80,7 +80,7 @@
                             <div class="ui-block-b w100 pl-2">
                                 <div class="ui-grid-a">
                                     <div class="ui-block-a w40">
-                                        <h4 style="line-height: 1.5;" class="black">Jane Doe</h4>
+                                        <h4 style="line-height: 1.5;" class="black">Nish Ram</h4>
                                     </div>
                                     <div style="color: #E2C224;" class="ui-block-b w60 text-right">
                                         <i class="fas fa-star"></i>
@@ -116,6 +116,8 @@
         </div>
         <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
             <h4>Comments</h4>
+            <div id="comments_nish">
+            </div><!--
             <div class=" ui-grid-a pt-2 primary-color-blue-bg">
                 <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
                 <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">Comment_1</p>
@@ -127,7 +129,7 @@
             <div class=" ui-grid-a pt-2 primary-color-blue-bg">
                 <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
                 <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">Comment_3</p>
-            </div>
+            </div>-->
         </div>
         <div class="input-comment-footer">
         <div class="ui-field-contain mt-4">
@@ -147,86 +149,217 @@
 
 </html>
 
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--        $(document).on("click", ".dealsClick", function () {-->
+<!--            sessionStorage.setItem("currentDeal", this.accessKey);-->
+<!--            sessionStorage.setItem("ratingFilter", '0');-->
+<!--            sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"145"}');-->
+<!--            sessionStorage.setItem("sort", 'default');-->
+<!--            document.location.href = 'promotion_details.html';-->
+<!--        });-->
+<!--        $(document).on("click", ".pathUrl", function () {-->
+<!--            document.location.href = this.accessKey;-->
+<!--        });-->
+<!--        let reviewList;-->
+<!--        changeValue = 'a';-->
+<!--        $.post("backend/review.php", {-->
+<!--            action: "view",-->
+<!--            prodId: sessionStorage.getItem("currentProduct"),-->
+<!--        }, function (data, status) {-->
+<!--            reviewList = $.parseJSON(data);-->
+<!--            $.each(reviewList[0].review, function (i, item) {-->
+<!--                let userData;-->
+<!--                let imagSrc;-->
+<!--                $.post("backend/userData.php", {-->
+<!--                    action: 'view',-->
+<!--                    currentUser: item.email-->
+<!--                }, function (data, status) {-->
+<!--                    alert(data);-->
+<!--                    userData = JSON.parse(data);-->
+<!--                    imagSrc = userData.imageSrc;-->
+<!--                    const ratings = item.rating;-->
+<!--                    const ratingInt = parseInt(ratings);-->
+<!--                    let ratingHtml = "";-->
+<!--                    for (let i = 0; i < 5; i++) {-->
+<!--                        if (ratingInt > i) {-->
+<!--                            ratingHtml = ratingHtml + `<i class="fas fa-star secondary-color-yellow-text"></i>`;-->
+<!--                        } else {-->
+<!--                            ratingHtml = ratingHtml + `<i class="fas fa-star primary-color-grey-text"></i>`;-->
+<!--                        }-->
+<!--                    }-->
+
+<!--                    const review = `<div class="ui-block-` + changeValue + ` w100 w-landscape-50"><div class="comment card px-3">-->
+<!--                        <div class="ui-grid-a">-->
+<!--                            <div class="ui-block-a w20">-->
+<!--                                <img src="` + userData.imageSrc + `" id="previewImage" alt="Profile Avatar" width="75%">-->
+<!--                            </div>-->
+<!--                            <div class="ui-block-b w80">-->
+<!--                                <div class="ui-grid-a d-flex align-items-baseline">-->
+<!--                                    <div class="ui-block-a">-->
+<!--                                        <h4 class="black line-height-small font-weight-bold">` + userData.name + `</h4>-->
+<!--                                    </div>-->
+<!--                                    <div class="ui-block-b text-right secondary-color-yellow-text">-->
+<!--                                        ` + ratingHtml + `-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="review-content pt-3">-->
+<!--                                    <p>-->
+<!--                                        ` + item.description + `-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                                <div class="ui-grid-a d-flex align-items-center">-->
+<!--                                    <div class="ui-block-a">-->
+<!--                                        <h6 class="text-muted mb-0 font-weight-bold">` + item.time + `</h6>-->
+<!--                                    </div>-->
+<!--                                    <div class="ui-block-b text-right">-->
+<!--                                        <i class="far fa-heart icon"></i>-->
+<!--                                        <span class = "font-weight-heavy font-size-m pl-2 v-align-top">57</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>`;-->
+<!--                    $("#reviewList").append(review);-->
+<!--                    if (changeValue === 'a') {-->
+<!--                        changeValue = 'b';-->
+
+<!--                    } else if (changeValue === 'b') {-->
+<!--                        changeValue = 'a';-->
+<!--                    }-->
+<!--                });-->
+<!--            });-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
 <script>
-    $(document).ready(function () {
-        $(document).on("click", ".dealsClick", function () {
-            sessionStorage.setItem("currentDeal", this.accessKey);
-            sessionStorage.setItem("ratingFilter", '0');
-            sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"145"}');
-            sessionStorage.setItem("sort", 'default');
-            document.location.href = 'promotion_details.html';
-        });
-        $(document).on("click", ".pathUrl", function () {
-            document.location.href = this.accessKey;
-        });
-        let reviewList;
-        changeValue = 'a';
-        $.post("backend/review.php", {
-            action: "view",
-            prodId: sessionStorage.getItem("currentProduct"),
-        }, function (data, status) {
-            reviewList = $.parseJSON(data);
-            $.each(reviewList[0].review, function (i, item) {
-                let userData;
-                let imagSrc;
-                $.post("backend/userData.php", {
-                    action: 'view',
-                    currentUser: item.email
-                }, function (data, status) {
-                    alert(data);
-                    userData = JSON.parse(data);
-                    imagSrc = userData.imageSrc;
-                    const ratings = item.rating;
-                    const ratingInt = parseInt(ratings);
-                    let ratingHtml = "";
-                    for (let i = 0; i < 5; i++) {
-                        if (ratingInt > i) {
-                            ratingHtml = ratingHtml + `<i class="fas fa-star secondary-color-yellow-text"></i>`;
-                        } else {
-                            ratingHtml = ratingHtml + `<i class="fas fa-star primary-color-grey-text"></i>`;
-                        }
-                    }
+    var config = {
+        apiKey: "AIzaSyDC0db7ssF55Q-yfiGUeCqB8wtHZ4_tyZw",
+        authDomain: "ui-ux-b3439.firebaseapp.com",
+        projectId: "ui-ux-b3439",
+        storageBucket: "ui-ux-b3439.appspot.com",
+        messagingSenderId: "628403705685",
+        appId: "1:628403705685:web:bebfe39d9d923bbf74c1dc",
+        measurementId: "G-CMKJ405F25"
+    };
+    // Initialize Firebase
+    var app = firebase.initializeApp(config);
+    // Initialize Cloud Firestore through Firebase
+    const db = app.firestore();
+    const docRef = db.collection("Places").doc('place_id_01').collection('comments');
 
-                    const review = `<div class="ui-block-` + changeValue + ` w100 w-landscape-50"><div class="comment card px-3">
-                        <div class="ui-grid-a">
-                            <div class="ui-block-a w20">
-                                <img src="` + userData.imageSrc + `" id="previewImage" alt="Profile Avatar" width="75%">
-                            </div>
-                            <div class="ui-block-b w80">
-                                <div class="ui-grid-a d-flex align-items-baseline">
-                                    <div class="ui-block-a">
-                                        <h4 class="black line-height-small font-weight-bold">` + userData.name + `</h4>
-                                    </div>
-                                    <div class="ui-block-b text-right secondary-color-yellow-text">
-                                        ` + ratingHtml + `
-                                    </div>
-                                </div>
-                                <div class="review-content pt-3">
-                                    <p>
-                                        ` + item.description + `
-                                    </p>
-                                </div>
-                                <div class="ui-grid-a d-flex align-items-center">
-                                    <div class="ui-block-a">
-                                        <h6 class="text-muted mb-0 font-weight-bold">` + item.time + `</h6>
-                                    </div>
-                                    <div class="ui-block-b text-right">
-                                        <i class="far fa-heart icon"></i>
-                                        <span class = "font-weight-heavy font-size-m pl-2 v-align-top">57</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>`;
-                    $("#reviewList").append(review);
-                    if (changeValue === 'a') {
-                        changeValue = 'b';
+    let i = 0;
+    db.collection("Places").doc('place_id_01').collection('comments').get().then((snapshot) => {
+        snapshot.forEach(function(x) {
+            $("#comments_nish").append(`
+        <div class=" ui-grid-a pt-2 primary-color-blue-bg">
+                <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
+                <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">${x.data().comment}</p>
+            </div>
+        `)
+        })
+    })
+    $("#submit").click(function () {
+        console.log($("#feedbackInput").val())
+        docRef.add({
+            comment : $("#feedbackInput").val()
 
-                    } else if (changeValue === 'b') {
-                        changeValue = 'a';
-                    }
-                });
+        })
+            .then(function(docRef) {
+                console.log("Document written with ID: ", docRef.id);
+                // document.location.href = 'reviews.html';
+            })
+            .catch(function(error) {
+                console.error("Error adding document: ", error);
             });
+        // $.post("backend/review.php", {
+        //     action: "add",
+        //     email: sessionStorage.getItem("loggedUser"),
+        //     prodId: sessionStorage.getItem("currentProduct"),
+        //     description: $("#feedback").val(),
+        //     time: '2 days ago',
+        //     rating: $('#ratedVal').val(),
+        // }, function (data, status) {
+        //     if (data === 'error') {
+        //         alert('Error');
+        //     } else if (data === 'success') {
+        //         document.location.href = 'reviews.html';
+        //     } else {
+        //
+        //     }
+        // });
+    });
+
+    db.collection("Places").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
+        snapshot.forEach(function(x) {
+            // $("#test1").append(`
+            //                 ${!Boolean(i % 2) ? `<div class="ui-block-a w50 pl-3">` : `<div class="ui-block-b w50 pl-3">`}
+            //                 <div class="ui-block-a pl-3">
+            //                     <div class="card">
+            //                         <div class="ui-grid-a">
+            //                             <div class="ui-block-b w80 pl-2">
+            //                                 <div class="ui-grid-a">
+            //                                     <div class="ui-block-a w40">
+            //                                         <h4 style="line-height: 1.5;" class="black">${x.data().name?x.data().name:"Jane Doe"}</h4>
+            //                                     </div>
+            //                                     <div style="color: #E2C224;" class="ui-block-b w60 text-right">
+            //                                             ${x.data().rating === '4' ? `
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>`
+            //     : x.data().rating === '5' ?`<i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>`
+            //         : x.data().rating === '3' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>`
+            //             : x.data().rating === '2' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>`
+            //                 : x.data().rating === '1' ? `<i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star-o secondary-color-yellow-text"></i>`
+            //                     : `<i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                             <i class="fa fa-star secondary-color-yellow-text"></i>
+            //                                         `}
+            //
+            //                                     </div>
+            //                                 </div>
+            //                                 <div class="review-content pt-2">
+            //                                     <p style="word-wrap: break-word;" class="primary-color-black text f16">
+            //                                         ${x.data().description}</p>
+            //                                 </div>
+            //                                 <div class="ui-grid-a">
+            //                                     <div class="ui-block-a">
+            //                                         <h6 class="primary-color-grey-text f16 fw-bold">${x.data().time}</h6>
+            //                                     </div>
+            //                                     <div class="ui-block-b f16 text-right">
+            //                                         <i class="far fa-heart"></i> 0
+            //                                     </div>
+            //                                 </div>
+            //                             </div>
+            //                         </div>
+            //                     </div>
+            //                 </div>
+            //     `);
+            i = i + 1;
         });
     });
+
+
 </script>
