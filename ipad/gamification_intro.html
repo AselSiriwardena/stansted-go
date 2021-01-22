@@ -48,8 +48,6 @@
                         <div class="ui-grid-solo text-center mb-3">
 
                             <p class="gamification_intro_text_content_p">
-                                Are you good at finding destinations? Then, join our place hunt game and right now !!!
-                                <br/>
 
                                 Your task is simple. Answer the questions related to well known destination.For a
                                 correct answer,
@@ -88,6 +86,16 @@
 
 
             </div>
+            <div data-role="popup" id="gameInfo" data-theme="a" data-overlay-theme="b" class="ui-content intro-popup-content"
+                 style="max-width:340px; padding-bottom:2em;">
+                <h2>Hurry Up!</h2>
+                <p style="font-size: 20px; text-align: center;">
+                    Are you good at finding destinations? <br/>Then, join our place hunt game<b> right now !!!</b>
+                </p>
+
+            </div>
+            <a href="#gameInfo" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="info"
+               id="popupLink" style="display: none"></a>
         </div>
     </div>
     <div data-role="footer" position="fixed" id="footer2" data-tap-toggle="false">
@@ -107,7 +115,14 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            document.getElementById("popupLink").click();
+        }, 1000); // 5000 to load it after 5 seconds from page load
+    });
 
+</script>
 
 </body>
 

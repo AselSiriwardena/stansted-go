@@ -180,6 +180,17 @@
                     </ul>
                 </div>
             </div>
+            <div data-role="popup" id="gameInfo" data-theme="a" data-overlay-theme="b"
+                 class="ui-content "
+                 style="max-width:340px; padding-bottom:2em;">
+                <img src="assets/images/congrats.gif" style="margin-left: 71px;width: 50%">
+                <p style="font-size: 20px; text-align: center;">
+                    You won <span style="color: red">two tickets </span> to travel in Edinburgh.<br/> Play more and get more rewards!!!</b>
+                </p>
+
+            </div>
+            <a href="#gameInfo" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="info"
+               id="popupLink" style="display: none"></a>
         </div>
     </div>
     <div data-role="footer" class="page-footer" position="fixed" data-fullscreen="true">
@@ -199,7 +210,9 @@
 </html>
 <script>
     $(document).ready(function () {
-
+        setTimeout(function () {
+            document.getElementById("popupLink").click();
+        }, 1000);
         $.post("backend/userData.php", {
             action: 'view',
             currentUser: sessionStorage.getItem("loggedUser")

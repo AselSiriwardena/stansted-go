@@ -160,7 +160,22 @@
     .minHeight90vh{
         min-height: 90vh;
     }
-    
+    .content-center-columns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro-popup-content{
+        max-width: 340px;
+        padding-bottom: 2em;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
 
 
 }
