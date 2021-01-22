@@ -1,12 +1,12 @@
 [
   {
     "id":"4",
-    "name":"Stok Cold Brew Coffee",
-    "details":"Brewed from the heart of Kashmir, Stok presents the best cold brew coffee of the 21st Century. This new line of cold brews gives twice the motivation and energy while keeping the nostalgic taste everybody loves...",
+    "name":"Glasgow",
+    "details":"Glasgow is a port city on the River Clyde in Scotland's western Lowlands. It's famed for its Victorian and art nouveau architecture, a rich legacy of the city's 18th–20th-century prosperity due to trade and shipbuilding. Today it's a national cultural hub, home to institutions including the Scottish Opera, Scottish Ballet and National Theatre of Scotland, as well as acclaimed museums and a thriving music scene.",
     "price":"30.99",
     "rating":"3.5",
     "noReviews":"58",
-    "image":"assets/img/productCoffee3.png",
+    "image":"https://www.netherlandsworldwide.nl/binaries/medium/content/gallery/nederlandwereldwijd/content-afbeeldingen/verenigd-koninkrijk/2018/glasgow.jpg",
     "review":[
       {
         "email":"123@gmail.com",

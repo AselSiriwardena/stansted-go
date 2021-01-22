@@ -1,12 +1,12 @@
 [
     {
       "id":"5",
-      "name":"Pixel 3 XL",
-      "details":"The Pixel 3 XL has identical cameras, dual front-facing speakers, Snapdragon 845 chipset, and 4GB of RAM as the fits-in-one-hand Google Pixel 3. But the XL version has the edge on its smaller sibling with a bigger 6.3-inch bezel-reduced OLED screen and higher-capacity 3,430mAh battery",
-      "price":"630.99",
+      "name":"Edinburgh",
+      "details":"Edinburgh is Scotland's compact, hilly capital. It has a medieval Old Town and elegant Georgian New Town with gardens and neoclassical buildings. Looming over the city is Edinburgh Castle, home to Scotland’s crown jewels and the Stone of Destiny, used in the coronation of Scottish rulers. Arthur’s Seat is an imposing peak in Holyrood Park with sweeping views, and Calton Hill is topped with monuments and memorials.",
+      "price":"30.99",
       "rating":"4",
       "noReviews":"287",
-      "image":"assets/img/productPixel.png",
+      "image":"https://www.netherlandsworldwide.nl/binaries/medium/content/gallery/nederlandwereldwijd/content-afbeeldingen/verenigd-koninkrijk/2018/edinburgh.jpg",
       "review":[
         {
           "email":"123@gmail.com",
