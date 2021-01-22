@@ -100,6 +100,8 @@
                 <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
                 <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">Comment_3</p>
             </div>
+            <div id="comments_nish">
+            </div>
         </div>
         <div class="input-comment-footer">
             <div class="ui-field-contain mt-4 collapse_1">
@@ -133,6 +135,47 @@
     const db = app.firestore();
 
     let i = 0;
+    $("#submit").click(function () {
+        console.log($("#feedbackInput").val())
+        $("#comments_nish").append(`
+        <div class=" ui-grid-a pt-2 primary-color-blue-bg">
+                <img class="ui-block-a" src="assets/images/reply_profile_1.svg" height="50px">
+                <p style="word-wrap: break-word;" class="ui-block-b primary-color-white-text text f16">${$("#feedbackInput").val()}</p>
+            </div>
+        `)
+        /*docRef.add({
+            name:"Nish Ram",
+            email: sessionStorage.getItem("loggedUser"),
+            prodId: sessionStorage.getItem("currentProduct"),
+            description: $("#feedback").val(),
+            time: 'Just Now',
+            rating: $('#ratedVal').val()
+        })
+            .then(function(docRef) {
+                console.log("Document written with ID: ", docRef.id);
+                // document.location.href = 'reviews.html';
+            })
+            .catch(function(error) {
+                console.error("Error adding document: ", error);
+            });
+*/
+        // $.post("backend/review.php", {
+        //     action: "add",
+        //     email: sessionStorage.getItem("loggedUser"),
+        //     prodId: sessionStorage.getItem("currentProduct"),
+        //     description: $("#feedback").val(),
+        //     time: '2 days ago',
+        //     rating: $('#ratedVal').val(),
+        // }, function (data, status) {
+        //     if (data === 'error') {
+        //         alert('Error');
+        //     } else if (data === 'success') {
+        //         document.location.href = 'reviews.html';
+        //     } else {
+        //
+        //     }
+        // });
+    });
 
     db.collection("Places").doc('place_id_01').collection('Ratings').get().then((snapshot) => {
         snapshot.forEach(function(x) {
