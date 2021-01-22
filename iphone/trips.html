@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>tripT</title>
+    <title>trips</title>
 
     <!-- jQuery mobile files -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
@@ -40,14 +40,14 @@
                 </a>
             </div>
             <div class="ui-block-a w80">
-                <div class="font-size-l font-weight-heavy">Macclesfield - Gainsborogh</div>
+                <div class="font-size-l font-weight-heavy">Trips</div>
             </div>
 
         </div>
         <div class="ui-grid-a">
             <div class="tab-content">
 
-                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" id="daily" accesskey="1">
+                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" accesskey="1">
                     <div class="ui-grid-a d-flex align-items-center p-3">
                         <div class="ui-block-b w80 pl-3">
                             <div class="ui-grid-a d-flex align-items-center">
@@ -69,14 +69,14 @@
 
                             <hr class="my-2">
                             <div class="ui-grid-b d-flex align-items-center">
-                                <h5 class="ui-block-a w50 text-muted font-weight-bold">Ticket Price</h5>
-                                <h3 class="ui-block-b w50 secondary-color" id="userPoints">$19.99</h3>
+                                <h5 class="ui-block-a w50 text-muted font-weight-bold">Total Price</h5>
+                                <h3 class="ui-block-b w50 secondary-color">$19.99</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" id="daily" accesskey="2">
+                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked"  accesskey="1">
                     <div class="ui-grid-a d-flex align-items-center p-3">
                         <div class="ui-block-b w80 pl-3">
                             <div class="ui-grid-a d-flex align-items-center">
@@ -98,14 +98,14 @@
 
                             <hr class="my-2">
                             <div class="ui-grid-b d-flex align-items-center">
-                                <h5 class="ui-block-a w50 text-muted font-weight-bold">Ticket Price</h5>
-                                <h3 class="ui-block-b w50 secondary-color" id="userPoints">$15.99</h3>
+                                <h5 class="ui-block-a w50 text-muted font-weight-bold">Total Price</h5>
+                                <h3 class="ui-block-b w50 secondary-color" >$15.99</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" id="daily" accesskey="3">
+                <div class="tab-pane card fade show active mb-4 p-0 ticketClicked" id="daily" accesskey="1">
                     <div class="ui-grid-a d-flex align-items-center p-3">
                         <div class="ui-block-b w80 pl-3">
                             <div class="ui-grid-a d-flex align-items-center">
@@ -127,8 +127,8 @@
 
                             <hr class="my-2">
                             <div class="ui-grid-b d-flex align-items-center">
-                                <h5 class="ui-block-a w50 text-muted font-weight-bold">Ticket Price</h5>
-                                <h3 class="ui-block-b w50 secondary-color" id="userPoints">$14.99</h3>
+                                <h5 class="ui-block-a w50 text-muted font-weight-bold">Total Price</h5>
+                                <h3 class="ui-block-b w50 secondary-color" >$14.99</h3>
                             </div>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
             } else {
                 sessionStorage.setItem("price", '14.99');
             }
-            document.location.href = 'payment_detail.html';
+            document.location.href = 'trip_details.html';
         });
         // $.post("backend/userData.php", {
         //     action: 'view',

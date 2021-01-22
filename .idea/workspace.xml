@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8c99bae-1f29-4591-90b9-2fd52f997bbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/iphone/gamification.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-landscape.css" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-landscape.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-portrait.css" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/assets/css/gamification-styles-portrait.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iphone/gamfication-q2.html" beforeDir="false" afterPath="$PROJECT_DIR$/iphone/gamfication-q2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/gamfication-q2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamfication-q2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/gamification.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/gamification_intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamification_intro.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -30,11 +34,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="pesh" />
-                    <option name="lastUsedInstant" value="1611254472" />
+                    <option name="lastUsedInstant" value="1611286480" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="develop" />
-                    <option name="lastUsedInstant" value="1611254465" />
+                    <option name="lastUsedInstant" value="1611286388" />
                   </RecentBranch>
                 </list>
               </option>
@@ -54,14 +58,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/iphone" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/iphone/assets/images" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\newux\iphone" />
       <recent name="C:\wamp64\www\newux\iphone\assets\images" />
+      <recent name="C:\wamp64\www\newux\ipad\assets\images" />
+      <recent name="C:\wamp64\www\newux\iphone" />
       <recent name="C:\wamp64\www\newux\iphone\assets\css" />
     </key>
   </component>
@@ -85,7 +90,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="pesh" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -116,11 +116,9 @@
                             <span class="leaderboard_li_rank_span"> Rank 3</span>
 
 
-
                         </li>
                         <li class="leaderboard-li">
                             <img src="assets/images/gamification-gold-user.svg" class="ui-li-icon ui-corner-none">Pesh R
-
 
 
                             <img src="assets/images/gamificationBadges.svg" class="ui-li-icon leaderboard_li_badge_img">
@@ -179,22 +177,26 @@
                     </ul>
                 </div>
             </div>
+            <div data-role="popup" id="gameInfo" data-theme="a" data-overlay-theme="b"
+                 class="ui-content intro-popup-content"
+                 style="max-width:340px; padding-bottom:2em;">
+                <img src="assets/images/congrats.gif">
+                <p style="font-size: 20px; text-align: center;">
+                    You won <span style="color: red">two tickets </span> to travel in Edinburgh.<br/> Play more and get more rewards!!!</b>
+                </p>
+
+            </div>
+            <a href="#gameInfo" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="info"
+               id="popupLink" style="display: none"></a>
         </div>
     </div>
-    <div data-role="footer" position="fixed" id="footer2" data-tap-toggle="false">
-        <div class="page-footer" data-fullscreen="true">
-            <div class="grid-container  border-rad-max">
-                <div class="grid-item"><a href="home.html" data-transition="slide"><img
-                        src="assets/images/nav_home.svg"></a></a></div>
-                <div class="grid-item"><a href="favouritesAll.html" data-transition="slide"><img
-                        src="assets/images/nav_heart.svg"></a></a></div>
-                <div class="grid-item"><a href="landing.html" data-transition="slide"><img
-                        src="assets/images/nav_mini_logo.svg"></a></a></div>
-                <div class="grid-item"><a href="cart.html" data-transition="slide"><img
-                        src="assets/images/nav_trips.svg"></a></a></div>
-                <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img
-                        src="assets/images/nav_profile.svg"></a></a></div>
-            </div>
+    <div data-role="footer" class="page-footer" position="fixed" data-fullscreen="true">
+        <div class="grid-container  border-rad-max">
+            <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home_selected.svg"></a></a></div>
+            <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
+            <div class="grid-item"><a href="store.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
+            <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
+            <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
         </div>
     </div>
 </div>
@@ -206,22 +208,9 @@
 <script>
     $(document).ready(function () {
 
-        // $(window).on('load', function() {
-        //     $('#myModal').modal('show');
-        // });
-        // function hide(){
-        //     document.getElementById("myModal").click();
-        // }
-        // // window.setTimeout(function () {
-        // //     window.location.reload();
-        // // }, 5000);
-
-        // document.getElementById("leaderboardScore").innerHTML = sessionStorage.clickcount;
-
-
-        // setTimeout(function () {
-        //     alert("Your score is " + sessionStorage.clickcount + ". You will be awarded one free ticket to Edinburg");
-        // }, 2000);
+        setTimeout(function () {
+            document.getElementById("popupLink").click();
+        }, 1000);
 
         $.post("backend/userData.php", {
             action: 'view',
