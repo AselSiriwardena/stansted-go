@@ -87,6 +87,8 @@
     .question-container {
         width: 600px;
         background: white;
+        border-radius: 21px !important;
+
         padding: unset !important;
         /*height: 50vh;*/
 
@@ -108,7 +110,7 @@
 
     .question-img-container {
         width: 100px;
-        height: 50vh;
+        height: 70vh;
 
     }
 
@@ -137,7 +139,7 @@
     }
 
     .gamifi-ques-title {
-        margin-bottom: 47px !important;
+        margin-bottom: 27px !important;
     }
 
     .color-black {
@@ -168,7 +170,21 @@
     .gamifi-intro-container{
         width: 55% ;
     }
-    
+    .leaderboard-width{
+        width: 40% !important;
+    }
+
+    .leaderboard-list-width{
+        width: 60% !important;
+    }
+    .padding-left-3{
+        padding-left: 1rem!important
+    }
+
+
+
+
+
 
 
 }
