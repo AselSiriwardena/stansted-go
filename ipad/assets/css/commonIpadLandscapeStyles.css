@@ -57,6 +57,26 @@
         font-weight: bold;
         color: white !important;
     }
+    .top-right{
+        position: absolute;
+        top: 8px;
+        right: 50px;
+        font-size: 15px;
+        /*text-shadow: 3px 4px 7px black;*/
+        text-shadow:1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+        font-weight: bold;
+        color: white !important;
+    }
+    .top-right-1{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        font-size: 15px;
+        /*text-shadow: 3px 4px 7px black;*/
+        text-shadow:1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+        font-weight: bold;
+        color: white !important;
+    }
 
     .imageTextOverlayContainer{
         padding: unset !important;
