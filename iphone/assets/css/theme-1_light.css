@@ -286,7 +286,7 @@
 
 /* First time landing styles start */
 #firstTimeLanding .content-landing{
-    background-image: linear-gradient(rgba(68, 68, 200, 0.8), rgba(68, 68, 200, 0.9)), url("../img/landingImage.jpg") !important;
+    background-image: linear-gradient(rgba(68, 68, 200, 0.8), rgba(68, 68, 200, 0.9)), url("../images/index_bg.png") !important;
     background-size: cover !important;
 }
 #firstTimeLanding #header {
