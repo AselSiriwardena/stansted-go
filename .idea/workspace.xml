@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8c99bae-1f29-4591-90b9-2fd52f997bbc" name="Default Changelist" comment="">
+    <list default="true" id="a816f1cd-fa10-45fb-8156-361805933921" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/data/products/6.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/data/promotions/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/promotions/1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/promotion_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/promotion_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/sort_filtering.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/sort_filtering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/users/peshala@pesh.com.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/users/peshala@pesh.com.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/product_details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
