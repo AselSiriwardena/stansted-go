@@ -1,1 +1,12 @@
-[{"name":"PLACE PROMOTION","discount":"25","details":"Winter is here and we know how precious coffee is to keep you warm. Browse through an extensive collection of renowned coffee brands to help you survive the cold holiday season...","duration":"24/11/2019","type":"In","productList":[5]}]
+[
+  {
+    "name":"PLACE PROMOTION",
+    "discount":"25",
+    "details":"Winter is here and we know how precious coffee is to keep you warm. Browse through an extensive collection of renowned coffee brands to help you survive the cold holiday season...",
+    "duration":"24/11/2019",
+    "type":"In",
+    "productList":[
+      5
+    ]
+  }
+]

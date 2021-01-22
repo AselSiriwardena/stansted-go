@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8c99bae-1f29-4591-90b9-2fd52f997bbc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ipad/promotion_details_backup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/gamfication-q2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamfication-q2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/gamification.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamification.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipad/gamification_intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/gamification_intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/10.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/3.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/4.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/5.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/6.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/7.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/8.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/products/9.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/products/9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/promotions/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/promotions/1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/promotions/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/promotions/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/promotions/3.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/promotions/3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/promotions/4.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/promotions/4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/data/users/peshala@pesh.com.json" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/data/users/peshala@pesh.com.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/promotion_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/promotion_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipad/sort_filtering.html" beforeDir="false" afterPath="$PROJECT_DIR$/ipad/sort_filtering.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +76,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/iphone/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/iphone/backend" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\newux\iphone\backend" />
       <recent name="C:\wamp64\www\newux\iphone\assets\images" />
       <recent name="C:\wamp64\www\newux\ipad\assets\images" />
       <recent name="C:\wamp64\www\newux\iphone" />

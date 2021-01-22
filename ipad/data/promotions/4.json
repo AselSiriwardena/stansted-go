@@ -1,1 +1,13 @@
-[{"name":"TOURIST PLACES SALE","discount":"70","details":"From the latest mobile phone to the latest speaker, we have everything available. Browse thhrough an array of products at amazing discount to gift loved ones this season.","duration":"24/11/2019","type":"Online","productList":[12,13]}]
+[
+  {
+    "name":"TOURIST PLACES SALE",
+    "discount":"70",
+    "details":"Winter is here and we know how precious travelling is to keep you warm. Browse through an extensive collection of renowned packages to help you survive the cold holiday season...",
+    "duration":"24/11/2019",
+    "type":"Online",
+    "productList":[
+      12,
+      13
+    ]
+  }
+]

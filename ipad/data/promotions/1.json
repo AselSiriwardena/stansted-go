@@ -1,13 +1,13 @@
 [
   {
-    "name":"ALL PROMOTIONAL PACKAGES",
+    "name":"ALL PROMOTIONAL OFFERS",
     "discount":"50",
     "details":"Winter is here and we know how precious travelling is to keep you warm. Browse through an extensive collection of renowned packages to help you survive the cold holiday season...",
     "duration":"24/11/2021",
     "type":"Online",
     "productList":[
       1,
-      2
+      2,3,4
     ]
   }
 ]
