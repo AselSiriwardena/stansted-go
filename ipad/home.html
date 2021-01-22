@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
 
     <!-- jQuery mobile files -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -16,7 +15,7 @@
 
     <!-- Bootstrap CSS file -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom JS Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -25,477 +24,408 @@
 
     <!-- Custom main CSS file -->
     <link rel="stylesheet" href="index.css">
-
+    <script>
+        //document.getElementById("username").innerHTML = document.cookie;
+        console.log(document.cookie);
+    </script>
 </head>
-
 <body class="post-login">
-    <div data-role="page" class="home">
-        <div data-role="header" id="header" class="align-stuff">
-            <div class="container">
-                <div class="ui-grid-a head-head">
-                    <div class="ui-block-a">
-                        <h1>Home</h1>
-                    </div>
-                    <div class="ui-block-b icons" id="optionz">
-                        <a class="primary-color-black-text" data-rel="popup" href="#overlay"
-                            data-position-to="#optionz"><i class="fas fa-search"></i></a>
-                        <div class="ui-content pt-0 mb-1" data-shadow="false" data-theme="none" data-overlay-theme="a"
-                            data-role="popup" id="overlay">
-                            <div class="deals-search-bar">
-                                <ul data-role="listview" data-filter="true" data-filter-reveal="true"
-                                    data-filter-placeholder="Searching Promotions" data-inset="true">
-                                    <li><a class="dealsClick" accesskey="1">Winter Coffee Sale</a></li>
-                                    <li><a class="dealsClick" accesskey="2">Google Pixel Sale</a></li>
-                                    <li><a class="dealsClick" accesskey="3">Furniture Sale</a></li>
-                                    <li><a class="dealsClick" accesskey="4">Electronic Christmas Sale</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a class="primary-color-black-text" href="realAR.html" rel="external"><i
-                                class="fas fa-camera"></i></a>
-                    </div>
-                </div>
+<div data-role="page" class="home">
+    <div data-role="header" id="header" class="px-4 pt-5 pb-4">
+        <div class="ui-grid-a d-flex align-items-center header-title-back">
+            <div class="ui-block-a d-flex align-items-center">
+                <h3 class="m-0">Destination</h3>
             </div>
-        </div>
-        <div class="align-stuff" data-role="main">
-            <div class="container">
-                <div class="favourites">
-                    <div class="ui-grid-solo mx-auto text-center">
-                        <div class="head-body">
-                            <h2 class="primary-color-black-text">Welcome<span class="primary-color-blue-text user_name"
-                                    id="username">James</span></h2>
-                            <p class="primary-color-grey-text f16">We have a lot in store for you...literally !</p>
-                        </div>
+            <div class="ui-block-b text-right">
+                <a class="primary-color-black-text" data-rel="popup" href="#overlay" data-position-to="origin"><i
+                        class="fas fa-search"></i></a>
+                <div class="ui-content" data-shadow="false" data-theme="none" data-overlay-theme="a" data-role="popup"
+                     id="overlay">
+                    <div class="deals-search-bar">
+                        <ul data-role="listview" data-filter="true" data-filter-reveal="true"
+                            data-filter-placeholder="Searching Promotions" data-inset="true">
+                            <li><a class="dealsClick" accesskey="1">Cambridge</a></li>
+                            <li><a class="dealsClick" accesskey="2">BigBen</a></li>
+                            <li><a class="dealsClick" accesskey="3">Manchester</a></li>
+                            <li><a class="dealsClick" accesskey="4">Scottish Highlands</a></li>
+                        </ul>
                     </div>
-                    <div class="ui-grid-a main-head ">
-                        <div class="ui-block-a pt-2 pl-2  w80">
-                            <h3><b>Today's Promotions</b></h3>
-                        </div>
-                        <div class="ui-block-b pl-3 w20 text-right">
-                            <h6><a class="pathurl" accesskey="deals.html">See all</a></h6>
-                        </div>
-                    </div>
-                    <div class="carousell">
-                        <div class="item">
-                            <div class="ui-grid-solo">
-                                <div class="ui-block-a">
-                                    <div class="card">
-                                        <div class="ui-grid-a d-flex align-items-end">
-                                            <div class="ui-block-a w60">
-                                                <div class="top">
-                                                    <div class="d-flex align-items-center">
-                                                        <h1 class="font-family-primary primary-color-black-text">
-                                                            <b>NIKE</b>
-                                                        </h1>
-                                                        <div class="top secondary-color-gold-text ml-2">
-                                                            <h5 class="mb-0 font-weight-bold">SUMMER</h5>
-                                                            <h5 style="letter-spacing: 9px;" class="font-weight-bold">
-                                                                SALE
-                                                            </h5>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="font-size-m">Shoes starting from</div>
-                                                        <div
-                                                            class="primary-color-red-text font-size-xl font-weight-heavy">
-                                                            <span
-                                                                class="font-size-m mr-1 font-weight-bold">USD</span>89.99
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <h6 class="text-muted font-weight-bold">Ends in 14 hours</h6>
-                                                </div>
-                                            </div>
-                                            <div class="ui-block-b w40">
-                                                <div class="bottom">
-                                                    <img src="assets/img/Nike.png" width="100%" height="auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="ui-grid-solo">
-                                <div class="ui-block-a">
-                                    <div class="card">
-                                        <div class="ui-grid-a d-flex align-items-end">
-                                            <div class="ui-block-a w60">
-                                                <div class="top">
-                                                    <div class="d-flex align-items-center">
-                                                        <h1 class="font-family-primary primary-color-black-text">
-                                                            <b>WWE</b>
-                                                        </h1>
-                                                        <div class="top secondary-color-gold-text ml-2">
-                                                            <h5 class="mb-0 font-weight-bold">Clearance</h5>
-                                                            <h5 class="font-weight-bold">Event</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="font-size-m">All merchandise</div>
-                                                        <div
-                                                            class="primary-color-red-text font-size-xl font-weight-heavy">
-                                                            <span class="font-size-m mr-1 font-weight-bold">up
-                                                                to</span>20%
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <h6 class="text-muted font-weight-bold">Ends in 35 days</h6>
-                                                </div>
-                                            </div>
-                                            <div class="ui-block-b w40">
-                                                <div class="bottom text-right">
-                                                    <img src="assets/img/wwe.png" width="80%" height="auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="ui-grid-solo">
-                                <div class="ui-block-a">
-                                    <div class="card">
-                                        <div class="ui-grid-a d-flex align-items-end">
-                                            <div class="ui-block-a w60">
-                                                <div class="top">
-                                                    <div class="d-flex align-items-center">
-                                                        <h1 class="font-family-primary primary-color-black-text">
-                                                            <b>JBL</b>
-                                                        </h1>
-                                                        <div class="top secondary-color-gold-text ml-2">
-                                                            <h5 class="mb-0 font-weight-bold">Coachella</h5>
-                                                            <h5 class="font-weight-bold">Extravaganza</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="font-size-m">Audio products</div>
-                                                        <div
-                                                            class="primary-color-red-text font-size-xl font-weight-heavy">
-                                                            <span class="font-size-m mr-1 font-weight-bold">up
-                                                                to</span>40%
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <h6 class="text-muted font-weight-bold">Ends in 12 Days</h6>
-                                                </div>
-                                            </div>
-                                            <div class="ui-block-b w40">
-                                                <div class="bottom text-right">
-                                                    <img src="assets/img/jbl.png" width="40%" height="auto">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="favourites">
-                    <div class="ui-grid-a main-head ">
-                        <div class="ui-block-a pt-2 pl-2  w80">
-                            <h3><b>Trending promotions</b></h3>
-                        </div>
-                        <div class="ui-block-b pl-3 w20 text-right">
-                            <h6><a class="pathurl" accesskey="deals.html">See All</a></h6>
-                        </div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a pr-3 justify-content-center">
-                            <a class="dealsClick" accesskey="1">
-                                <img alt="Trending promotion" class="img-fluid" width="100%"
-                                    src="assets/img/coffeePromo.png">
-                            </a>
-                        </div>
-                        <div class="ui-block-b pl-3 justify-content-center">
-                            <a class="dealsClick" accesskey="2">
-                                <img alt="Trending promotion" class="img-fluid" width="100%"
-                                    src="assets/img/pixelPromo.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a pt-3 pr-3 w50 justify-content-center">
-                            <a class="dealsClick" accesskey="3">
-                                <img alt="Trending promotion" class="img-fluid" width="100%"
-                                    src="assets/img/furniturePromo.png">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-<!--            <div class="container">-->
-<!--                <div class="ui-grid-a main-head mt-5">-->
-<!--                    <div class="ui-block-a pt-2 pl-2  w80">-->
-<!--                        <h3><b>Ranking Summary</b></h3>-->
-<!--                    </div>-->
-<!--                    <div class="ui-block-b pl-3 w20 text-right">-->
-<!--                        <h6><a href="">See all</a></h6>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="ui-grid-a">-->
-<!--                    <div class="ui-block-a w40 pr-3">-->
-<!--                        <div class="card">-->
-<!--                            <div class="ui-grid-solo text-center mb-3">-->
-<!--                                <img src="assets/img/avatar.svg" id="userImage" width="100" class="img-fluid">-->
-<!--                                <p class="primary-color-grey-text f16 mb-0 mt-3">Personal Rank</p>-->
-<!--                                <h2 class="primary-color-blue-text f32 fw-heavy">#101</h2>-->
-<!--                                <div class="ui-grid-a mt-5">-->
-<!--                                    <div class="ui-block-a text-left">-->
-<!--                                        <p class="f16 primary-color-grey-text mb-0">Daily Points</p>-->
-<!--                                        <h3 class="f22 primary-color-green-text">150</h3>-->
-<!--                                    </div>-->
-<!--                                    <div class="ui-block-b text-right">-->
-<!--                                        <p class="f16 primary-color-grey-text mb-0">Total Points</p>-->
-<!--                                        <h3 class="f22 primary-color-green-text" id="userPoints">15,050</h3>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="ui-block-b w60 pl-3 mt-4">-->
-<!--                        <ul class="nav nav-tabs nav-justified nav-primary">-->
-<!--                            <li class="nav-item">-->
-<!--                                <a href="#shipping" class="nav-link active" data-toggle="tab">Today</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a href="#ongoing" class="nav-link" data-toggle="tab">Week</a>-->
-<!--                            </li>-->
-<!--                            <li class="nav-item">-->
-<!--                                <a href="#unpaid" class="nav-link" data-toggle="tab">Month</a>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!--                        <div class="tab-content">-->
-<!--                            <div class="tab-pane card fade show active" id="shipping">-->
-<!--                                <table data-role="table" id="movie-table-custom" data-mode="" class="movie-list">-->
-<!--                                    <thead>-->
-<!--                                        <tr>-->
-<!--                                            <th>Rank</th>-->
-<!--                                            <th style="width:40%">Name</th>-->
-<!--                                            <th>Daily Points</th>-->
-<!--                                            <th>Total Points</th>-->
-<!--                                        </tr>-->
-<!--                                    </thead>-->
-<!--                                    <tbody>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#1</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">Citizen Kane-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1941</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">100%</td>-->
-<!--                                        </tr>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#2</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">Casablanca-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1942</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">97%</td>-->
-<!--                                        </tr>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#3</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">The Godfather-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1972</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">97%</td>-->
-<!--                                        </tr>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#4</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">The Middle Man-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1989</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">90%</td>-->
-<!--                                        </tr>-->
-<!--                                    </tbody>-->
-<!--                                </table>-->
-<!--                            </div>-->
-<!--                            <div class="tab-pane card fade" id="ongoing">-->
-<!--                                <table data-role="table" id="movie-table-custom" data-mode="" class="movie-list">-->
-<!--                                    <thead>-->
-<!--                                        <tr>-->
-<!--                                            <th>Rank</th>-->
-<!--                                            <th style="width:40%">Name</th>-->
-<!--                                            <th>Daily Points</th>-->
-<!--                                            <th>Total Points</th>-->
-<!--                                        </tr>-->
-<!--                                    </thead>-->
-<!--                                    <tbody>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#1</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">Citizen Kane-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1941</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">100%</td>-->
-<!--                                        </tr>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#2</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">Casablanca-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1942</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">97%</td>-->
-<!--                                        </tr>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#3</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">The Godfather-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1972</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">97%</td>-->
-<!--                                        </tr>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#4</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">The Middle Man-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1989</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">90%</td>-->
-<!--                                        </tr>-->
-<!--                                    </tbody>-->
-<!--                                </table>-->
-<!--                            </div>-->
-<!--                            <div class="tab-pane card fade" id="unpaid">-->
-<!--                                <table data-role="table" id="movie-table-custom" data-mode="" class="movie-list">-->
-<!--                                    <thead>-->
-<!--                                        <tr>-->
-<!--                                            <th>Rank</th>-->
-<!--                                            <th style="width:40%">Name</th>-->
-<!--                                            <th>Daily Points</th>-->
-<!--                                            <th>Total Points</th>-->
-<!--                                        </tr>-->
-<!--                                    </thead>-->
-<!--                                    <tbody>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#1</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">Citizen Kane-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1941</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">100%</td>-->
-<!--                                        </tr>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#2</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">Casablanca-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1942</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">97%</td>-->
-<!--                                        </tr>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#3</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">The Godfather-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1972</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">97%</td>-->
-<!--                                        </tr>-->
-<!--                                        <tr valign="middle">-->
-<!--                                            <th>#4</th>-->
-<!--                                            <td class="primary-color-black-text fw-bold"><img-->
-<!--                                                    src="assets/img/avatar-placeholder.png" class="img-fluid pr-2"-->
-<!--                                                    width="30px" alt="">The Middle Man-->
-<!--                                            </td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">1989</td>-->
-<!--                                            <td class="primary-color-blue-text fw-bold">90%</td>-->
-<!--                                        </tr>-->
-<!--                                    </tbody>-->
-<!--                                </table>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-        </div>
-        <div data-role="footer" position="fixed" id="footer2" data-tap-toggle="false" >
-            <div class="page-footer" data-fullscreen="true">
-                <div class="grid-container  border-rad-max">
-                    <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home_selected.svg"></a></a></div>
-                    <div class="grid-item"><a href="favouritesAll.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
-                    <div class="grid-item"><a href="explore_more.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
-                    <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
-                    <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
                 </div>
             </div>
         </div>
     </div>
+    <div role="main" id="main">
+        <div class="search-items">
+            <ul class="nav nav-tabs nav-justified nav-primary">
+                <li class="nav-item">
+                    <a href="#daily" class="nav-link active" data-toggle="tab">City</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#weekly" class="nav-link" data-toggle="tab">HillCountry</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#monthly" class="nav-link" data-toggle="tab">Coastal</a>
+                </li>
+            </ul>
+        </div>
+        <div class="trending px-4 px-landscape-0">
+            <div class="slider carousell">
+                <div class="item ui-grid-b px-landscape-4">
+                    <div class="ui-block-a w100 justify-content-center">
+                        <div class="promotion-banner ui-block-a">
+                            <a class="dealsClick" accesskey="1">
+                                <img alt="Trending promotion" class="img-fluid" width="100%"
+                                     src="assets/images/destination_1.svg">
+                            </a>
+                            <div class="ui-block-a w70">
+                                <div class="font-size font-weight-heavy">Tower Bridge</div>
+                                <h6 class="text-muted font-weight-bold">London</h6>
+                            </div>
+                            <div class="ui-block-b w30 bottom">
+                                <img src="assets/images/destination_star_rate.svg" width="100%" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ui-grid-b px-landscape-4">
+                    <div class="ui-block-a w100 justify-content-center">
+                        <div class="promotion-banner ui-block-a">
+                            <a class="dealsClick" accesskey="1">
+                                <img alt="Trending promotion" class="img-fluid" width="100%"
+                                     src="assets/images/destination_1.svg">
+                            </a>
+                            <div class="ui-block-a w70">
+                                <div class="font-size font-weight-heavy">Tower Bridge</div>
+                                <h6 class="text-muted font-weight-bold">London</h6>
+                            </div>
+                            <div class="ui-block-b w30 bottom">
+                                <img src="assets/images/destination_star_rate.svg" width="100%" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ui-grid-b px-landscape-4">
+                    <div class="ui-block-a w100 justify-content-center">
+                        <div class="promotion-banner ui-block-a">
+                            <a class="dealsClick" accesskey="1">
+                                <img alt="Trending promotion" class="img-fluid" width="100%"
+                                     src="assets/images/destination_1.svg">
+                            </a>
+                            <div class="ui-block-a w70">
+                                <div class="font-size font-weight-heavy">Tower Bridge</div>
+                                <h6 class="text-muted font-weight-bold">London</h6>
+                            </div>
+                            <div class="ui-block-b w30 bottom">
+                                <img src="assets/images/destination_star_rate.svg" width="100%" height="auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-tabs nav-justified nav-primary">
+                <li class="nav-item">
+                    <a rel="external" href="exploreAR.html" class="nav-link active" id="card_link" accesskey="proceed">Explore AR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#paypal" class="nav-link" id="paypal_link" data-toggle="tab">Explore More</a>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="ui-grid-a mt-4 mb-3 px-4 d-flex align-items-center">
+                <div class="ui-block-a w80">
+                    <div class="font-size-l font-weight-heavy">Promotional Offers</div>
+                </div>
+                <div class="ui-block-b w20">
+                    <div class="font-size-m text-right"><a>Show All</a></div>
+                </div>
+            </div>
+            <div class="carousell">
+                <div class="item">
+                    <div class="ui-grid-solo">
+                        <div class="ui-block-a">
+                            <div class="card">
+                                <div class="ui-grid-a d-flex align-items-end">
+                                    <div class="ui-block-a w60">
+                                        <div class="top">
+                                            <div class="d-flex align-items-center">
+                                                <h2 class="font-family-primary primary-color-black-text">Cornwall</h2>
+                                            </div>
+                                            <div>
+                                                <div class="font-size-m">Tickets starting from</div>
+                                                <div class="primary-color-red-text font-size-xl font-weight-heavy">
+                                                    <span class="font-size-m mr-1 font-weight-bold">USD</span>19.99
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <h6 class="text-muted font-weight-bold">Ends in 14 hours</h6>
+                                        </div>
+                                    </div>
+                                    <div class="ui-block-b w40">
+                                        <div class="bottom">
+                                            <img src="assets/images/Cornwall.jpg" width="100%" height="auto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ui-grid-solo">
+                        <div class="ui-block-a">
+                            <div class="card">
+                                <div class="ui-grid-a d-flex align-items-end">
+                                    <div class="ui-block-a w60">
+                                        <div class="top">
+                                            <div class="d-flex align-items-center">
+                                                <h2 class="font-family-primary primary-color-black-text">Norfolk
+                                                </h2>
+                                            </div>
+                                            <div>
+                                                <div class="font-size-m">Tickets starting from</div>
+                                                <div class="primary-color-red-text font-size-xl font-weight-heavy">
+                                                    <span class="font-size-m mr-1 font-weight-bold">USD</span>19.99
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <h6 class="text-muted font-weight-bold">Ends in 14 hours</h6>
+                                        </div>
+                                    </div>
+                                    <div class="ui-block-b w40">
+                                        <div class="bottom">
+                                            <img src="assets/images/Norfolk.jpg" width="100%" height="auto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ui-grid-solo">
+                        <div class="ui-block-a">
+                            <div class="card">
+                                <div class="ui-grid-a d-flex align-items-end">
+                                    <div class="ui-block-a w60">
+                                        <div class="top">
+                                            <div class="d-flex align-items-center">
+                                                <h2 class="font-family-primary primary-color-black-text">Warham
+                                                </h2>
+                                            </div>
+                                            <div>
+                                                <div class="font-size-m">Tickets starting from</div>
+                                                <div class="primary-color-red-text font-size-xl font-weight-heavy">
+                                                    <span class="font-size-m mr-1 font-weight-bold">USD</span>19.99
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <h6 class="text-muted font-weight-bold">Ends in 14 hours</h6>
+                                        </div>
+                                    </div>
+                                    <div class="ui-block-b w40">
+                                        <div class="bottom">
+                                            <img src="assets/images/warham.jpg" width="100%" height="auto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="trending px-4 px-landscape-0">
+            <div class="ui-grid-a mt-4 mb-3 d-flex align-items-center px-landscape-4">
+                <div class="ui-block-a w80">
+                    <div class="font-size-l font-weight-heavy">Places</div>
+                </div>
+                <div class="ui-block-b w20">
+                    <div class="font-size-m text-right"><a>Show All</a></div>
+                </div>
+            </div>
+            <div class="trending-items">
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a w100">
+                        <div class="card py-0 px-0">
+                            <div class="top-card px-2 pb-2 pt-3">
+                                <div class="ui-grid-a d-flex align-items-center">
+                                    <div class="ui-block-a w50">
+                                        <img alt="product Image" class="img-fluid" src="assets/images/Cambridge.jpg"
+                                             height="auto" width="90%">
+                                    </div>
+                                    <div class="ui-block-b w50">
+                                        <div class="prodContent">
+                                            <div class="ui-grid-solo">
+                                                <div class="ui-block-a">
+                                                    <h4 class="mt-0 truncate font-weight-bold m-0">Cambridge</h4>
+                                                </div>
+                                            </div>
+                                            <div class="ui-grid-solo pt-1">
+                                                <div class="ui-block-a w100">
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price mt-2">
+                                            <div class="font-size-s text-muted font-weight-bold">
+                                                <del>20.99</del>
+                                            </div>
+                                            <div class="font-weight-heavy font-size-xl">
+                                                <div class="red">
+                                                    <span class="font-size-m font-weight-bold">USD</span> 10.99
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-card ui-grid-a">
+                                <div class="ui-grid-c d-flex align-items-center">
+                                    <div class="ui-block-a w20 text-left icon d-flex">
+                                        <i class=" fa fa-heart-o"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a w100">
+                        <div class="card py-0 px-0">
+                            <div class="top-card px-2 pb-2 pt-3">
+                                <div class="ui-grid-a d-flex align-items-center">
+                                    <div class="ui-block-a w50">
+                                        <img alt="product Image" class="img-fluid" src="assets/images/Manchester.jpg"
+                                             height="auto" width="90%">
+                                    </div>
+                                    <div class="ui-block-b w50">
+                                        <div class="prodContent">
+                                            <div class="ui-grid-solo">
+                                                <div class="ui-block-a">
+                                                    <h4 class="mt-0 truncate font-weight-bold m-0">Manchester</h4>
+                                                </div>
+                                            </div>
+                                            <div class="ui-grid-solo pt-1">
+                                                <div class="ui-block-a w100">
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price mt-2">
+                                            <div class="font-size-s text-muted font-weight-bold">
+                                                <del>20.99</del>
+                                            </div>
+                                            <div class="font-weight-heavy font-size-xl">
+                                                <div class="red">
+                                                    <span class="font-size-m font-weight-bold">USD</span> 10.99
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-card ui-grid-a">
+                                <div class="ui-grid-c d-flex align-items-center">
+                                    <div class="ui-block-a w20 text-left icon d-flex">
+                                        <i class=" fa fa-heart-o"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a w100">
+                        <div class="card py-0 px-0">
+                            <div class="top-card px-2 pb-2 pt-3">
+                                <div class="ui-grid-a d-flex align-items-center">
+                                    <div class="ui-block-a w50">
+                                        <img alt="product Image" class="img-fluid mr-4" src="assets/images/Scotland.jpg"
+                                             height="auto" width="90%">
+                                    </div>
+                                    <div class="ui-block-b  pl-2">
+                                        <div class="prodContent">
+                                            <div class="ui-grid-solo">
+                                                <div class="ui-block-a">
+                                                    <h4 class="mt-0 truncate font-weight-bold m-0">Scottish Highlands</h4>
+                                                </div>
+                                            </div>
+                                            <div class="ui-grid-solo pt-1">
+                                                <div class="ui-block-a w100">
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star secondary-color-yellow-text"></i>
+                                                    <i class="fa fa-star-o secondary-color-yellow-text"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price mt-2">
+                                            <div class="font-size-s text-muted font-weight-bold">
+                                                <del>20.99</del>
+                                            </div>
+                                            <div class="font-weight-heavy font-size-xl">
+                                                <div class="red">
+                                                    <span class="font-size-m font-weight-bold">USD</span> 10.99
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-card ui-grid-a">
+                                <div class="ui-grid-c d-flex align-items-center">
+                                    <div class="ui-block-a w20 text-left icon d-flex">
+                                        <i class=" fa fa-heart-o"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-role="footer" class="page-footer" position="fixed" data-fullscreen="true">
+    <div class="grid-container  border-rad-max">
+        <div class="grid-item"><a href="home.html" data-transition="slide"><img src="assets/images/nav_home_selected.svg"></a></a></div>
+        <div class="grid-item"><a href="favourites.html" data-transition="slide"><img src="assets/images/nav_heart.svg"></a></a></div>
+        <div class="grid-item"><a href="store.html" data-transition="slide"><img src="assets/images/nav_mini_logo.svg"></a></a></div>
+        <div class="grid-item"><a href="cart.html" data-transition="slide"><img src="assets/images/nav_trips.svg"></a></a></div>
+        <div class="grid-item"><a href="aboutUs.html" data-transition="slide"><img src="assets/images/nav_profile.svg"></a></a></div>
+    </div>
+</div>
+</div>
 </body>
-
 </html>
 <script>
     $(document).ready(function () {
-
-        $('#' + sessionStorage.getItem('theme')).prop("checked", true);
-
-        if (sessionStorage.getItem('theme') === 'dark') {
-            $('body').addClass('dark');
-        }
-        $('input[name="radio-group-2"]:radio').change(function () {
-            if (this.accessKey === 'dark') {
-                sessionStorage.setItem('theme', 'dark')
-                $('body').addClass('dark');
-
-            } else {
-                sessionStorage.setItem('theme', 'light')
-                $('body').removeClass('dark');
-            }
-        });
-
-
-        $.post("backend/userData.php", {
-            action: 'view',
-            currentUser: sessionStorage.getItem("loggedUser")
-        }, function (data, status) {
-            const json = JSON.parse(data);
-            $("#username").html(json.name);
-            if (json.imageSrc !== "") {
-                $("#userImage").attr('src', json.imageSrc);
-            }
-
-            $("#userPoints").html(json.points);
+        $(document).on("click", ".pathUrl", function () {
+            document.location.href = this.accessKey;
         });
         $(document).on("click", ".dealsClick", function () {
-            if (this.accessKey === "2") {
-                sessionStorage.setItem("currentDeal", this.accessKey);
-                sessionStorage.setItem("ratingFilter", '0');
-                sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"999"}');
-                sessionStorage.setItem("sort", 'default');
-                document.location.href = 'promotion_details_in.html';
-            } else {
-                sessionStorage.setItem("currentDeal", this.accessKey);
-                sessionStorage.setItem("ratingFilter", '0');
-                sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"999"}');
-                sessionStorage.setItem("sort", 'default');
-                document.location.href = 'promotion_details.html';
-            }
-
-        });
-        $(document).on("click", ".pathurl", function () {
-            document.location.href = this.accessKey;
+            sessionStorage.removeItem('currentDeal');
+            sessionStorage.setItem("currentDeal", this.accessKey);
+            sessionStorage.setItem("ratingFilter", '0');
+            sessionStorage.setItem("priceFilter", '{"startValue":"0","EndValue":"999"}');
+            sessionStorage.setItem("sort", 'default');
+            document.location.href = 'promotion_details.html';
         });
 
     })
+
 </script>
