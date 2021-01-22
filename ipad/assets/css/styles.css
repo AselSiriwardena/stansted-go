@@ -224,6 +224,8 @@ a {
 /* Home Styles */
 .home {
     background-color: #F6FAFF;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .home .user_name {
