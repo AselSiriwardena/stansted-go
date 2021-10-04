@@ -4,3 +4,5 @@ Jquery application for online train ticket booking. The application includes loc
 Heroku link - https://stanstedgoip.herokuapp.com/
 
 Youtube Demo - https://www.youtube.com/watch?v=6CP-TxFjmVU
+
+![Landing Page](landing-page.jpeg)
